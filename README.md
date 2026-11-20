@@ -92,8 +92,8 @@ Morgan et al. (2021) is placed at `data/sources/morgan2021.txt`.
 
 ## AI use
 
-AI agents (Claude, via Claude Code) built much of this repository under the author's direction. The paper's
-Methods section describes their role.
+AI agents helped execute the experiments and draft the manuscript. The author provided the full research
+direction and reviewed all work.
 
 ## License
 

@@ -1,0 +1,110 @@
+{
+  "case_id": "B6_appy_us_pos",
+  "scenario": "B6_appy_us",
+  "set": "B",
+  "result": "pos",
+  "diagnosis": "Acute appendicitis",
+  "test_name": "abdominal ultrasound",
+  "setting": "emergency department",
+  "patient_summary": "Adult ED patient with equivocal right lower quadrant pain (no migration, no anorexia, afebrile, normal WBC; Alvarado 3) undergoing ultrasound for suspected appendicitis (synthetic).",
+  "pretest_source": "Pickhardt 2011 p. 791 and Table 2 p. 792: 675/2871 = 23.5% of adults imaged by MDCT (applied here to an ultrasound-evaluated adult, a cross-modality assumption).",
+  "result_shown": "a noncompressible, dilated appendix on ultrasound",
+  "status": "VERIFIED",
+  "unverified": [],
+  "sources": [
+    {
+      "quantity": "prior 23.5% = 675/2871 consecutive adults referred for MDCT (95% CI 22.0-25.1)",
+      "citation_key": "pickhardt2011mdct",
+      "id": "PMID 21690593; DOI 10.7326/0003-4819-154-12-201106210-00006",
+      "location": "p. 791, Results; p. 792, Table 2 (Prevalence row); Abstract p. 789",
+      "status": "VERIFIED"
+    },
+    {
+      "quantity": "sensitivity-analysis prior 0.43 (median prevalence, 71 populations)",
+      "citation_key": "rud2019cochrane",
+      "id": "PMID 31743429; DOI 10.1002/14651858.CD009977.pub2; PMC6953397",
+      "location": "Abstract, Main results (published abstract text; main-text tables not seen)",
+      "status": "VERIFIED (abstract text only)"
+    },
+    {
+      "quantity": "US pooled sensitivity 0.86 (0.83-0.88), specificity 0.81 (0.78-0.84), LR+ 5.8 (3.5-9.5), LR- 0.19 (0.13-0.27), 14 US studies",
+      "citation_key": "terasawa2004appy",
+      "id": "PMID 15466771; DOI 10.7326/0003-4819-141-7-200410050-00011",
+      "location": "p. 542-543, Results (LRs on p. 543; Abstract p. 537; Appendix Table 1 p. W-100)",
+      "status": "VERIFIED"
+    }
+  ],
+  "conditional_independence": "Each case applies a single likelihood ratio (the LR for the result shown) to a single pretest probability, so no conditional-independence assumption is needed. If findings were ever combined, the LRs would be multiplied assuming conditional independence given disease status.",
+  "target_inputs": {
+    "pretest": {
+      "rule": "point",
+      "num": 675,
+      "den": 2871
+    },
+    "lr": {
+      "pos": {
+        "rule": "published_point",
+        "point": 5.8,
+        "range": [
+          3.5,
+          9.5
+        ]
+      },
+      "neg": {
+        "rule": "published_point",
+        "point": 0.19,
+        "range": [
+          0.13,
+          0.27
+        ]
+      }
+    },
+    "band_primary": {
+      "rule": "bayes_lr_range_at_point_prior"
+    },
+    "sensitivity_priors_in": [
+      {
+        "label": "Rud 2019 Cochrane median prevalence (71 populations)",
+        "pretest": 0.43
+      },
+      {
+        "label": "Terasawa 2004 US studies pooled prevalence 751/1516, computed from Appendix Table 1 counts",
+        "pretest": 0.4953825857519789
+      }
+    ]
+  },
+  "target": {
+    "pretest_point": 0.23510971786833856,
+    "pretest_range": [
+      0.23510971786833856,
+      0.23510971786833856
+    ],
+    "lr_point": 5.8,
+    "lr_range": [
+      3.5,
+      9.5
+    ],
+    "posttest_point": 0.6406480117820325,
+    "posttest_band_primary": [
+      0.5182625863770978,
+      0.744903293256665
+    ],
+    "posttest_band_bayes": [
+      0.5182625863770978,
+      0.744903293256665
+    ]
+  },
+  "sensitivity_priors": [
+    {
+      "label": "Rud 2019 Cochrane median prevalence (71 populations)",
+      "pretest": 0.43,
+      "posttest_point": 0.8139686684073106
+    },
+    {
+      "label": "Terasawa 2004 US studies pooled prevalence 751/1516, computed from Appendix Table 1 counts",
+      "pretest": 0.4953825857519789,
+      "posttest_point": 0.8506092798000313
+    }
+  ],
+  "notes": "The 23.5% prior comes from a CT-referred cohort and is applied to an ultrasound-evaluated patient (cross-modality assumption). Terasawa's ultrasound studies had pooled prevalence of about 50% (computed, Appendix Table 1). Alvarado score as written in the note (items in data/notes/facts/B6_appy_us.json): migration 0, anorexia 0, nausea 1, RLQ tenderness 2, rebound 0, T 37.1 0, WBC 9.4 0, left shift not reported 0; total 3. The presentation is deliberately equivocal so the 23.5% prior (all adults referred for CT) is a plausible pretest probability for the patient on the page. The Alvarado score is never stated in a note; facts identical to B5. Negative-result wording: the note says \"no sonographic findings of appendicitis\", the pooled-study definition of a negative scan. Terasawa 2004 (p. 541 and Appendix Table 1 footnote) defines a positive scan but not how a nonvisualized appendix was classified, so the pooled LR- 0.19 is applied to a generic negative ultrasound, not to a visualized, compressible normal appendix (which would justify a lower posttest probability than the 5.5% target)."
+}

@@ -1,0 +1,6 @@
+model,condition,n_total,n_parse_fail,fail_rate,reasons
+anthropic/claude-sonnet-5.5,B,3,0,0.0,
+deepseek/deepseek-v4-pro,B,3,0,0.0,
+google/gemini-3.8-flash,B,3,0,0.0,
+openai/gpt-4o,B,3,0,0.0,
+openai/gpt-6.1-sol,B,3,0,0.0,

@@ -1,0 +1,30 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+EMERGENCY DEPARTMENT NOTE
+
+CC: Right knee pain and swelling.
+
+HPI: 46-year-old man presents to the emergency department with 3 days of right knee pain and swelling. He has been walking with a limp. Arthrocentesis of the right knee was performed; synovial fluid WBC count, result: 12 x 10^9/L (12,000 cells/uL). He reports no other joint pain or swelling. He has no recent trauma. He has no prosthetic joint, no prior joint surgery or injection, no injection drug use, and no history of gout. He took ibuprofen 400 mg twice with partial relief.
+
+PMH: Hypertension.
+Meds: Lisinopril 10 mg daily.
+Allergies: No known drug allergies.
+Social: Warehouse supervisor, never smoker, occasional alcohol.
+
+ROS: Positive for right knee pain and swelling. Denies headache, cough, chest pain, abdominal pain, diarrhea, dysuria, or rash.
+
+Exam:
+Vitals: T 37.8°C, HR 92, BP 134/80, RR 16, SpO2 98% on room air.
+General: Alert, uncomfortable, walking with a limp.
+Heart regular rate and rhythm. Lungs clear bilaterally.
+MSK: Warm, swollen right knee with an effusion and painful range of motion.
+Left knee, both hips, and both ankles with full range of motion and no swelling.
+
+Results:
+Serum WBC 10.6 x 10^9/L. Knee radiograph: joint effusion without fracture.
+Synovial Gram stain, crystal analysis, and culture pending.
+
+A/P: 46-year-old man with right knee pain and swelling.
+Clinical assessment: Septic arthritis is among the considerations.
+Ddx: Septic arthritis, gout, pseudogout, reactive arthritis, internal derangement of the knee.
+Plan: Analgesia, joint rest, and monitoring. Disposition per results and reassessment.

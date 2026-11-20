@@ -1,0 +1,427 @@
+{
+ "scenario": "B1_pe_low",
+ "source": "Wells criteria (Wells 2000/2001 categories); clinical vignette written for this study (no source vignette) for the PE evidence",
+ "setting": "emergency department",
+ "diagnosis": "Pulmonary embolism",
+ "test_name": "ELISA D-dimer",
+ "wells_items": [
+  {
+   "item": "Clinical signs and symptoms of DVT",
+   "points": 3.0,
+   "present": false
+  },
+  {
+   "item": "PE is the leading consideration or an alternative diagnosis is less likely than PE",
+   "points": 3.0,
+   "present": false
+  },
+  {
+   "item": "Heart rate above 100 beats/min",
+   "points": 1.5,
+   "present": false
+  },
+  {
+   "item": "Immobilization or surgery in the previous 4 weeks",
+   "points": 1.5,
+   "present": false
+  },
+  {
+   "item": "Previous PE or DVT",
+   "points": 1.5,
+   "present": false
+  },
+  {
+   "item": "Hemoptysis",
+   "points": 1.0,
+   "present": false
+  },
+  {
+   "item": "Malignancy (treatment within 6 months or palliative)",
+   "points": 1.0,
+   "present": false
+  }
+ ],
+ "wells_total": 0,
+ "wells_category": "low (<2)",
+ "wells_note": "Item by item: DVT signs 0; PE leading consideration 0 (viral pleurisy judged more likely); HR 88 not above 100, 0; immobilization or surgery 0; prior PE or DVT 0; hemoptysis 0; malignancy 0. Total 0, low. Score is computable from the facts but is never stated in any note (V, N, B, S). The A/P states only the clinician's alternative-diagnosis judgment, which is the Wells 3-point item.",
+ "surface_key_note": "Surface keys: V, N, B, S, or NB (N and B), NBS. First string is what the templates render; any string counts for the check. Matching is case-insensitive.",
+ "core_facts": [
+  {
+   "id": "age_sex",
+   "surfaces": {
+    "V": [
+     "52-year-old woman"
+    ],
+    "NB": [
+     "52-year-old woman"
+    ],
+    "S": [
+     "52F"
+    ]
+   }
+  },
+  {
+   "id": "setting",
+   "surfaces": {
+    "V": [
+     "in the emergency department"
+    ],
+    "NB": [
+     "emergency department"
+    ],
+    "S": [
+     "ED"
+    ]
+   }
+  },
+  {
+   "id": "duration",
+   "surfaces": {
+    "V": [
+     "2 days"
+    ],
+    "NB": [
+     "2 days"
+    ],
+    "S": [
+     "2d"
+    ]
+   }
+  },
+  {
+   "id": "pain",
+   "surfaces": {
+    "V": [
+     "pleuritic chest pain"
+    ],
+    "NB": [
+     "pleuritic chest pain"
+    ],
+    "S": [
+     "pleuritic CP"
+    ]
+   }
+  },
+  {
+   "id": "dyspnea",
+   "surfaces": {
+    "V": [
+     "mild shortness of breath"
+    ],
+    "NB": [
+     "mild shortness of breath"
+    ],
+    "S": [
+     "mild SOB"
+    ]
+   }
+  },
+  {
+   "id": "uri",
+   "surfaces": {
+    "V": [
+     "had a runny nose and sore throat last week"
+    ],
+    "NB": [
+     "runny nose and sore throat last week"
+    ],
+    "S": [
+     "URI sx last wk"
+    ]
+   }
+  },
+  {
+   "id": "hr",
+   "surfaces": {
+    "V": [
+     "a heart rate of 88 beats/min"
+    ],
+    "NB": [
+     "HR 88"
+    ],
+    "S": [
+     "HR 88"
+    ]
+   }
+  },
+  {
+   "id": "no_hemoptysis",
+   "surfaces": {
+    "V": [
+     "no hemoptysis"
+    ],
+    "NB": [
+     "no hemoptysis"
+    ],
+    "S": [
+     "no hemoptysis"
+    ]
+   }
+  },
+  {
+   "id": "no_cancer",
+   "surfaces": {
+    "V": [
+     "no history of cancer"
+    ],
+    "NB": [
+     "no history of cancer"
+    ],
+    "S": [
+     "no hx cancer"
+    ]
+   }
+  },
+  {
+   "id": "no_surg",
+   "surfaces": {
+    "V": [
+     "no recent surgery or immobilization"
+    ],
+    "NB": [
+     "no recent surgery or immobilization"
+    ],
+    "S": [
+     "no recent surgery/immobilization"
+    ]
+   }
+  },
+  {
+   "id": "no_vte",
+   "surfaces": {
+    "V": [
+     "no prior DVT or PE"
+    ],
+    "NB": [
+     "no prior DVT or PE"
+    ],
+    "S": [
+     "no prior DVT/PE"
+    ]
+   }
+  },
+  {
+   "id": "no_dvt",
+   "surfaces": {
+    "V": [
+     "no unilateral leg swelling or calf tenderness"
+    ],
+    "NB": [
+     "no unilateral leg swelling or calf tenderness"
+    ],
+    "S": [
+     "no unilat leg swelling or calf tenderness"
+    ]
+   }
+  },
+  {
+   "id": "alt",
+   "surfaces": {
+    "V": [
+     "the clinician thinks viral pleurisy is a more likely explanation than pulmonary embolism"
+    ],
+    "NB": [
+     "viral pleurisy considered more likely than PE"
+    ],
+    "S": [
+     "viral pleurisy more likely than PE"
+    ]
+   }
+  }
+ ],
+ "filler": [
+  {
+   "id": "f_pain",
+   "justification": "Character of a stated symptom.",
+   "surfaces": {
+    "NB": [
+     "The pain is right-sided and sharp, worse with deep breaths"
+    ],
+    "S": [
+     "Pain R-sided, sharp, worse w/ deep breaths"
+    ]
+   }
+  },
+  {
+   "id": "f_tx",
+   "justification": "Home analgesic use; no diagnostic content.",
+   "surfaces": {
+    "NB": [
+     "She took ibuprofen at home with partial relief"
+    ],
+    "S": [
+     "Ibuprofen at home, partial relief"
+    ]
+   }
+  },
+  {
+   "id": "f_pmh",
+   "justification": "Unrelated history.",
+   "surfaces": {
+    "NB": [
+     "seasonal allergies"
+    ],
+    "S": [
+     "seasonal allergies"
+    ]
+   }
+  },
+  {
+   "id": "f_med",
+   "justification": "Antihistamine, no hormonal or prothrombotic agent.",
+   "surfaces": {
+    "NB": [
+     "cetirizine 10 mg daily PRN"
+    ],
+    "S": [
+     "cetirizine 10 PRN"
+    ]
+   }
+  },
+  {
+   "id": "f_allergy",
+   "justification": "Allergy status unrelated.",
+   "surfaces": {
+    "NB": [
+     "no known drug allergies"
+    ],
+    "S": [
+     "NKDA"
+    ]
+   }
+  },
+  {
+   "id": "f_social",
+   "justification": "Neutral social history.",
+   "surfaces": {
+    "NB": [
+     "teacher, never smoker, occasional alcohol"
+    ],
+    "S": [
+     "teacher, never smoker, occ EtOH"
+    ]
+   }
+  },
+  {
+   "id": "f_ros_neg",
+   "justification": "Unrelated systems.",
+   "surfaces": {
+    "NB": [
+     "abdominal pain, nausea, vomiting, diarrhea, rash, headache, or dysuria"
+    ],
+    "S": [
+     "abd pain, N/V/D, rash, HA, dysuria"
+    ]
+   }
+  },
+  {
+   "id": "f_vitals",
+   "justification": "Normal other vitals.",
+   "surfaces": {
+    "NB": [
+     "BP 124/78, RR 18, T 37.2°C, SpO2 98% on room air"
+    ],
+    "S": [
+     "BP 124/78, RR 18, T 37.2, SpO2 98% RA"
+    ]
+   }
+  },
+  {
+   "id": "f_gen",
+   "justification": "Comfortable appearance.",
+   "surfaces": {
+    "NB": [
+     "alert, in no acute distress"
+    ],
+    "S": [
+     "A&O, NAD"
+    ]
+   }
+  },
+  {
+   "id": "f_cv",
+   "justification": "Normal rate stated in vitals.",
+   "surfaces": {
+    "NB": [
+     "regular rhythm, no murmur"
+    ],
+    "S": [
+     "RRR, no murmur"
+    ]
+   }
+  },
+  {
+   "id": "f_lungs",
+   "justification": "Normal lung exam.",
+   "surfaces": {
+    "NB": [
+     "clear bilaterally, no wheeze"
+    ],
+    "S": [
+     "CTAB, no wheeze"
+    ]
+   }
+  },
+  {
+   "id": "f_labs",
+   "justification": "Routine ED chest pain studies, normal, including a chest radiograph (M6; Wells 2001 p. 99 clinician judgment is made with CXR, ECG and labs).",
+   "surfaces": {
+    "NB": [
+     "ECG with sinus rhythm and no ST changes. Troponin I below the reference limit. CBC and BMP within normal limits. CXR: no acute cardiopulmonary process."
+    ],
+    "S": [
+     "ECG sinus rhythm, no ST changes. Trop I below ref. CBC, BMP WNL. CXR no acute cardiopulmonary process."
+    ]
+   }
+  },
+  {
+   "id": "f_ddx",
+   "justification": "Lists target among alternatives; no interpretation of result.",
+   "surfaces": {
+    "NB": [
+     "viral pleurisy, pulmonary embolism, pneumonia, musculoskeletal chest pain, pericarditis"
+    ],
+    "S": [
+     "viral pleurisy, PE, pneumonia, MSK CP, pericarditis"
+    ]
+   }
+  },
+  {
+   "id": "f_plan",
+   "justification": "Result-neutral plan.",
+   "surfaces": {
+    "NB": [
+     "Acetaminophen as needed for pain. Disposition per results and reassessment."
+    ],
+    "S": [
+     "APAP PRN pain. Dispo per results and reassessment."
+    ]
+   }
+  }
+ ],
+ "result": {
+  "pos": {
+   "V": [
+    "1,150 ng/mL FEU, above the 500 ng/mL FEU cutoff"
+   ],
+   "NB": [
+    "1,150 ng/mL FEU, above the 500 ng/mL FEU cutoff"
+   ],
+   "S": [
+    "1,150 ng/mL FEU, above the 500 FEU cutoff"
+   ]
+  },
+  "neg": {
+   "V": [
+    "320 ng/mL FEU, below the 500 ng/mL FEU cutoff"
+   ],
+   "NB": [
+    "320 ng/mL FEU, below the 500 ng/mL FEU cutoff"
+   ],
+   "S": [
+    "320 ng/mL FEU, below the 500 FEU cutoff"
+   ]
+  }
+ },
+ "perc_note": "Age 52 is not a Wells item. It makes the patient PERC-positive (age >= 50), so ordering a D-dimer is guideline-plausible (L3). All other PERC criteria are met (HR 88, SpO2 98%, no hemoptysis, no estrogen, no prior VTE, no unilateral leg swelling, no recent surgery or trauma)."
+}

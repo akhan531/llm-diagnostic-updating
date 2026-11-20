@@ -1,0 +1,3 @@
+model,case_id,condition,seed,prompt_version,parse_status,flagged,length_stopped,completion_tokens,error
+deepseek/deepseek-v4-pro,B7_strep_neg,V,3,v1,call_error,True,0,,IncompleteRead: IncompleteRead(352 bytes read)
+deepseek/deepseek-v4-pro,B8_septic_neg,N,2,v1,unparseable_missing_field,True,1,8000,

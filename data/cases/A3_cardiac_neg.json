@@ -1,0 +1,98 @@
+{
+  "case_id": "A3_cardiac_neg",
+  "scenario": "A3_cardiac",
+  "set": "A",
+  "result": "neg",
+  "diagnosis": "Cardiac ischemia",
+  "test_name": "exercise stress test",
+  "setting": "primary care outpatient clinic (Morgan p748)",
+  "patient_summary": "43-year-old premenopausal woman with atypical chest pain and normal ECG, no risk factors, normal vital signs and examination (Morgan 2021 Figure legend, vignette C).",
+  "pretest_source": "Morgan 2021 Table 3, cardiac ischemia pretest evidence range 1-4.4%; point = log-odds midpoint.",
+  "result_shown": "a negative exercise stress test (no ischemic ST changes)",
+  "status": "VERIFIED",
+  "unverified": [],
+  "sources": [
+    {
+      "quantity": "pretest 1-4.4%",
+      "citation_key": "morgan2021",
+      "id": "PMID 33818595; DOI 10.1001/jamainternmed.2021.0269; PMC8022260",
+      "location": "Table 3, Cardiac ischemia: pretest",
+      "status": "VERIFIED"
+    },
+    {
+      "quantity": "LR+ 2.03-2.65, LR- 0.51-0.56",
+      "citation_key": "morgan2021",
+      "id": "PMID 33818595; DOI 10.1001/jamainternmed.2021.0269; PMC8022260",
+      "location": "Table 4, Exercise stress test, positive/negative",
+      "status": "VERIFIED"
+    },
+    {
+      "quantity": "posttest 2-11% (pos), 0.43-2.5% (neg)",
+      "citation_key": "morgan2021",
+      "id": "PMID 33818595; DOI 10.1001/jamainternmed.2021.0269; PMC8022260",
+      "location": "Table 3, Cardiac ischemia: after positive/negative",
+      "status": "VERIFIED"
+    }
+  ],
+  "conditional_independence": "Each case applies a single likelihood ratio (the LR for the result shown) to a single pretest probability, so no conditional-independence assumption is needed. If findings were ever combined, the LRs would be multiplied assuming conditional independence given disease status.",
+  "target_inputs": {
+    "pretest": {
+      "rule": "logodds_midpoint",
+      "range": [
+        0.01,
+        0.044
+      ]
+    },
+    "lr": {
+      "pos": {
+        "rule": "geomean_range",
+        "range": [
+          2.03,
+          2.65
+        ]
+      },
+      "neg": {
+        "rule": "geomean_range",
+        "range": [
+          0.51,
+          0.56
+        ]
+      }
+    },
+    "band_primary": {
+      "rule": "printed",
+      "pct": {
+        "pos": [
+          2,
+          11
+        ],
+        "neg": [
+          0.43,
+          2.5
+        ]
+      }
+    }
+  },
+  "target": {
+    "pretest_point": 0.021106453256381833,
+    "pretest_range": [
+      0.01,
+      0.044
+    ],
+    "lr_point": 0.5344155686354956,
+    "lr_range": [
+      0.51,
+      0.56
+    ],
+    "posttest_point": 0.011391560213315293,
+    "posttest_band_primary": [
+      0.0043,
+      0.025
+    ],
+    "posttest_band_bayes": [
+      0.005125113053964426,
+      0.025126448033937026
+    ]
+  },
+  "notes": "Printed post-negative lower bound 0.43 vs Bayes 0.51."
+}

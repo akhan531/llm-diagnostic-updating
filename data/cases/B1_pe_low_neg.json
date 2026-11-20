@@ -1,0 +1,81 @@
+{
+  "case_id": "B1_pe_low_neg",
+  "scenario": "B1_pe_low",
+  "set": "B",
+  "result": "neg",
+  "diagnosis": "Pulmonary embolism",
+  "test_name": "D-dimer",
+  "setting": "emergency department",
+  "patient_summary": "52-year-old adult ED patient with pleuritic chest pain and dyspnea, low Wells category (synthetic).",
+  "pretest_source": "Wells 2001 Results, p. 102 (also Abstract p. 98, Figure 2 p. 103): low-probability group, 7 of 527 (1.3%, CI 0.5-2.7%) had PE.",
+  "result_shown": "ELISA D-dimer below the assay cutoff (500 ng/mL FEU)",
+  "status": "VERIFIED",
+  "unverified": [],
+  "sources": [
+    {
+      "quantity": "pretest 7/527 = 1.3% (CI 0.5-2.7)",
+      "citation_key": "wells2001pe",
+      "id": "PMID 11453709; DOI 10.7326/0003-4819-135-2-200107170-00010",
+      "location": "p. 102, Results text (Abstract p. 98; group sizes in Figure 2, p. 103)",
+      "status": "VERIFIED"
+    },
+    {
+      "quantity": "LR+ 1.68 (1.44-1.95), LR- 0.13 (0.03-0.58), ELISA, PE studies, Tier 1 analysis",
+      "citation_key": "stein2004ddimer",
+      "id": "PMID 15096330; DOI 10.7326/0003-4819-140-8-200404200-00005",
+      "location": "p. 593, Table 1 (Pulmonary Embolism, ELISA row)",
+      "status": "VERIFIED"
+    }
+  ],
+  "conditional_independence": "Each case applies a single likelihood ratio (the LR for the result shown) to a single pretest probability, so no conditional-independence assumption is needed. If findings were ever combined, the LRs would be multiplied assuming conditional independence given disease status.",
+  "target_inputs": {
+    "pretest": {
+      "rule": "point",
+      "num": 7,
+      "den": 527
+    },
+    "lr": {
+      "pos": {
+        "rule": "published_point",
+        "point": 1.68,
+        "range": [
+          1.44,
+          1.95
+        ]
+      },
+      "neg": {
+        "rule": "published_point",
+        "point": 0.13,
+        "range": [
+          0.03,
+          0.58
+        ]
+      }
+    },
+    "band_primary": {
+      "rule": "bayes_lr_range_at_point_prior"
+    }
+  },
+  "target": {
+    "pretest_point": 0.013282732447817837,
+    "pretest_range": [
+      0.013282732447817837,
+      0.013282732447817837
+    ],
+    "lr_point": 0.13,
+    "lr_range": [
+      0.03,
+      0.58
+    ],
+    "posttest_point": 0.0017469428500124784,
+    "posttest_band_primary": [
+      0.0004036831279675516,
+      0.00774720451856658
+    ],
+    "posttest_band_bayes": [
+      0.0004036831279675516,
+      0.00774720451856658
+    ]
+  },
+  "notes": "Positive-result variant is weakly informative. Assay mismatch: the prior is from a cohort that used the SimpliRED whole-blood agglutination assay (Wells 2001 p. 97 and throughout), while the LRs are for the ELISA class (Stein 2004 Tier 1). For the whole-blood assay class Stein 2004 Table 1 (p. 593) gives PE LR+ 2.93 (1.89-4.52), LR- 0.31 (0.18-0.51); Tier 2 ELISA PE is LR+ 1.97, LR- 0.08 (0.01-0.43). The Wells cohort's own implied LR- is about 0.34 to 0.51: 2 of the 7 low-probability PE had a negative D-dimer (diagnosed by high-probability V/Q scan at presentation, p. 102 and Figure 2 footnote, p. 103) and 1 more of the 437 D-dimer-negative low-probability patients had PE in follow-up (Abstract p. 98; low-group NPV printed as 99.5%, p. 102), so 2 to 3 of 7 PE were D-dimer negative (approximate; LR- = (k/7)/((437-k)/520) for k = 2, 3). Primary band = Bayes over the Stein Tier 1 ELISA LR CIs at the Wells prior. Wells score as written in the note (items from data/notes/facts/B1_pe_low.json): DVT signs 0; PE leading consideration 0 (viral pleurisy judged more likely); HR 88, 0; immobilization or surgery 0; prior PE or DVT 0; hemoptysis 0; malignancy 0. Total 0 = low (<2). Age 52 is not a Wells item; it keeps the patient PERC-positive (age >= 50) so a D-dimer is a guideline-plausible order (L3)."
+}

@@ -1,0 +1,10 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+CC: R knee pain and swelling
+HPI: 46M in ED, 3d R knee pain and swelling. Limping. No other joint pain or swelling. No recent trauma. No prosthetic joint, no prior joint surgery/injection, no IVDU, no hx gout. Ibuprofen 400 x2 with partial relief.
+PMH: HTN. Meds: lisinopril 10 daily. NKDA.
+SH: warehouse supervisor, never smoker, occ EtOH.
+ROS: + R knee pain/swelling. Neg HA, cough, CP, abd pain, diarrhea, dysuria, rash.
+PE: T 37.8, HR 92, BP 134/80, RR 16, SpO2 98% RA. A&O, uncomfortable, limping. RRR. CTAB. MSK: R knee warm, swollen, effusion, painful ROM. L knee, both hips, both ankles full ROM, no swelling.
+Data: Serum WBC 10.6. Knee XR: effusion, no fracture. Synovial fluid WBC (R knee arthrocentesis): 12 x 10^9/L (12,000 cells/uL). Synovial Gram stain, crystals, culture pending.
+A/P: 46M w/ R knee pain and swelling. Septic arthritis among considerations. Ddx septic arthritis, gout, pseudogout, reactive arthritis, internal derangement. Analgesia, joint rest, monitoring. Dispo per results and reassessment.

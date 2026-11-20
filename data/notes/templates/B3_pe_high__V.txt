@@ -1,0 +1,3 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+A {age_sex} {setting} has {duration} of {dyspnea} and {pain}. She has {leg}, and has {imm}. She has {hr}, {spo2}, {no_hemoptysis}, {no_cancer}, and {no_vte}. {^alt}. A CT pulmonary angiogram shows {RESULT}.

@@ -1,0 +1,3 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+A {age_sex} {setting} has {onset}. He has {htn}, {bp_arms}, {no_neuro}, {no_murmur}, and {no_known}. {^alt}. The D-dimer is {RESULT}.

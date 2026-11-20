@@ -1,0 +1,29 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+OUTPATIENT CLINIC NOTE
+
+CC: Cough and shortness of breath for 5 days.
+
+HPI: 35-year-old woman, previously healthy, who smokes tobacco, presents with 5 days of fatigue, productive cough, and worsening shortness of breath. She reports temperatures to 38.9°C at home and has been taking ibuprofen for the fever with partial relief. She has stayed home from work since onset.
+
+PMH: Previously healthy.
+Meds: Ibuprofen 400 mg PO PRN.
+Allergies: No known drug allergies.
+Social: Current smoker; occasional alcohol; works in an office.
+
+ROS: Positive for fatigue, fever, productive cough, and worsening shortness of breath. Denies headache, abdominal pain, nausea, vomiting, diarrhea, rash, dysuria, or leg swelling.
+
+Exam:
+Vitals: T 37.2°C, HR 105, BP 118/72, RR 16, SpO2 98% on room air.
+General: Alert, fatigued-appearing.
+CV: Tachycardic, regular rhythm.
+Lungs: Decreased breath sounds over the lower right field.
+Abdomen soft, nontender. No leg edema. No rash.
+
+Results:
+POC glucose 96 mg/dL. Urine hCG negative.
+CXR (PA and lateral): no focal consolidation.
+
+A/P: 35-year-old woman with 5 days of cough, dyspnea, and fever.
+Ddx: Community-acquired pneumonia, acute bronchitis, influenza or other viral respiratory infection.
+Plan: Tobacco cessation counseling provided. Return precautions reviewed. Further management per chest radiograph result. Follow up in 1 week or sooner if worse.

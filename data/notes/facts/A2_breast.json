@@ -1,0 +1,210 @@
+{
+ "scenario": "A2_breast",
+ "source": "Morgan 2021 (PMC8022260), Figure legend vignette B; quote in",
+ "setting": "primary care outpatient clinic, annual visit",
+ "diagnosis": "Breast cancer",
+ "test_name": "screening mammography",
+ "surface_key_note": "Surface keys: V, N, B, S, or NB (N and B), NBS. First string is what the templates render; any string counts for the check. Matching is case-insensitive.",
+ "core_facts": [
+  {
+   "id": "age_sex",
+   "surfaces": {
+    "V": [
+     "45-year-old woman"
+    ],
+    "NB": [
+     "45-year-old woman"
+    ],
+    "S": [
+     "45F"
+    ]
+   }
+  },
+  {
+   "id": "visit",
+   "surfaces": {
+    "V": [
+     "an annual visit"
+    ],
+    "NB": [
+     "annual visit"
+    ],
+    "S": [
+     "annual visit"
+    ]
+   }
+  },
+  {
+   "id": "no_rf",
+   "surfaces": {
+    "V": [
+     "no specific risk factors or symptoms for breast cancer"
+    ],
+    "NB": [
+     "no family history of breast or ovarian cancer, no prior breast biopsy, and no breast lump, pain, nipple discharge, or skin changes"
+    ],
+    "S": [
+     "no FHx breast/ovarian CA, no prior bx, no breast lump/pain/nipple d/c/skin changes"
+    ]
+   }
+  }
+ ],
+ "filler": [
+  {
+   "id": "f_hpi",
+   "justification": "Generic wellness statement; she is asymptomatic as stated.",
+   "surfaces": {
+    "NB": [
+     "She feels well and has no concerns today"
+    ],
+    "S": [
+     "Feels well, no concerns"
+    ]
+   }
+  },
+  {
+   "id": "f_pmh",
+   "justification": "Allergic rhinitis does not affect breast cancer odds.",
+   "surfaces": {
+    "NB": [
+     "seasonal allergic rhinitis"
+    ],
+    "S": [
+     "seasonal allergic rhinitis"
+    ]
+   }
+  },
+  {
+   "id": "f_med",
+   "justification": "Supplement only; no hormonal agent.",
+   "surfaces": {
+    "NB": [
+     "multivitamin daily"
+    ],
+    "S": [
+     "multivitamin daily"
+    ]
+   }
+  },
+  {
+   "id": "f_allergy",
+   "justification": "Allergy status unrelated.",
+   "surfaces": {
+    "NB": [
+     "no known drug allergies"
+    ],
+    "S": [
+     "NKDA"
+    ]
+   }
+  },
+  {
+   "id": "f_social",
+   "justification": "Neutral social history.",
+   "surfaces": {
+    "NB": [
+     "works as an accountant, never smoker, exercises regularly"
+    ],
+    "S": [
+     "accountant, never smoker, exercises regularly"
+    ]
+   }
+  },
+  {
+   "id": "f_ros_neg",
+   "justification": "Unrelated systems.",
+   "surfaces": {
+    "NB": [
+     "headache, cough, abdominal pain, dysuria, or rash"
+    ],
+    "S": [
+     "HA, cough, abd pain, dysuria, rash"
+    ]
+   }
+  },
+  {
+   "id": "f_vitals",
+   "justification": "Normal vitals with BMI in the normal range.",
+   "surfaces": {
+    "NB": [
+     "BP 116/72, HR 68, BMI 24"
+    ],
+    "S": [
+     "BP 116/72, HR 68, BMI 24"
+    ]
+   }
+  },
+  {
+   "id": "f_exam",
+   "justification": "Routine exam of unrelated systems.",
+   "surfaces": {
+    "NB": [
+     "Heart regular rate and rhythm. Lungs clear bilaterally. Abdomen soft, nontender."
+    ],
+    "S": [
+     "RRR. Lungs CTAB. Abd soft NT."
+    ]
+   }
+  },
+  {
+   "id": "f_cbe",
+   "justification": "Asymptomatic screening breast exam; absence of a mass is already implied by 'no symptoms'.",
+   "surfaces": {
+    "NB": [
+     "Breasts symmetric without masses, skin changes, or nipple discharge. No axillary adenopathy."
+    ],
+    "S": [
+     "Breasts symmetric, no masses/skin changes/nipple d/c. No axillary LAD."
+    ]
+   }
+  },
+  {
+   "id": "f_labs",
+   "justification": "Routine wellness labs, pending.",
+   "surfaces": {
+    "NB": [
+     "Fasting lipid panel and A1c drawn today, results pending."
+    ],
+    "S": [
+     "Fasting lipids and A1c drawn, pending."
+    ]
+   }
+  },
+  {
+   "id": "f_plan",
+   "justification": "Routine health maintenance; result-neutral.",
+   "surfaces": {
+    "NB": [
+     "Influenza vaccine given today. Healthy lifestyle counseling provided. Follow up per results of today's and recent studies, otherwise in 1 year."
+    ],
+    "S": [
+     "Flu vaccine given. Lifestyle counseling. F/u per today's and recent results, otherwise 1 yr."
+    ]
+   }
+  }
+ ],
+ "result": {
+  "pos": {
+   "V": [
+    "positive (abnormal), with recall for additional imaging"
+   ],
+   "NB": [
+    "positive (abnormal), recalled for additional imaging"
+   ],
+   "S": [
+    "positive (abnormal), recalled for additional imaging"
+   ]
+  },
+  "neg": {
+   "V": [
+    "negative"
+   ],
+   "NB": [
+    "negative"
+   ],
+   "S": [
+    "negative"
+   ]
+  }
+ }
+}

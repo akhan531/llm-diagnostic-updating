@@ -1,0 +1,28 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+OUTPATIENT CLINIC NOTE
+
+CC: {^oa} ({f_site}). Also noticed foul-smelling urine.
+
+HPI: {age_sex} with {oa} ({f_site}) seen today. {f_oa_hpi} He has noted {odor} and reports {no_sx}.
+
+PMH: {^f_pmh}.
+Meds: {^f_med}.
+Allergies: {^f_allergy}.
+Social: {^f_social}.
+
+ROS: Positive for joint pain and {odor}. Denies {f_ros_neg}.
+
+Exam:
+Vitals: {f_vitals}.
+{f_exam}
+
+Results:
+{f_labs}.
+Urine dipstick: {dipstick}.
+
+A/P: {age_sex} with {oa} and {odor}.
+Ddx: {^f_ddx}.
+Plan: {f_plan}
+
+Addendum, day 3: urine culture final: {RESULT}.

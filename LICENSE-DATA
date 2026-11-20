@@ -1,0 +1,6 @@
+The case files, synthetic clinical notes, prompts and model outputs in data/, harness/prompts/ and results/
+are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+Copyright (c) 2026 Ali Khan. Full text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Model responses in results/raw/ were produced by third-party models through OpenRouter and remain subject to
+the respective providers' terms.

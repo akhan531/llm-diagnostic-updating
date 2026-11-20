@@ -1,0 +1,10 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+CC: chest pain {f_dur}
+HPI: {age_sex}, {pain} {f_dur}. {f_course}. {^no_rf}.
+PMH: {f_pmh}. Meds: {f_med}. {f_allergy}.
+SH: {f_social}.
+ROS: + CP. Neg {f_ros_neg}.
+PE: {vitals_exam}. {exam_norm}
+Data: ECG {ecg}. ETT ({f_proto}; done 2 d ago, report in chart): {RESULT}.
+A/P: {age_sex} w/ {pain}. Ddx {f_ddx}. {f_plan}

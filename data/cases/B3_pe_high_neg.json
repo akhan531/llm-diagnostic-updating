@@ -1,0 +1,112 @@
+{
+  "case_id": "B3_pe_high_neg",
+  "scenario": "B3_pe_high",
+  "set": "B",
+  "result": "neg",
+  "diagnosis": "Pulmonary embolism",
+  "test_name": "CT pulmonary angiography",
+  "setting": "emergency department",
+  "patient_summary": "Adult ED patient with dyspnea, tachycardia and unilateral leg swelling, high Wells category (synthetic).",
+  "pretest_source": "Wells 2001 Abstract p. 98: high-probability group (n=64), 37.5% had PE (24 of 64). The Results text p. 102 prints '24 of 64 (40.6%)', an internal inconsistency in the paper; 24/64 = 37.5%. Small n.",
+  "result_shown": "no filling defect in the pulmonary arteries on CTPA",
+  "status": "VERIFIED",
+  "unverified": [],
+  "sources": [
+    {
+      "quantity": "pretest 24/64 = 37.5% (Abstract); Results text prints 40.6% (CI 28.7-53.7) for '24 of 64', inconsistent; the count 24 and Figure 2 flow are consistent with 37.5%",
+      "citation_key": "wells2001pe",
+      "id": "PMID 11453709; DOI 10.7326/0003-4819-135-2-200107170-00010",
+      "location": "p. 98 Abstract; p. 102 Results text; p. 103 Figure 2",
+      "status": "VERIFIED"
+    },
+    {
+      "quantity": "CTA 2x2 (conclusive scans): 150 TP, 31 FN, 25 FP, 567 TN, so sensitivity 150/181 (83%), specificity 567/592 (96%); LRs computed from these counts (not published)",
+      "citation_key": "stein2006pioped2",
+      "id": "PMID 16738268; DOI 10.1056/NEJMoa052367",
+      "location": "p. 2324, Table 4",
+      "status": "VERIFIED"
+    },
+    {
+      "quantity": "observed CTA PPV 96% (22/23; CI 78-99) and NPV 60% (9/15; CI 32-83) in the high-probability stratum; sensitivity target only",
+      "citation_key": "stein2006pioped2",
+      "id": "PMID 16738268; DOI 10.1056/NEJMoa052367",
+      "location": "p. 2325, Table 5 (text p. 2323)",
+      "status": "VERIFIED"
+    }
+  ],
+  "conditional_independence": "Each case applies a single likelihood ratio (the LR for the result shown) to a single pretest probability, so no conditional-independence assumption is needed. If findings were ever combined, the LRs would be multiplied assuming conditional independence given disease status.",
+  "target_inputs": {
+    "pretest": {
+      "rule": "point",
+      "num": 24,
+      "den": 64
+    },
+    "sens": 0.8287292817679558,
+    "spec": 0.9577702702702703,
+    "lr": {
+      "pos": {
+        "rule": "from_sens_spec"
+      },
+      "neg": {
+        "rule": "from_sens_spec"
+      }
+    },
+    "band_primary": {
+      "rule": "degenerate"
+    },
+    "sensitivity_priors_in": [
+      {
+        "label": "Wells 2001 Results text p. 102 printed percentage 40.6% (CI 28.7-53.7)",
+        "pretest": 0.406
+      }
+    ]
+  },
+  "target": {
+    "pretest_point": 0.375,
+    "pretest_range": [
+      0.375,
+      0.375
+    ],
+    "lr_point": 0.17882233720171106,
+    "lr_range": [
+      0.17882233720171106,
+      0.17882233720171106
+    ],
+    "posttest_point": 0.09689699414457462,
+    "posttest_band_primary": [
+      0.09689699414457462,
+      0.09689699414457462
+    ],
+    "posttest_band_bayes": [
+      0.09689699414457462,
+      0.09689699414457462
+    ]
+  },
+  "notes": "n=64 so the prior is imprecise (Wells CI 28.7-53.7 around the printed 40.6%). Prior and LRs from different cohorts. PIOPED II high-stratum values rest on 23 and 15 patients. Wells score as written in the note: DVT signs 3 (left calf swelling, deep venous tenderness, 3 cm asymmetry); PE leading consideration, no alternative more likely 3; HR 112, 1.5; immobilization (bed-bound 10 days from an acute lumbar disc herniation; both calves exposed for the measurement) 1.5; prior PE or DVT 0; hemoptysis 0; malignancy 0. Total 9.0 = high (>6). Unscored findings (SpO2 92%, RR 22) are not Wells items; they are plausible within the high-probability stratum and are identical across conditions and result polarities (L5).",
+  "sensitivity_priors": [
+    {
+      "label": "Wells 2001 Results text p. 102 printed percentage 40.6% (CI 28.7-53.7)",
+      "pretest": 0.406,
+      "posttest_point": 0.10891338937179287
+    }
+  ],
+  "sensitivity_targets": [
+    {
+      "label": "PIOPED II observed CTA NPV, high clinical probability (stored as P(PE) = 1 - NPV)",
+      "num": 6,
+      "den": 15,
+      "ci": [
+        0.17000000000000004,
+        0.6799999999999999
+      ],
+      "location": "p. 2325, Table 5",
+      "npv": 0.6,
+      "npv_ci": [
+        0.32,
+        0.83
+      ],
+      "quantity": "P(disease) = 1 - NPV",
+      "value": 0.4
+    }
+  ]
+}

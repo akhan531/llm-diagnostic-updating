@@ -1,0 +1,29 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+EMERGENCY DEPARTMENT NOTE
+
+CC: Shortness of breath and chest pain for 2 days.
+
+HPI: 71-year-old woman presents to the emergency department with 2 days of new shortness of breath and pleuritic chest pain. The pain is right-sided and worse with deep breaths. A CT pulmonary angiogram with IV contrast was performed; findings: filling defect in a pulmonary artery. She reports left calf swelling and pain. She has been bed-bound for the past 10 days after an acute lumbar disc herniation. She has no hemoptysis.
+
+PMH: Hypertension, osteoarthritis; no history of cancer; no prior DVT or PE.
+Meds: Lisinopril 10 mg daily, acetaminophen 650 mg PRN.
+Allergies: Penicillin (rash).
+Social: Retired, lives with her daughter, never smoker.
+
+ROS: Positive for new shortness of breath, pleuritic chest pain, and leg swelling. Denies headache, abdominal pain, nausea, vomiting, diarrhea, dysuria, or rash.
+
+Exam:
+Vitals: HR 112, BP 128/76, RR 22, T 37.1°C, SpO2 92% on room air.
+General: Alert, mildly dyspneic.
+CV: Tachycardic, regular rhythm, no murmur.
+Lungs: Clear bilaterally.
+Extremities: Left calf swelling and tenderness along the deep venous system, with the left calf 3 cm larger than the right.
+
+Results:
+ECG with sinus tachycardia and no ST changes. Troponin I below the reference limit. Creatinine 0.8 mg/dL. CXR: no acute cardiopulmonary process.
+
+A/P: 71-year-old woman with shortness of breath and pleuritic chest pain.
+Clinical assessment: PE is the leading consideration, no alternative more likely.
+Ddx: Pulmonary embolism, pneumonia, acute coronary syndrome, pericarditis.
+Plan: Continuous pulse oximetry and cardiac monitoring. Disposition per results and reassessment.

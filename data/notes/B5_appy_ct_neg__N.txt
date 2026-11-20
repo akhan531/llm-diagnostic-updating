@@ -1,0 +1,29 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+EMERGENCY DEPARTMENT NOTE
+
+CC: Abdominal pain for 18 hours.
+
+HPI: 31-year-old man presents to the emergency department with 18 hours of right lower quadrant pain, localized there since onset. He reports nausea but no anorexia. He has not taken any medication for it.
+
+PMH: No significant medical history and no prior abdominal surgery.
+Meds: None.
+Allergies: No known drug allergies.
+Social: Software developer, never smoker, occasional alcohol.
+
+ROS: Positive for abdominal pain and nausea. Denies chest pain, cough, dysuria, hematuria, rash, or headache.
+
+Exam:
+Vitals: T 37.1°C, HR 92, BP 126/78, RR 16, SpO2 99% on room air.
+General: Alert, uncomfortable but not toxic-appearing.
+Heart regular rate and rhythm. Lungs clear bilaterally.
+Abdomen: Right lower quadrant tenderness; no rebound tenderness.
+
+Results:
+WBC 9.4 x 10^9/L.
+Creatinine 0.9 mg/dL, lipase within normal limits. Urinalysis without blood, protein, or pyuria.
+CT abdomen and pelvis with IV contrast: normal appendix (5 mm) without wall thickening or periappendiceal fat stranding.
+
+A/P: 31-year-old man with abdominal pain and nausea.
+Ddx: Acute appendicitis, mesenteric adenitis, infectious gastroenteritis, ureteral stone, terminal ileitis.
+Plan: IV fluids, analgesia, and antiemetic as needed. Disposition per results and reassessment.

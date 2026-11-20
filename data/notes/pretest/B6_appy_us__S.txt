@@ -1,0 +1,10 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+CC: abd pain x 18h
+HPI: 31M, 18h RLQ pain, localized there since onset. Nausea, no anorexia. No meds taken.
+PMH: no sig PMH, no prior abd surgery. Meds: none. NKDA.
+SH: software dev, never smoker, occ EtOH.
+ROS: + abd pain, nausea. Neg CP, cough, dysuria, hematuria, rash, HA.
+PE: T 37.1, HR 92, BP 126/78, RR 16, SpO2 99% RA. A&O, uncomfortable, non-toxic. RRR. Lungs CTAB. Abd: RLQ tenderness; no rebound.
+Data: WBC 9.4. Cr 0.9, lipase WNL. UA no blood, protein, or pyuria.
+A/P: 31M w/ abd pain, nausea. Ddx acute appendicitis, mesenteric adenitis, infectious gastroenteritis, ureteral stone, terminal ileitis. IVF, analgesia, antiemetic PRN. Dispo per results and reassessment.

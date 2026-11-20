@@ -1,0 +1,3 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+A {age_sex} comes in for {visit}. She has {no_rf}. A screening mammogram is obtained and is {RESULT}.

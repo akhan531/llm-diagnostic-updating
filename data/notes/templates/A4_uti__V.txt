@@ -1,0 +1,3 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+A {age_sex} is seen for {oa}. He has noted {odor} and {no_sx}. A urine dipstick shows {dipstick}. A urine culture is obtained and shows {RESULT}.

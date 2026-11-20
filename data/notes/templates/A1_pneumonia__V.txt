@@ -1,0 +1,3 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+A {prior_health} {age_sex} who {tobacco} presents with {duration} of {sx_fatigue}, {sx_cough}, {sx_dyspnea}, {fever}, and {dec_bs}. She has {hr}, but {vitals_rest}. A chest radiograph is obtained and shows {RESULT}.

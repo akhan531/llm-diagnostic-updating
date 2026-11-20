@@ -1,0 +1,542 @@
+{
+ "_comment": "Published clinician estimates, copied from Morgan 2021 (JAMA Intern Med 2021;181(6):747-755; DOI 10.1001/jamainternmed.2021.0269). All values are median (IQR) in percent. Pooled values (n=553) are printed only in the Results text; Table 3 prints residents, attendings and NP/PA separately and has no pooled column. No pooled value is computed by us. Checked cell by cell against data/sources/morgan2021.txt by analysis/tests/test_clinicians.py. Rodman 2023 reused this survey; its own numbers are not used here.",
+ "source": {
+  "citation_key": "morgan2021",
+  "doi": "10.1001/jamainternmed.2021.0269",
+  "pmc": "PMC8022260",
+  "pdf": "data/sources/morgan2021.pdf",
+  "table": "Table 3",
+  "table_page": "p752",
+  "pooled_location": "Results text, p750 (pdf page 4)",
+  "n_pooled": 553,
+  "n_residents": 290,
+  "n_attendings": 202,
+  "n_np_pa": 61,
+  "units": "percent"
+ },
+ "status": "VERIFIED",
+ "unverified": [
+  "Survey eAppendix 1 verbatim wording and eAppendix 2 (not reachable); not needed for these values"
+ ],
+ "scenarios": [
+  {
+   "scenario": "A1_pneumonia",
+   "morgan_label": "Pneumonia",
+   "test": "chest radiography",
+   "case_ids": {
+    "pos": "A1_pneumonia_pos",
+    "neg": "A1_pneumonia_neg"
+   },
+   "items": {
+    "pretest": {
+     "applies_to_result": "pretest",
+     "evidence_range_printed_pct": "25-42",
+     "pooled": {
+      "median": 80,
+      "iqr_low": 75,
+      "iqr_high": 90,
+      "n": 553,
+      "location": "Results text, p750"
+     },
+     "groups": {
+      "residents": {
+       "median": 80,
+       "iqr_low": 75,
+       "iqr_high": 90,
+       "n": 290
+      },
+      "attendings": {
+       "median": 85,
+       "iqr_low": 80,
+       "iqr_high": 90,
+       "n": 202
+      },
+      "np_pa": {
+       "median": 80,
+       "iqr_low": 70,
+       "iqr_high": 90,
+       "n": 61
+      }
+     },
+     "groups_location": "Table 3, p752 (JAMA Intern Med 2021;181(6))",
+     "status": "VERIFIED"
+    },
+    "post_pos": {
+     "applies_to_result": "pos",
+     "evidence_range_printed_pct": "46-65",
+     "pooled": {
+      "median": 95,
+      "iqr_low": 90,
+      "iqr_high": 100,
+      "n": 553,
+      "location": "Results text, p750"
+     },
+     "groups": {
+      "residents": {
+       "median": 95,
+       "iqr_low": 90,
+       "iqr_high": 99,
+       "n": 290
+      },
+      "attendings": {
+       "median": 95,
+       "iqr_low": 95,
+       "iqr_high": 100,
+       "n": 202
+      },
+      "np_pa": {
+       "median": 95,
+       "iqr_low": 90,
+       "iqr_high": 100,
+       "n": 61
+      }
+     },
+     "groups_location": "Table 3, p752 (JAMA Intern Med 2021;181(6))",
+     "status": "VERIFIED"
+    },
+    "post_neg": {
+     "applies_to_result": "neg",
+     "evidence_range_printed_pct": "10-19",
+     "pooled": {
+      "median": 50,
+      "iqr_low": 30,
+      "iqr_high": 80,
+      "n": 553,
+      "location": "Results text, p750"
+     },
+     "groups": {
+      "residents": {
+       "median": 60,
+       "iqr_low": 40,
+       "iqr_high": 80,
+       "n": 290
+      },
+      "attendings": {
+       "median": 50,
+       "iqr_low": 20,
+       "iqr_high": 80,
+       "n": 202
+      },
+      "np_pa": {
+       "median": 50,
+       "iqr_low": 20,
+       "iqr_high": 50,
+       "n": 61
+      }
+     },
+     "groups_location": "Table 3, p752 (JAMA Intern Med 2021;181(6))",
+     "status": "VERIFIED"
+    }
+   }
+  },
+  {
+   "scenario": "A2_breast",
+   "morgan_label": "Breast cancer",
+   "test": "mammography",
+   "case_ids": {
+    "pos": "A2_breast_pos",
+    "neg": "A2_breast_neg"
+   },
+   "items": {
+    "pretest": {
+     "applies_to_result": "pretest",
+     "evidence_range_printed_pct": "0.2-0.3",
+     "pooled": {
+      "median": 5,
+      "iqr_low": 1,
+      "iqr_high": 10,
+      "n": 553,
+      "location": "Results text, p750"
+     },
+     "groups": {
+      "residents": {
+       "median": 5,
+       "iqr_low": 1,
+       "iqr_high": 10,
+       "n": 290
+      },
+      "attendings": {
+       "median": 2,
+       "iqr_low": 1,
+       "iqr_high": 10,
+       "n": 202
+      },
+      "np_pa": {
+       "median": 10,
+       "iqr_low": 5,
+       "iqr_high": 20,
+       "n": 61
+      }
+     },
+     "groups_location": "Table 3, p752 (JAMA Intern Med 2021;181(6))",
+     "status": "VERIFIED"
+    },
+    "post_pos": {
+     "applies_to_result": "pos",
+     "evidence_range_printed_pct": "3-9",
+     "pooled": {
+      "median": 50,
+      "iqr_low": 30,
+      "iqr_high": 80,
+      "n": 553,
+      "location": "Results text, p750"
+     },
+     "groups": {
+      "residents": {
+       "median": 60,
+       "iqr_low": 35,
+       "iqr_high": 75,
+       "n": 290
+      },
+      "attendings": {
+       "median": 50,
+       "iqr_low": 20,
+       "iqr_high": 80,
+       "n": 202
+      },
+      "np_pa": {
+       "median": 60,
+       "iqr_low": 50,
+       "iqr_high": 80,
+       "n": 61
+      }
+     },
+     "groups_location": "Table 3, p752 (JAMA Intern Med 2021;181(6))",
+     "status": "VERIFIED"
+    },
+    "post_neg": {
+     "applies_to_result": "neg",
+     "evidence_range_printed_pct": "<0.05",
+     "pooled": {
+      "median": 5,
+      "iqr_low": 1,
+      "iqr_high": 10,
+      "n": 553,
+      "location": "Results text, p750"
+     },
+     "groups": {
+      "residents": {
+       "median": 5,
+       "iqr_low": 1,
+       "iqr_high": 10,
+       "n": 290
+      },
+      "attendings": {
+       "median": 1,
+       "iqr_low": 1,
+       "iqr_high": 10,
+       "n": 202
+      },
+      "np_pa": {
+       "median": 10,
+       "iqr_low": 2,
+       "iqr_high": 20,
+       "n": 61
+      }
+     },
+     "groups_location": "Table 3, p752 (JAMA Intern Med 2021;181(6))",
+     "status": "VERIFIED"
+    }
+   }
+  },
+  {
+   "scenario": "A3_cardiac",
+   "morgan_label": "Cardiac ischemia",
+   "test": "exercise stress test",
+   "case_ids": {
+    "pos": "A3_cardiac_pos",
+    "neg": "A3_cardiac_neg"
+   },
+   "items": {
+    "pretest": {
+     "applies_to_result": "pretest",
+     "evidence_range_printed_pct": "1-4.4",
+     "pooled": {
+      "median": 10,
+      "iqr_low": 5,
+      "iqr_high": 20,
+      "n": 553,
+      "location": "Results text, p750"
+     },
+     "groups": {
+      "residents": {
+       "median": 10,
+       "iqr_low": 5,
+       "iqr_high": 20,
+       "n": 290
+      },
+      "attendings": {
+       "median": 5,
+       "iqr_low": 3,
+       "iqr_high": 10,
+       "n": 202
+      },
+      "np_pa": {
+       "median": 15,
+       "iqr_low": 6.25,
+       "iqr_high": 30,
+       "n": 61
+      }
+     },
+     "groups_location": "Table 3, p752 (JAMA Intern Med 2021;181(6))",
+     "status": "VERIFIED"
+    },
+    "post_pos": {
+     "applies_to_result": "pos",
+     "evidence_range_printed_pct": "2-11",
+     "pooled": {
+      "median": 70,
+      "iqr_low": 50,
+      "iqr_high": 90,
+      "n": 553,
+      "location": "Results text, p750"
+     },
+     "groups": {
+      "residents": {
+       "median": 75,
+       "iqr_low": 50,
+       "iqr_high": 90,
+       "n": 290
+      },
+      "attendings": {
+       "median": 60,
+       "iqr_low": 25,
+       "iqr_high": 80,
+       "n": 202
+      },
+      "np_pa": {
+       "median": 90,
+       "iqr_low": 60,
+       "iqr_high": 95,
+       "n": 61
+      }
+     },
+     "groups_location": "Table 3, p752 (JAMA Intern Med 2021;181(6))",
+     "status": "VERIFIED"
+    },
+    "post_neg": {
+     "applies_to_result": "neg",
+     "evidence_range_printed_pct": "0.43-2.5",
+     "pooled": {
+      "median": 5,
+      "iqr_low": 1,
+      "iqr_high": 10,
+      "n": 553,
+      "location": "Results text, p750"
+     },
+     "groups": {
+      "residents": {
+       "median": 5,
+       "iqr_low": 1,
+       "iqr_high": 10,
+       "n": 290
+      },
+      "attendings": {
+       "median": 5,
+       "iqr_low": 1,
+       "iqr_high": 10,
+       "n": 202
+      },
+      "np_pa": {
+       "median": 10,
+       "iqr_low": 5,
+       "iqr_high": 20,
+       "n": 61
+      }
+     },
+     "groups_location": "Table 3, p752 (JAMA Intern Med 2021;181(6))",
+     "status": "VERIFIED"
+    }
+   }
+  },
+  {
+   "scenario": "A4_uti",
+   "morgan_label": "Urinary tract infection",
+   "test": "urine culture",
+   "case_ids": {
+    "pos": "A4_uti_pos",
+    "neg": "A4_uti_neg"
+   },
+   "items": {
+    "pretest": {
+     "applies_to_result": "pretest",
+     "evidence_range_printed_pct": "0-1",
+     "pooled": {
+      "median": 20,
+      "iqr_low": 10,
+      "iqr_high": 50,
+      "n": 553,
+      "location": "Results text, p750"
+     },
+     "groups": {
+      "residents": {
+       "median": 25,
+       "iqr_low": 10,
+       "iqr_high": 60,
+       "n": 290
+      },
+      "attendings": {
+       "median": 20,
+       "iqr_low": 5,
+       "iqr_high": 50,
+       "n": 202
+      },
+      "np_pa": {
+       "median": 30,
+       "iqr_low": 10,
+       "iqr_high": 50,
+       "n": 61
+      }
+     },
+     "groups_location": "Table 3, p752 (JAMA Intern Med 2021;181(6))",
+     "status": "VERIFIED"
+    },
+    "post_pos": {
+     "applies_to_result": "pos",
+     "evidence_range_printed_pct": "0-8.3",
+     "pooled": {
+      "median": 80,
+      "iqr_low": 30,
+      "iqr_high": 95,
+      "n": 553,
+      "location": "Results text, p750"
+     },
+     "groups": {
+      "residents": {
+       "median": 77.5,
+       "iqr_low": 25,
+       "iqr_high": 95,
+       "n": 290
+      },
+      "attendings": {
+       "median": 90,
+       "iqr_low": 40,
+       "iqr_high": 98,
+       "n": 202
+      },
+      "np_pa": {
+       "median": 90,
+       "iqr_low": 75,
+       "iqr_high": 100,
+       "n": 61
+      }
+     },
+     "groups_location": "Table 3, p752 (JAMA Intern Med 2021;181(6))",
+     "status": "VERIFIED"
+    },
+    "post_neg": {
+     "applies_to_result": "neg",
+     "evidence_range_printed_pct": "0-0.11",
+     "pooled": {
+      "median": 5,
+      "iqr_low": 0,
+      "iqr_high": 10,
+      "n": 553,
+      "location": "Results text, p750"
+     },
+     "groups": {
+      "residents": {
+       "median": 5,
+       "iqr_low": 0.1,
+       "iqr_high": 20,
+       "n": 290
+      },
+      "attendings": {
+       "median": 5,
+       "iqr_low": 0,
+       "iqr_high": 10,
+       "n": 202
+      },
+      "np_pa": {
+       "median": 5,
+       "iqr_low": 0,
+       "iqr_high": 10,
+       "n": 61
+      }
+     },
+     "groups_location": "Table 3, p752 (JAMA Intern Med 2021;181(6))",
+     "status": "VERIFIED"
+    }
+   }
+  },
+  {
+   "scenario": "A5_hypothetical",
+   "morgan_label": "Hypothetical testing situation",
+   "test": "hypothetical test",
+   "case_ids": {
+    "pos": "A5_hypothetical_pos",
+    "neg": "A5_hypothetical_neg"
+   },
+   "items": {
+    "pretest": null,
+    "post_pos": {
+     "applies_to_result": "pos",
+     "evidence_range_printed_pct": "2",
+     "pooled": {
+      "median": 95,
+      "iqr_low": 95,
+      "iqr_high": 100,
+      "n": 553,
+      "location": "Results text, p750"
+     },
+     "groups": {
+      "residents": {
+       "median": 95,
+       "iqr_low": 95,
+       "iqr_high": 95,
+       "n": 290
+      },
+      "attendings": {
+       "median": 95,
+       "iqr_low": 80,
+       "iqr_high": 100,
+       "n": 202
+      },
+      "np_pa": {
+       "median": 95,
+       "iqr_low": 95,
+       "iqr_high": 100,
+       "n": 61
+      }
+     },
+     "groups_location": "Table 3, p752 (JAMA Intern Med 2021;181(6))",
+     "status": "VERIFIED"
+    },
+    "post_neg": {
+     "applies_to_result": "neg",
+     "evidence_range_printed_pct": "0",
+     "pooled": {
+      "median": 5,
+      "iqr_low": 0,
+      "iqr_high": 5,
+      "n": 553,
+      "location": "Results text, p750"
+     },
+     "groups": {
+      "residents": {
+       "median": 2,
+       "iqr_low": 0,
+       "iqr_high": 10,
+       "n": 290
+      },
+      "attendings": {
+       "median": 5,
+       "iqr_low": 0,
+       "iqr_high": 5,
+       "n": 202
+      },
+      "np_pa": {
+       "median": 5,
+       "iqr_low": 5,
+       "iqr_high": 75,
+       "n": 61
+      }
+     },
+     "groups_location": "Table 3, p752 (JAMA Intern Med 2021;181(6))",
+     "status": "VERIFIED"
+    }
+   },
+   "pretest_note": "No pretest estimate was asked (prevalence 1 in 1000 is given in the question); no pretest comparison."
+  }
+ ]
+}

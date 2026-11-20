@@ -1,0 +1,10 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+CC: sore throat
+HPI: 29F in primary care clinic, sore throat w/ odynophagia x 2d. Mild HA. No cough or rhinorrhea. Acetaminophen with partial relief.
+PMH: no sig PMH. Meds: norethindrone-EE daily. NKDA.
+SH: grad student, never smoker, occ EtOH.
+ROS: + sore throat. Neg CP, abd pain, vomiting, diarrhea, dysuria, leg swelling.
+PE: T 37.4, HR 82, BP 114/70, RR 14, SpO2 99% RA. A&O, comfortable, full sentences. HEENT: pharynx and tonsils mildly erythematous, uvula midline, no peritonsillar swelling; no tonsillar exudate. Neck: tender anterior cervical LAD. Lungs CTAB. CV RRR. Abd soft NT.
+Data: RADT (throat swab): no group A streptococcal antigen detected.
+A/P: 29F w/ sore throat. Group A strep pharyngitis among considerations. Ddx group A strep pharyngitis, viral pharyngitis, mono, allergic rhinitis w/ PND, GERD. Acetaminophen, fluids, lozenges. F/u per results and reassessment.

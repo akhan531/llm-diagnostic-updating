@@ -1,0 +1,11 @@
+arm,model,n_total,n_ok,pct_ok,n_length_stopped
+L,anthropic/claude-sonnet-5.5,60,60,100.0,0
+L,deepseek/deepseek-v4-pro,60,60,100.0,0
+L,google/gemini-3.8-flash,60,60,100.0,0
+L,openai/gpt-4o,60,59,98.33333333333333,0
+L,openai/gpt-6.1-sol,60,60,100.0,0
+N,anthropic/claude-sonnet-5.5,60,60,100.0,0
+N,deepseek/deepseek-v4-pro,100,96,96.0,4
+N,google/gemini-3.8-flash,100,100,100.0,0
+N,openai/gpt-4o,100,100,100.0,0
+N,openai/gpt-6.1-sol,60,60,100.0,0

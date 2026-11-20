@@ -1,0 +1,30 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+EMERGENCY DEPARTMENT NOTE
+
+CC: Chest pain radiating to the back.
+
+HPI: {^age_sex} presents to the {setting} with {onset}. {^f_pain}. A D-dimer sent from triage resulted at {RESULT}. {^f_assoc}. He has {no_known}.
+
+PMH: {^htn}.
+Meds: {^f_med}.
+Allergies: {^f_allergy}.
+Social: {^f_social}.
+
+ROS: Positive for chest pain. Denies {f_ros_neg}.
+
+Exam:
+Vitals: {bp_arms}. {^f_vitals}.
+General: {^f_gen}.
+CV: {^f_cv}; {no_murmur}.
+Lungs: {^f_lungs}.
+Neuro: {^no_neuro}.
+{f_exam_rest}
+
+Results:
+{f_labs}
+
+A/P: {age_sex} with chest pain radiating to the back.
+Clinical assessment: {^alt}.
+Ddx: {^f_ddx}.
+Plan: {f_plan}

@@ -1,0 +1,92 @@
+{
+  "case_id": "A4_uti_pos",
+  "scenario": "A4_uti",
+  "result": "pos",
+  "diagnosis": "Urinary tract infection",
+  "test_name": "urine culture",
+  "status": "VERIFIED",
+  "unverified": [],
+  "set": "A",
+  "setting": "primary care outpatient clinic (Morgan p748)",
+  "patient_summary": "65-year-old man seen for osteoarthritis, foul-smelling urine, no pain or difficulty with urination, urine dipstick with trace blood (asymptomatic bacteriuria per Morgan 2021 Results; Figure legend, vignette D).",
+  "pretest_source": "Morgan 2021 Table 3, UTI pretest evidence range 0-1%; lower end 0 replaced by 0.1%; point = log-odds midpoint of 0.1% and 1%. The 0.1% replacement is by analogy with Morgan's 0% to 0.1% response rule (p749); Morgan applies that rule to practitioner responses, not to evidence-range endpoints. The 0.1% lower edge is a convention, independent of the analysis clipping bounds (1e-5).",
+  "result_shown": "greater than 100,000 CFU/mL of Escherichia coli",
+  "sources": [
+    {
+      "quantity": "pretest 0-1% (stored as 0.1-1%)",
+      "citation_key": "morgan2021",
+      "id": "PMID 33818595; DOI 10.1001/jamainternmed.2021.0269; PMC8022260",
+      "location": "Table 3, UTI: pretest",
+      "status": "VERIFIED"
+    },
+    {
+      "quantity": "LR+ 9.00, LR- 0.11",
+      "citation_key": "morgan2021",
+      "id": "PMID 33818595; DOI 10.1001/jamainternmed.2021.0269; PMC8022260",
+      "location": "Table 4, Urine culture, positive/negative",
+      "status": "VERIFIED"
+    },
+    {
+      "quantity": "posttest 0-8.3% (pos), 0-0.11% (neg)",
+      "citation_key": "morgan2021",
+      "id": "PMID 33818595; DOI 10.1001/jamainternmed.2021.0269; PMC8022260",
+      "location": "Table 3, UTI: after positive/negative",
+      "status": "VERIFIED"
+    }
+  ],
+  "conditional_independence": "Each case applies a single likelihood ratio (the LR for the result shown) to a single pretest probability, so no conditional-independence assumption is needed. If findings were ever combined, the LRs would be multiplied assuming conditional independence given disease status.",
+  "target_inputs": {
+    "pretest": {
+      "rule": "logodds_midpoint",
+      "range": [
+        0.001,
+        0.01
+      ]
+    },
+    "lr": {
+      "pos": {
+        "rule": "published_point",
+        "point": 9.0
+      },
+      "neg": {
+        "rule": "published_point",
+        "point": 0.11
+      }
+    },
+    "band_primary": {
+      "rule": "printed",
+      "pct": {
+        "pos": [
+          0,
+          8.3
+        ],
+        "neg": [
+          0,
+          0.11
+        ]
+      }
+    }
+  },
+  "target": {
+    "pretest_point": 0.0031697198561558204,
+    "pretest_range": [
+      0.001,
+      0.01
+    ],
+    "lr_point": 9.0,
+    "lr_range": [
+      9.0,
+      9.0
+    ],
+    "posttest_point": 0.02782197575353467,
+    "posttest_band_primary": [
+      0.0,
+      0.083
+    ],
+    "posttest_band_bayes": [
+      0.008928571428571423,
+      0.08333333333333336
+    ]
+  },
+  "notes": "Zero endpoints handled. The printed bands keep their 0 lower bound. The target is 'urinary tract infection', the question Morgan's respondents answered (abstract p747, Results p750, Tables 3 and 4 p752); the vignette itself describes asymptomatic bacteriuria (Results p750). The word bacteriuria is deliberately kept out of the diagnosis string shown to models."
+}

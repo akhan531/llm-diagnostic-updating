@@ -1,0 +1,30 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+EMERGENCY DEPARTMENT NOTE
+
+CC: Shortness of breath and chest pain for 3 days.
+
+HPI: 62-year-old man presents to the emergency department with 3 days of progressive shortness of breath and right-sided pleuritic chest pain. The pain is worse with deep breaths. He also has dry cough. He has taken acetaminophen at home with little relief.
+
+PMH: Hypertension.
+Meds: Lisinopril 10 mg daily.
+Allergies: No known drug allergies.
+Social: Retired mechanic, never smoker, occasional alcohol.
+
+ROS: Positive for progressive shortness of breath, right-sided pleuritic chest pain, and dry cough.
+
+Exam:
+Vitals: T 37.0°C, HR 108, BP 134/82, RR 20, SpO2 96% on room air.
+General: Alert, mildly short of breath with conversation.
+CV: Tachycardic, regular rhythm, no murmur.
+Lungs: Clear breath sounds bilaterally.
+Abdomen soft, nontender. No rash.
+
+Results:
+ECG with sinus tachycardia and no ST changes. Creatinine 0.9 mg/dL. CXR: no acute cardiopulmonary process.
+CT pulmonary angiogram with IV contrast: no filling defect in the pulmonary arteries.
+
+A/P: 62-year-old man with shortness of breath and pleuritic chest pain.
+Clinical assessment: PE is the leading consideration; pneumonia and pleurisy are less likely.
+Ddx: Pulmonary embolism, pneumonia, pleurisy, acute coronary syndrome, pericarditis.
+Plan: Continuous pulse oximetry and cardiac monitoring. Acetaminophen as needed for pain. Disposition per results and reassessment.

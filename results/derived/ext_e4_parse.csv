@@ -1,0 +1,11 @@
+arm,model,n_total,n_ok,pct_ok,n_length_stopped
+NUnnamed,anthropic/claude-sonnet-5.5,60,60,100.0,0
+NUnnamed,deepseek/deepseek-v4-pro,60,59,98.33333333333333,1
+NUnnamed,google/gemini-3.8-flash,60,60,100.0,0
+NUnnamed,openai/gpt-4o,60,60,100.0,0
+NUnnamed,openai/gpt-6.1-sol,60,60,100.0,0
+LUnnamed,anthropic/claude-sonnet-5.5,60,60,100.0,0
+LUnnamed,deepseek/deepseek-v4-pro,60,59,98.33333333333333,1
+LUnnamed,google/gemini-3.8-flash,60,60,100.0,0
+LUnnamed,openai/gpt-4o,60,60,100.0,0
+LUnnamed,openai/gpt-6.1-sol,60,60,100.0,0

@@ -1,0 +1,3 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+A {age_sex} {setting} has {duration} of {pain} and {dyspnea}, and {uri}. She has {hr}, {no_hemoptysis}, {no_cancer}, {no_surg}, {no_vte}, and {no_dvt}. {^alt}. An ELISA D-dimer is {RESULT}.

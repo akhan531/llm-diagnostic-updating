@@ -1,0 +1,10 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+CC: CP, SOB x {duration}
+HPI: {age_sex}, {pain}, {dyspnea} x {duration}. {^f_pain}. {^f_tx}. {^uri}. {^no_hemoptysis}.
+PMH: {f_pmh}; {no_cancer}; {no_vte}. {^no_surg}. Meds: {f_med}. {f_allergy}.
+SH: {f_social}.
+ROS: + {pain}, {dyspnea}. Neg {f_ros_neg}.
+PE: {hr}, {f_vitals}. {^f_gen}. {^f_cv}. {^f_lungs}. {^no_dvt}.
+Data: {f_labs} ELISA D-dimer: {RESULT}.
+A/P: {age_sex} w/ CP, SOB. {^alt}. Ddx {f_ddx}. {f_plan}

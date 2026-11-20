@@ -1,0 +1,28 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+OUTPATIENT CLINIC NOTE
+
+CC: Sore throat.
+
+HPI: 29-year-old woman presents to the primary care outpatient clinic with sore throat with painful swallowing for 2 days. She has had a mild headache. A rapid antigen detection test on a throat swab was performed in clinic; result: positive for group A streptococcal antigen. She has no cough or rhinorrhea. She has been taking acetaminophen with partial relief.
+
+PMH: No significant medical history.
+Meds: Norethindrone-ethinyl estradiol daily.
+Allergies: No known drug allergies.
+Social: Graduate student, never smoker, occasional alcohol.
+
+ROS: Positive for sore throat. Denies chest pain, abdominal pain, vomiting, diarrhea, dysuria, or leg swelling.
+
+Exam:
+Vitals: T 37.4°C, HR 82, BP 114/70, RR 14, SpO2 99% on room air.
+General: Alert, comfortable, speaking in full sentences.
+HEENT: Posterior pharynx and tonsils mildly erythematous, uvula midline, no peritonsillar swelling; no tonsillar exudate.
+Neck: Tender anterior cervical lymph nodes.
+Lungs: Clear bilaterally.
+CV: Regular rate and rhythm.
+Abdomen soft, nontender.
+
+A/P: 29-year-old woman with sore throat.
+Clinical assessment: Group A streptococcal pharyngitis is among the considerations.
+Ddx: Group A streptococcal pharyngitis, viral pharyngitis, infectious mononucleosis, allergic rhinitis with postnasal drip, gastroesophageal reflux.
+Plan: Acetaminophen, fluids, and throat lozenges for symptom relief. Follow-up per results and reassessment.

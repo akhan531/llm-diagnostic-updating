@@ -1,0 +1,75 @@
+{
+  "case_id": "B7_strep_pos",
+  "scenario": "B7_strep",
+  "set": "B",
+  "result": "pos",
+  "diagnosis": "Group A streptococcal pharyngitis",
+  "test_name": "rapid antigen detection test",
+  "setting": "primary care outpatient clinic",
+  "patient_summary": "Adult clinic patient with 2 days of sore throat, tender anterior cervical nodes, no tonsillar exudate, no cough or rhinorrhea, afebrile (modified Centor 2); throat swab sent for a rapid antigen detection test (synthetic).",
+  "pretest_source": "Stewart 2014 PLoS ONE, Results, 'Adults - Immunochromatographic Methods': prevalence of group A streptococcal infection in the 6 adult strata 21.3% (259/1,216 patients); the same 1,216 patients give the test sensitivity and specificity (Table 1, Immunochromatographic, Adults).",
+  "result_shown": "rapid antigen detection test positive for group A streptococcal antigen",
+  "status": "VERIFIED",
+  "unverified": [],
+  "sources": [
+    {
+      "quantity": "pretest 259/1,216 = 21.3% (range of the 6 strata 16.1% to 25.7%)",
+      "citation_key": "stewart2014rapid",
+      "id": "PMID 25369170; DOI 10.1371/journal.pone.0111727; PMC4219770",
+      "location": "Results, 'Adults - Immunochromatographic Methods' (prevalence sentence); Table 1, Adults, Immunochromatographic, 'Number of patients' 1,216 and 'Number of strata' 6",
+      "status": "VERIFIED",
+      "quote": "The prevalence of GAS infection in the 6 adults strata was 21.3% (259/1,216 patients) (range 16.1% to 25.7%)."
+    },
+    {
+      "quantity": "pooled sensitivity 91% (95% CI 87-94), specificity 93% (95% CI 92-95), immunochromatographic methods, adults (1,216 patients, 6 strata); LRs computed from these, not published",
+      "citation_key": "stewart2014rapid",
+      "id": "PMID 25369170; DOI 10.1371/journal.pone.0111727; PMC4219770",
+      "location": "Table 1 (Immunochromatographic, Adults: Sensitivity, Specificity rows); Abstract and Results text",
+      "status": "VERIFIED",
+      "quote": "In the adult population (1,216 patients), the pooled sensitivity was 91% (95% CI, 87 to 94%) and the pooled specificity was 93% (95% CI, 92 to 95%)"
+    }
+  ],
+  "conditional_independence": "Each case applies a single likelihood ratio (the LR for the result shown) to a single pretest probability, so no conditional-independence assumption is needed. If findings were ever combined, the LRs would be multiplied assuming conditional independence given disease status.",
+  "target_inputs": {
+    "pretest": {
+      "rule": "point",
+      "num": 259,
+      "den": 1216
+    },
+    "sens": 0.91,
+    "spec": 0.93,
+    "lr": {
+      "pos": {
+        "rule": "from_sens_spec"
+      },
+      "neg": {
+        "rule": "from_sens_spec"
+      }
+    },
+    "band_primary": {
+      "rule": "degenerate"
+    }
+  },
+  "target": {
+    "pretest_point": 0.21299342105263158,
+    "pretest_range": [
+      0.21299342105263158,
+      0.21299342105263158
+    ],
+    "lr_point": 13.000000000000009,
+    "lr_range": [
+      13.000000000000009,
+      13.000000000000009
+    ],
+    "posttest_point": 0.7786771507863092,
+    "posttest_band_primary": [
+      0.7786771507863092,
+      0.7786771507863092
+    ],
+    "posttest_band_bayes": [
+      0.7786771507863092,
+      0.7786771507863092
+    ]
+  },
+  "notes": "LR arithmetic (computed from published sensitivity and specificity, not published LRs): LR+ = sens/(1 - spec) = 0.91/0.07 = 13.000; LR- = (1 - sens)/spec = 0.09/0.93 = 0.0968. Prior and test come from the same 6 adult strata and the same 1,216 patients and the same culture reference standard, the cleanest prior and LR match among the Set B cases. Computed CI-corner sensitivity band (not the primary band, which is degenerate as for B2 and B3): LR+ 10.9 to 18.8, LR- 0.063 to 0.141. Caveats: pooled across devices (I2 61% sensitivity, 72% specificity); a throat culture reference standard cannot separate infection from carriage; the prior is the prevalence among adults who were tested, not Centor-stratified, so the note is written as an equivocal presentation (modified Centor 2: tender anterior nodes and no cough present; no exudate; afebrile). The clinician line (group A streptococcal pharyngitis among the considerations) is a deliberate realism fact, identical across conditions and polarities. Centor items are in data/notes/facts/B7_strep.json and are never stated in a note."
+}

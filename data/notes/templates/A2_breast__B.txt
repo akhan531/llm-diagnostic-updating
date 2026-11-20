@@ -1,0 +1,25 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+OUTPATIENT CLINIC NOTE, ANNUAL VISIT
+
+CC: {^visit}.
+
+HPI: {^age_sex} presents for her {visit}. {^f_hpi}. She has {no_rf}. A screening mammogram (bilateral CC and MLO views, performed last week, report in chart) was {RESULT}.
+
+PMH: {^f_pmh}.
+Meds: {^f_med}.
+Allergies: {^f_allergy}.
+Social: {^f_social}.
+
+ROS: Denies {f_ros_neg}.
+
+Exam:
+Vitals: {f_vitals}.
+{f_exam}
+Breasts: {^f_cbe}
+
+Results:
+{f_labs}
+
+A/P: {age_sex} at {visit}, asymptomatic.
+Plan: {f_plan}

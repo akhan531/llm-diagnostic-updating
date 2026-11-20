@@ -1,0 +1,28 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+OUTPATIENT CLINIC NOTE
+
+CC: Sore throat.
+
+HPI: {^age_sex} presents to the {setting} with {onset}. {^f_assoc}. A rapid antigen detection test on a throat swab was performed in clinic; result: {RESULT}. She has {no_uri}. {^f_tx}.
+
+PMH: {^f_pmh}.
+Meds: {^f_med}.
+Allergies: {^f_allergy}.
+Social: {^f_social}.
+
+ROS: Positive for sore throat. Denies {f_ros_neg}.
+
+Exam:
+Vitals: {^f_vitals}.
+General: {^f_gen}.
+HEENT: {^f_pharynx}; {no_exudate}.
+Neck: {^nodes}.
+Lungs: {^f_lungs}.
+CV: {^f_cv}.
+{f_exam_rest}
+
+A/P: {age_sex} with sore throat.
+Clinical assessment: {^alt}.
+Ddx: {^f_ddx}.
+Plan: {f_plan}

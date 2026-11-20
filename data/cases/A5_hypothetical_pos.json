@@ -1,0 +1,78 @@
+{
+  "case_id": "A5_hypothetical_pos",
+  "scenario": "A5_hypothetical",
+  "set": "A",
+  "result": "pos",
+  "diagnosis": "Hypothetical disease (prevalence 1 in 1000)",
+  "test_name": "hypothetical test",
+  "setting": "numeric question, no clinical setting (condition V only)",
+  "patient_summary": "A person tested with a test for a disease of prevalence 1 in 1000, sensitivity 100%, specificity 95% (Morgan 2021 Results text, hypothetical question).",
+  "pretest_source": "Morgan 2021 Results text, hypothetical question: prevalence 1 out of 1000.",
+  "result_shown": "a positive test result",
+  "status": "VERIFIED",
+  "unverified": [],
+  "sources": [
+    {
+      "quantity": "prevalence 1/1000, sensitivity 100%, specificity 95%",
+      "citation_key": "morgan2021",
+      "id": "PMID 33818595; DOI 10.1001/jamainternmed.2021.0269; PMC8022260",
+      "location": "Results text, hypothetical question",
+      "status": "VERIFIED"
+    },
+    {
+      "quantity": "correct answers 2% (pos) and 0% (neg)",
+      "citation_key": "morgan2021",
+      "id": "PMID 33818595; DOI 10.1001/jamainternmed.2021.0269; PMC8022260",
+      "location": "Table 3, Hypothetical rows; Results text",
+      "status": "VERIFIED"
+    }
+  ],
+  "conditional_independence": "Each case applies a single likelihood ratio (the LR for the result shown) to a single pretest probability, so no conditional-independence assumption is needed. If findings were ever combined, the LRs would be multiplied assuming conditional independence given disease status.",
+  "target_inputs": {
+    "pretest": {
+      "rule": "point",
+      "num": 1,
+      "den": 1000
+    },
+    "sens": 1.0,
+    "spec": 0.95,
+    "lr": {
+      "pos": {
+        "rule": "from_sens_spec"
+      },
+      "neg": {
+        "rule": "from_sens_spec",
+        "fit_value": 0.001
+      }
+    },
+    "band_primary": {
+      "rule": "degenerate"
+    }
+  },
+  "target": {
+    "pretest_point": 0.001,
+    "pretest_range": [
+      0.001,
+      0.001
+    ],
+    "lr_point": 19.999999999999982,
+    "lr_range": [
+      19.999999999999982,
+      19.999999999999982
+    ],
+    "posttest_point": 0.019627085377821363,
+    "posttest_band_primary": [
+      0.019627085377821363,
+      0.019627085377821363
+    ],
+    "posttest_band_bayes": [
+      0.019627085377821363,
+      0.019627085377821363
+    ]
+  },
+  "notes": "Calibration check, condition V only. Posterior after positive = 0.001/(0.001+0.999*0.05) = 1.963% (Morgan prints 2). LR- = 0 exactly, so the posterior after a negative is exactly 0 and logit is undefined; lr_point 0.001 is a documented placeholder (a convention, independent of the analysis clip, which is 1e-5) so score.py can run, and exclude_from_fit is true. Primary band is degenerate at the exact posterior rather than at the rounded printed 2%.",
+  "exclude_from_fit": true,
+  "conditions_run": [
+    "V"
+  ]
+}

@@ -1,0 +1,349 @@
+{
+ "scenario": "B4_aas",
+ "source": "ADD-RS items per Nazerian 2018 ADvISED (PMID 29030346); clinical vignette written for this study",
+ "setting": "emergency department",
+ "diagnosis": "Acute aortic syndrome",
+ "test_name": "D-dimer (500 ng/mL FEU cutoff)",
+ "add_rs_items": [
+  {
+   "category": "High-risk conditions (Marfan or connective tissue disease, family history of aortic disease, known aortic valve disease, known thoracic aneurysm, previous aortic manipulation)",
+   "present": false,
+   "note": "absent per no_known"
+  },
+  {
+   "category": "High-risk pain features (abrupt onset, severe intensity, ripping or tearing)",
+   "present": true,
+   "note": "abrupt onset and severe intensity (onset fact)"
+  },
+  {
+   "category": "High-risk examination features (pulse deficit or systolic BP differential, focal neurologic deficit with pain, new aortic regurgitation murmur with pain, hypotension or shock)",
+   "present": false,
+   "note": "absent per bp_arms, no_neuro, no_murmur"
+  }
+ ],
+ "add_rs_total": 1,
+ "add_rs_note": "ADD-RS 1 (one point from the pain category). Hypertension is a common risk factor but not an ADD-RS item. ADD-RS is not stated in any note. Cutoff stated in both results is 500 ng/mL. The prior used for the target is the ADD-RS = 1 stratum prevalence 96/1071 (Nazerian p. 253-254); the D-dimer LRs are cohort-wide. The clinician line (acute aortic syndrome among the leading considerations) and 'diaphoretic' are not ADD-RS items; they are deliberate realism facts, identical across conditions and polarities (L6).",
+ "surface_key_note": "Surface keys: V, N, B, S, or NB (N and B), NBS. First string is what the templates render; any string counts for the check. Matching is case-insensitive.",
+ "core_facts": [
+  {
+   "id": "age_sex",
+   "surfaces": {
+    "V": [
+     "56-year-old man"
+    ],
+    "NB": [
+     "56-year-old man"
+    ],
+    "S": [
+     "56M"
+    ]
+   }
+  },
+  {
+   "id": "setting",
+   "surfaces": {
+    "V": [
+     "in the emergency department"
+    ],
+    "NB": [
+     "emergency department"
+    ],
+    "S": [
+     "ED"
+    ]
+   }
+  },
+  {
+   "id": "onset",
+   "surfaces": {
+    "V": [
+     "sudden-onset severe chest pain radiating to the back, starting 3 hours ago"
+    ],
+    "NB": [
+     "sudden-onset severe chest pain radiating to the back, starting 3 hours ago"
+    ],
+    "S": [
+     "sudden severe CP radiating to back, onset 3h ago"
+    ]
+   }
+  },
+  {
+   "id": "htn",
+   "surfaces": {
+    "V": [
+     "hypertension"
+    ],
+    "NB": [
+     "hypertension"
+    ],
+    "S": [
+     "HTN"
+    ]
+   }
+  },
+  {
+   "id": "bp_arms",
+   "surfaces": {
+    "V": [
+     "equal blood pressures in both arms and symmetric pulses"
+    ],
+    "NB": [
+     "BP 150/88 in the right arm and 146/86 in the left arm, with symmetric radial and femoral pulses"
+    ],
+    "S": [
+     "BP 150/88 R arm, 146/86 L arm, symmetric radial/femoral pulses"
+    ]
+   }
+  },
+  {
+   "id": "no_neuro",
+   "surfaces": {
+    "V": [
+     "no focal neurologic deficit"
+    ],
+    "NB": [
+     "no focal neurologic deficit"
+    ],
+    "S": [
+     "no focal neuro deficit"
+    ]
+   }
+  },
+  {
+   "id": "no_murmur",
+   "surfaces": {
+    "V": [
+     "no new murmur"
+    ],
+    "NB": [
+     "no new murmur"
+    ],
+    "S": [
+     "no new murmur"
+    ]
+   }
+  },
+  {
+   "id": "no_known",
+   "surfaces": {
+    "V": [
+     "no known aortic disease, Marfan syndrome, family history of aortic dissection, or recent aortic surgery or instrumentation"
+    ],
+    "NB": [
+     "no known aortic disease, Marfan syndrome, family history of aortic dissection, or recent aortic surgery or instrumentation"
+    ],
+    "S": [
+     "no known aortic disease, Marfan, FHx aortic dissection, or recent aortic surgery/instrumentation"
+    ]
+   }
+  },
+  {
+   "id": "alt",
+   "surfaces": {
+    "V": [
+     "the clinician includes acute aortic syndrome among the leading considerations"
+    ],
+    "NB": [
+     "acute aortic syndrome is among the leading considerations"
+    ],
+    "S": [
+     "acute aortic syndrome among leading considerations"
+    ]
+   }
+  }
+ ],
+ "filler": [
+  {
+   "id": "f_pain",
+   "justification": "Character of stated symptom.",
+   "surfaces": {
+    "NB": [
+     "The pain is not changed by position or breathing"
+    ],
+    "S": [
+     "Pain not changed by position or breathing"
+    ]
+   }
+  },
+  {
+   "id": "f_assoc",
+   "justification": "Mild nonspecific accompanying symptom.",
+   "surfaces": {
+    "NB": [
+     "He felt nauseated at onset"
+    ],
+    "S": [
+     "Nauseated at onset"
+    ]
+   }
+  },
+  {
+   "id": "f_med",
+   "justification": "Antihypertensive for the stated condition.",
+   "surfaces": {
+    "NB": [
+     "amlodipine 5 mg daily"
+    ],
+    "S": [
+     "amlodipine 5 daily"
+    ]
+   }
+  },
+  {
+   "id": "f_allergy",
+   "justification": "Allergy status unrelated.",
+   "surfaces": {
+    "NB": [
+     "no known drug allergies"
+    ],
+    "S": [
+     "NKDA"
+    ]
+   }
+  },
+  {
+   "id": "f_social",
+   "justification": "Neutral social history.",
+   "surfaces": {
+    "NB": [
+     "works as an electrician, former smoker who quit 10 years ago, occasional alcohol"
+    ],
+    "S": [
+     "electrician, former smoker (quit 10y), occ EtOH"
+    ]
+   }
+  },
+  {
+   "id": "f_ros_neg",
+   "justification": "Unrelated systems.",
+   "surfaces": {
+    "NB": [
+     "headache, fever, cough, abdominal pain, vomiting, diarrhea, or dysuria"
+    ],
+    "S": [
+     "HA, fever, cough, abd pain, vomiting, diarrhea, dysuria"
+    ]
+   }
+  },
+  {
+   "id": "f_vitals",
+   "justification": "Remaining vitals.",
+   "surfaces": {
+    "NB": [
+     "HR 94, RR 18, T 36.9°C, SpO2 98% on room air"
+    ],
+    "S": [
+     "HR 94, RR 18, T 36.9, SpO2 98% RA"
+    ]
+   }
+  },
+  {
+   "id": "f_gen",
+   "justification": "Appearance consistent with stated pain.",
+   "surfaces": {
+    "NB": [
+     "alert, uncomfortable, diaphoretic"
+    ],
+    "S": [
+     "A&O, uncomfortable, diaphoretic"
+    ]
+   }
+  },
+  {
+   "id": "f_cv",
+   "justification": "Normal cardiac exam apart from stated findings.",
+   "surfaces": {
+    "NB": [
+     "regular rhythm, no rub or gallop"
+    ],
+    "S": [
+     "RRR, no rub/gallop"
+    ]
+   }
+  },
+  {
+   "id": "f_lungs",
+   "justification": "Normal lung exam.",
+   "surfaces": {
+    "NB": [
+     "clear bilaterally"
+    ],
+    "S": [
+     "CTAB"
+    ]
+   }
+  },
+  {
+   "id": "f_exam_rest",
+   "justification": "Unrelated systems.",
+   "surfaces": {
+    "NB": [
+     "Abdomen soft, nontender. No leg edema."
+    ],
+    "S": [
+     "Abd soft NT. No LE edema."
+    ]
+   }
+  },
+  {
+   "id": "f_labs",
+   "justification": "Routine ED chest pain studies.",
+   "surfaces": {
+    "NB": [
+     "ECG with sinus rhythm and no acute ST changes. Troponin I below the reference limit. Creatinine 1.0 mg/dL."
+    ],
+    "S": [
+     "ECG sinus rhythm, no acute ST changes. Trop I below ref. Cr 1.0."
+    ]
+   }
+  },
+  {
+   "id": "f_ddx",
+   "justification": "Lists target among alternatives; no interpretation of result.",
+   "surfaces": {
+    "NB": [
+     "acute aortic syndrome, acute coronary syndrome, pulmonary embolism, musculoskeletal chest pain, esophageal spasm"
+    ],
+    "S": [
+     "acute aortic syndrome, ACS, PE, MSK CP, esophageal spasm"
+    ]
+   }
+  },
+  {
+   "id": "f_plan",
+   "justification": "Result-neutral plan.",
+   "surfaces": {
+    "NB": [
+     "IV access, continuous cardiac monitoring, and IV analgesia. Disposition per results and reassessment."
+    ],
+    "S": [
+     "IV access, tele, IV analgesia. Dispo per results and reassessment."
+    ]
+   }
+  }
+ ],
+ "result": {
+  "pos": {
+   "V": [
+    "880 ng/mL FEU, above the 500 ng/mL FEU cutoff"
+   ],
+   "NB": [
+    "880 ng/mL FEU, above the 500 ng/mL FEU cutoff"
+   ],
+   "S": [
+    "880 ng/mL FEU, above the 500 FEU cutoff"
+   ]
+  },
+  "neg": {
+   "V": [
+    "310 ng/mL FEU, below the 500 ng/mL FEU cutoff"
+   ],
+   "NB": [
+    "310 ng/mL FEU, below the 500 ng/mL FEU cutoff"
+   ],
+   "S": [
+    "310 ng/mL FEU, below the 500 FEU cutoff"
+   ]
+  }
+ }
+}

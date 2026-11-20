@@ -1,0 +1,132 @@
+{
+  "case_id": "B4_aas_neg",
+  "scenario": "B4_aas",
+  "set": "B",
+  "result": "neg",
+  "diagnosis": "Acute aortic syndrome",
+  "test_name": "D-dimer",
+  "setting": "emergency department",
+  "patient_summary": "Adult ED patient with acute chest and back pain and suspected aortic syndrome, ADD-RS 1 (synthetic).",
+  "pretest_source": "Nazerian 2018 (ADvISED) p. 253-254: ADD-RS=1 stratum, 1071 of 1850 patients (p. 253), AAS adjudicated in 96 of them (p. 254), 96/1071 = 9.0% (printed 9%, p. 254). The note is written to ADD-RS = 1, so the stratum prevalence is the primary prior.",
+  "result_shown": "D-dimer below 500 ng/mL FEU",
+  "status": "VERIFIED",
+  "unverified": [],
+  "sources": [
+    {
+      "quantity": "ADD-RS=1 stratum: 1071 of 1850 patients; 96 AAS in this stratum; prevalence 96/1071 = 9.0% (printed 9%)",
+      "citation_key": "nazerian2018advised",
+      "id": "PMID 29030346; DOI 10.1161/CIRCULATIONAHA.117.029457",
+      "location": "p. 253, Results (1071 patients with ADD-RS=1); p. 254, Results, ADD-RS Classification (96 AAS in ADD-RS=1; prevalence 9%)",
+      "status": "VERIFIED"
+    },
+    {
+      "quantity": "D-dimer (cutoff 500 ng/mL) sensitivity 96.7% (93.6-98.6), specificity 64% (61.6-66.4), LR+ 2.69 (2.51-2.88), LR- 0.05 (0.03-0.1); 8 AAS with negative D-dimer; cohort-wide values (all ADD-RS strata)",
+      "citation_key": "nazerian2018advised",
+      "id": "PMID 29030346; DOI 10.1161/CIRCULATIONAHA.117.029457",
+      "location": "p. 255, Results (D-Dimer section); Table 2 lists the 8",
+      "status": "VERIFIED"
+    },
+    {
+      "quantity": "whole-cohort prevalence 241/1850 (13%); prevalence by ADD-RS 2.7% (0), 9% (1), 39% (>1); used as sensitivity priors",
+      "citation_key": "nazerian2018advised",
+      "id": "PMID 29030346; DOI 10.1161/CIRCULATIONAHA.117.029457",
+      "location": "p. 253, Results (13%); p. 254, Results (ADD-RS Classification)",
+      "status": "VERIFIED"
+    }
+  ],
+  "conditional_independence": "Each case applies a single likelihood ratio (the LR for the result shown) to a single pretest probability, so no conditional-independence assumption is needed. If findings were ever combined, the LRs would be multiplied assuming conditional independence given disease status.",
+  "target_inputs": {
+    "pretest": {
+      "rule": "point",
+      "num": 96,
+      "den": 1071
+    },
+    "lr": {
+      "pos": {
+        "rule": "published_point",
+        "point": 2.69,
+        "range": [
+          2.51,
+          2.88
+        ]
+      },
+      "neg": {
+        "rule": "published_point",
+        "point": 0.05,
+        "range": [
+          0.03,
+          0.1
+        ]
+      }
+    },
+    "band_primary": {
+      "rule": "bayes_lr_range_at_point_prior"
+    },
+    "sensitivity_priors_in": [
+      {
+        "label": "Whole-cohort prevalence 241/1850 = 13% (Nazerian p. 253), the earlier primary prior",
+        "pretest": 0.13027027027027027
+      },
+      {
+        "label": "ADD-RS 0 stratum prevalence 2.7% (Nazerian p. 254)",
+        "pretest": 0.027
+      },
+      {
+        "label": "ADD-RS >1 stratum prevalence 39% (Nazerian p. 254)",
+        "pretest": 0.39
+      }
+    ]
+  },
+  "target": {
+    "pretest_point": 0.0896358543417367,
+    "pretest_range": [
+      0.0896358543417367,
+      0.0896358543417367
+    ],
+    "lr_point": 0.05,
+    "lr_range": [
+      0.03,
+      0.1
+    ],
+    "posttest_point": 0.004898958971218618,
+    "posttest_band_primary": [
+      0.0029451466437599694,
+      0.009750152346130412
+    ],
+    "posttest_band_bayes": [
+      0.0029451466437599694,
+      0.009750152346130412
+    ]
+  },
+  "notes": "Primary prior is the ADD-RS = 1 stratum prevalence 96/1071, matching the note (ADD-RS 1: abrupt severe pain only). The D-dimer LRs are cohort-wide (computed over all ADD-RS strata, p. 255), so applying them to one stratum assumes the LRs are constant across strata. Primary band = Bayes over the published LR CIs at the 9.0% prior. The whole-cohort 13% prior, ADD-RS 0 and ADD-RS >1 prevalences are sensitivity priors; the ADD-RS plus D-dimer strategies (Table 3, p. 256) are not used for targets. The note's clinician line (acute aortic syndrome among the leading considerations) and 'diaphoretic' are not ADD-RS items; they are deliberate realism facts, identical across conditions and result polarities (L6). Stratum check: within ADD-RS = 1 the observed AAS rate is 2/630 = 0.32% after a negative D-dimer and 94/441 = 21.3% after a positive one (counts derived from p. 253-255, stored as sensitivity_targets), implying stratum LR- about 0.032 and LR+ about 2.75, both inside the primary bands, so the cohort-wide LRs are consistent with the stratum data. These observed values are not the primary target.",
+  "sensitivity_priors": [
+    {
+      "label": "Whole-cohort prevalence 241/1850 = 13% (Nazerian p. 253), the earlier primary prior",
+      "pretest": 0.13027027027027027,
+      "posttest_point": 0.007433453625736406
+    },
+    {
+      "label": "ADD-RS 0 stratum prevalence 2.7% (Nazerian p. 254)",
+      "pretest": 0.027,
+      "posttest_point": 0.0013855390773336081
+    },
+    {
+      "label": "ADD-RS >1 stratum prevalence 39% (Nazerian p. 254)",
+      "pretest": 0.39,
+      "posttest_point": 0.030976965845909463
+    }
+  ],
+  "sensitivity_targets": [
+    {
+      "label": "Observed P(AAS | D-dimer negative) within ADD-RS = 1: 924 - 294 = 630 negatives, 3 - 1 = 2 AAS (counts derived from published numbers; CI computed, Wilson)",
+      "num": 2,
+      "den": 630,
+      "ci": [
+        0.0009,
+        0.0115
+      ],
+      "location": "p. 253 (1071 and 441 with ADD-RS=1); p. 255 (294 ADD-RS=0 D-dimer negative with 1 AAS; 924 ADD-RS<=1 D-dimer negative with 3 AAS)",
+      "value": 0.0031746031746031746
+    }
+  ]
+}

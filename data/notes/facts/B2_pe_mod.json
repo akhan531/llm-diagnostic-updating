@@ -1,0 +1,468 @@
+{
+ "scenario": "B2_pe_mod",
+ "source": "Wells criteria (Wells 2000/2001 categories); clinical vignette written for this study (no source vignette) for the PE evidence",
+ "setting": "emergency department",
+ "diagnosis": "Pulmonary embolism",
+ "test_name": "CT pulmonary angiography",
+ "wells_items": [
+  {
+   "item": "Clinical signs and symptoms of DVT",
+   "points": 3.0,
+   "present": false
+  },
+  {
+   "item": "PE is the leading consideration or an alternative diagnosis is less likely than PE",
+   "points": 3.0,
+   "present": true
+  },
+  {
+   "item": "Heart rate above 100 beats/min",
+   "points": 1.5,
+   "present": true
+  },
+  {
+   "item": "Immobilization or surgery in the previous 4 weeks",
+   "points": 1.5,
+   "present": false
+  },
+  {
+   "item": "Previous PE or DVT",
+   "points": 1.5,
+   "present": false
+  },
+  {
+   "item": "Hemoptysis",
+   "points": 1.0,
+   "present": false
+  },
+  {
+   "item": "Malignancy (treatment within 6 months or palliative)",
+   "points": 1.0,
+   "present": false
+  }
+ ],
+ "wells_total": 4.5,
+ "wells_category": "moderate (2 to 6)",
+ "wells_note": "Score is computable from the facts but is never stated in any note. Item by item: DVT signs 0; PE leading consideration with pneumonia and pleurisy less likely 3; HR 108 above 100 1.5; immobilization or surgery 0; prior PE or DVT 0; hemoptysis 0; malignancy 0. Total 4.5, moderate. Unscored findings are neutral: T 37.0, SpO2 96% RA, clear lungs, ECG sinus tachycardia only, no troponin, creatinine normal.",
+ "surface_key_note": "Surface keys: V, N, B, S, or NB (N and B), NBS. First string is what the templates render; any string counts for the check. Matching is case-insensitive.",
+ "core_facts": [
+  {
+   "id": "age_sex",
+   "surfaces": {
+    "V": [
+     "62-year-old man"
+    ],
+    "NB": [
+     "62-year-old man"
+    ],
+    "S": [
+     "62M"
+    ]
+   }
+  },
+  {
+   "id": "setting",
+   "surfaces": {
+    "V": [
+     "in the emergency department"
+    ],
+    "NB": [
+     "emergency department"
+    ],
+    "S": [
+     "ED"
+    ]
+   }
+  },
+  {
+   "id": "duration",
+   "surfaces": {
+    "V": [
+     "3 days"
+    ],
+    "NB": [
+     "3 days"
+    ],
+    "S": [
+     "3d"
+    ]
+   }
+  },
+  {
+   "id": "dyspnea",
+   "surfaces": {
+    "V": [
+     "progressive shortness of breath"
+    ],
+    "NB": [
+     "progressive shortness of breath"
+    ],
+    "S": [
+     "progressive SOB"
+    ]
+   }
+  },
+  {
+   "id": "pain",
+   "surfaces": {
+    "V": [
+     "right-sided pleuritic chest pain"
+    ],
+    "NB": [
+     "right-sided pleuritic chest pain"
+    ],
+    "S": [
+     "R pleuritic CP"
+    ]
+   }
+  },
+  {
+   "id": "cough",
+   "surfaces": {
+    "V": [
+     "a dry cough"
+    ],
+    "NB": [
+     "dry cough"
+    ],
+    "S": [
+     "dry cough"
+    ]
+   }
+  },
+  {
+   "id": "temp",
+   "surfaces": {
+    "V": [
+     "a temperature of 37.0°C"
+    ],
+    "NB": [
+     "T 37.0°C"
+    ],
+    "S": [
+     "T 37.0"
+    ]
+   }
+  },
+  {
+   "id": "hr",
+   "surfaces": {
+    "V": [
+     "a heart rate of 108 beats/min"
+    ],
+    "NB": [
+     "HR 108"
+    ],
+    "S": [
+     "HR 108"
+    ]
+   }
+  },
+  {
+   "id": "spo2",
+   "surfaces": {
+    "V": [
+     "an oxygen saturation of 96% on room air"
+    ],
+    "NB": [
+     "SpO2 96% on room air"
+    ],
+    "S": [
+     "SpO2 96% RA"
+    ]
+   }
+  },
+  {
+   "id": "bs",
+   "surfaces": {
+    "V": [
+     "clear breath sounds bilaterally"
+    ],
+    "NB": [
+     "clear breath sounds bilaterally"
+    ],
+    "S": [
+     "CTAB"
+    ]
+   }
+  },
+  {
+   "id": "no_hemoptysis",
+   "surfaces": {
+    "V": [
+     "no hemoptysis"
+    ],
+    "NB": [
+     "no hemoptysis"
+    ],
+    "S": [
+     "no hemoptysis"
+    ]
+   }
+  },
+  {
+   "id": "no_cancer",
+   "surfaces": {
+    "V": [
+     "no history of cancer"
+    ],
+    "NB": [
+     "no history of cancer"
+    ],
+    "S": [
+     "no hx cancer"
+    ]
+   }
+  },
+  {
+   "id": "no_surg",
+   "surfaces": {
+    "V": [
+     "no recent surgery or immobilization"
+    ],
+    "NB": [
+     "no recent surgery or immobilization"
+    ],
+    "S": [
+     "no recent surgery/immobilization"
+    ]
+   }
+  },
+  {
+   "id": "no_vte",
+   "surfaces": {
+    "V": [
+     "no prior DVT or PE"
+    ],
+    "NB": [
+     "no prior DVT or PE"
+    ],
+    "S": [
+     "no prior DVT/PE"
+    ]
+   }
+  },
+  {
+   "id": "no_dvt",
+   "surfaces": {
+    "V": [
+     "no leg swelling or calf tenderness"
+    ],
+    "NB": [
+     "no leg swelling or calf tenderness"
+    ],
+    "S": [
+     "no leg swelling or calf tenderness"
+    ]
+   }
+  },
+  {
+   "id": "alt",
+   "surfaces": {
+    "V": [
+     "the clinician judges pulmonary embolism to be the leading explanation, with pneumonia and pleurisy less likely"
+    ],
+    "NB": [
+     "PE is the leading consideration; pneumonia and pleurisy are less likely"
+    ],
+    "S": [
+     "PE leading consideration; pneumonia, pleurisy less likely"
+    ]
+   }
+  }
+ ],
+ "filler": [
+  {
+   "id": "f_pain",
+   "justification": "Course of stated symptom.",
+   "surfaces": {
+    "NB": [
+     "The pain is worse with deep breaths"
+    ],
+    "S": [
+     "Pain worse w/ deep breaths"
+    ]
+   }
+  },
+  {
+   "id": "f_tx",
+   "justification": "Home analgesic use.",
+   "surfaces": {
+    "NB": [
+     "He has taken acetaminophen at home with little relief"
+    ],
+    "S": [
+     "APAP at home, little relief"
+    ]
+   }
+  },
+  {
+   "id": "f_pmh",
+   "justification": "Common comorbidity, not a Wells item.",
+   "surfaces": {
+    "NB": [
+     "hypertension"
+    ],
+    "S": [
+     "HTN"
+    ]
+   }
+  },
+  {
+   "id": "f_med",
+   "justification": "Antihypertensive for the stated condition.",
+   "surfaces": {
+    "NB": [
+     "lisinopril 10 mg daily"
+    ],
+    "S": [
+     "lisinopril 10 daily"
+    ]
+   }
+  },
+  {
+   "id": "f_allergy",
+   "justification": "Allergy status unrelated.",
+   "surfaces": {
+    "NB": [
+     "no known drug allergies"
+    ],
+    "S": [
+     "NKDA"
+    ]
+   }
+  },
+  {
+   "id": "f_social",
+   "justification": "Neutral social history.",
+   "surfaces": {
+    "NB": [
+     "retired mechanic, never smoker, occasional alcohol"
+    ],
+    "S": [
+     "retired mechanic, never smoker, occ EtOH"
+    ]
+   }
+  },
+  {
+   "id": "f_ros_neg",
+   "justification": "Unrelated systems.",
+   "surfaces": {
+    "NB": [
+     "headache, abdominal pain, nausea, vomiting, diarrhea, dysuria, or rash"
+    ],
+    "S": [
+     "HA, abd pain, N/V/D, dysuria, rash"
+    ]
+   }
+  },
+  {
+   "id": "f_vitals",
+   "justification": "Remaining vitals.",
+   "surfaces": {
+    "NB": [
+     "BP 134/82, RR 20"
+    ],
+    "S": [
+     "BP 134/82, RR 20"
+    ]
+   }
+  },
+  {
+   "id": "f_gen",
+   "justification": "Appearance consistent with stated symptoms.",
+   "surfaces": {
+    "NB": [
+     "alert, mildly short of breath with conversation"
+    ],
+    "S": [
+     "A&O, mildly SOB w/ conversation"
+    ]
+   }
+  },
+  {
+   "id": "f_cv",
+   "justification": "Tachycardia already stated.",
+   "surfaces": {
+    "NB": [
+     "tachycardic, regular rhythm, no murmur"
+    ],
+    "S": [
+     "tachy, RRR, no murmur"
+    ]
+   }
+  },
+  {
+   "id": "f_exam_rest",
+   "justification": "Unrelated systems.",
+   "surfaces": {
+    "NB": [
+     "Abdomen soft, nontender. No rash."
+    ],
+    "S": [
+     "Abd soft NT. No rash."
+    ]
+   }
+  },
+  {
+   "id": "f_labs",
+   "justification": "ECG consistent with the stated tachycardia; creatinine needed before contrast; normal chest radiograph (M6). Troponin omitted so no extra cardiac finding shifts the Wells prior.",
+   "surfaces": {
+    "NB": [
+     "ECG with sinus tachycardia and no ST changes. Creatinine 0.9 mg/dL. CXR: no acute cardiopulmonary process."
+    ],
+    "S": [
+     "ECG sinus tachy, no ST changes. Cr 0.9. CXR no acute cardiopulmonary process."
+    ]
+   }
+  },
+  {
+   "id": "f_ddx",
+   "justification": "Lists target among alternatives; no interpretation of result.",
+   "surfaces": {
+    "NB": [
+     "pulmonary embolism, pneumonia, pleurisy, acute coronary syndrome, pericarditis"
+    ],
+    "S": [
+     "PE, pneumonia, pleurisy, ACS, pericarditis"
+    ]
+   }
+  },
+  {
+   "id": "f_plan",
+   "justification": "Result-neutral plan.",
+   "surfaces": {
+    "NB": [
+     "Continuous pulse oximetry and cardiac monitoring. Acetaminophen as needed for pain. Disposition per results and reassessment."
+    ],
+    "S": [
+     "Cont pulse ox and tele. APAP PRN pain. Dispo per results and reassessment."
+    ]
+   }
+  }
+ ],
+ "result": {
+  "pos": {
+   "V": [
+    "a filling defect in a pulmonary artery"
+   ],
+   "NB": [
+    "filling defect in a pulmonary artery"
+   ],
+   "S": [
+    "filling defect in a pulm artery"
+   ]
+  },
+  "neg": {
+   "V": [
+    "no filling defect in the pulmonary arteries"
+   ],
+   "NB": [
+    "no filling defect in the pulmonary arteries"
+   ],
+   "S": [
+    "no filling defect in the pulmonary arteries"
+   ]
+  }
+ }
+}

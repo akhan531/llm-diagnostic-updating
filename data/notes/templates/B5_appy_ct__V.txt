@@ -1,0 +1,3 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+A {age_sex} {setting} has {duration} of {pain_site}, with {nausea} but {no_anorexia}. He has {temp}, {rlq}, {no_rebound}, and {wbc}. A CT scan of the abdomen and pelvis with IV contrast shows {RESULT}.

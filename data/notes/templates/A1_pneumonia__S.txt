@@ -1,0 +1,10 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+CC: cough, SOB x {duration}
+HPI: {age_sex}, {prior_health}, {tobacco}. {^duration} {sx_fatigue}, {sx_cough}, {sx_dyspnea}, {fever}. {^f_home_tx}. {^f_work}.
+PMH: {prior_health}. Meds: {f_med}. {f_allergy}.
+SH: {tobacco}, {f_alcohol}, {f_job}.
+ROS: + {sx_fatigue}, fever, {sx_cough}, {sx_dyspnea}. Neg {f_ros_neg}.
+PE: {fever_vital}, {hr}, {vitals_rest}. {^f_gen}. {^f_cv}. {^dec_bs}. {f_exam_rest}
+Data: {f_labs} CXR PA/lat: {RESULT}.
+A/P: {age_sex} w/ {duration} cough, SOB, fever. Ddx {f_ddx}. {f_plan}

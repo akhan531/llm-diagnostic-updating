@@ -1,0 +1,29 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+EMERGENCY DEPARTMENT NOTE
+
+CC: Abdominal pain for {duration}.
+
+HPI: {^age_sex} presents to the {setting} with {duration} of {pain_site}. He reports {nausea} but {no_anorexia}. {^f_tx}.
+
+PMH: {^f_pmh}.
+Meds: {^f_med}.
+Allergies: {^f_allergy}.
+Social: {^f_social}.
+
+ROS: Positive for abdominal pain and {nausea}. Denies {f_ros_neg}.
+
+Exam:
+Vitals: {temp}, {f_vitals}.
+General: {^f_gen}.
+{f_cvlung}
+Abdomen: {^rlq}; {no_rebound}.
+
+Results:
+{^wbc}.
+{f_labs} {f_ua}
+RLQ ultrasound (graded compression): {RESULT}.
+
+A/P: {age_sex} with abdominal pain and {nausea}.
+Ddx: {^f_ddx}.
+Plan: {f_plan}

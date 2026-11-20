@@ -1,0 +1,6 @@
+headline,statistic,ten,twelve,material,direction,note
+update ratio r above 1 (pooled),"pooled sign p (r median, models with r>1)",p=0.1094; r=1.475; 5 of 5,p=0.0386; r=1.397; 5 of 5,yes,stronger,
+hindsight in the stated pretest (pooled),"pooled sign p (median gap pp, models surviving Holm within)",p=0.0020; adj=0.0137; gap=7.22; 5 of 5,p=0.0005; adj=0.0034; gap=5.30; 5 of 5,no,stronger,
+hindsight vs blind pretest after positive (pooled),pooled sign-flip p,p=0.0020,p=0.0005,no,stronger,
+inflated stated pretest,share of scenarios with median stated pretest above published (median excess pp),10 of 10; 6.77,10 of 12; 6.26,yes,weaker,stronger here means the same all-scenarios pattern holds in more clusters
+format contrasts null (pooled N-V CI width),pooled N-V mean [CI] (largest per-model upper bound H1 to H3),"0.126 [-0.028, 0.274]; p=0.0898; max hi 0.743","0.119 [-0.0009, 0.237]; p=0.0508; max hi 0.610",yes,mixed,stronger = narrower interval around the null; mixed = narrower but the evidence of a worsening rose by more than 0.15 in -log10 p; zero in pooled N-V CI: yes -> yes

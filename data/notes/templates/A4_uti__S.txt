@@ -1,0 +1,11 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+CC: {oa} ({f_site}), foul-smelling urine
+HPI: {age_sex} w/ {oa} ({f_site}). {f_oa_hpi} {^odor}, {no_sx}.
+PMH: {f_pmh}. Meds: {f_med}. {f_allergy}.
+SH: {f_social}.
+ROS: + joint pain, {odor}. Neg {f_ros_neg}.
+PE: {f_vitals}. {f_exam}
+Data: {f_labs}. UA dip: {dipstick}.
+A/P: {age_sex} w/ {oa}, {odor}. Ddx {f_ddx}. {f_plan}
+Addendum d3: UCx final: {RESULT}.

@@ -1,0 +1,6 @@
+model,set,condition,n,mid_mae_pp,mid_median_abs_pp,band_mae_pp,band_median_pp,label
+anthropic/claude-sonnet-5.5,A,V,24,16.871458333333333,1.9725000000000001,14.118333333333332,0.97,SECONDARY descriptive; primary metric is distance outside the band
+deepseek/deepseek-v4-pro,A,V,38,18.870789473684212,2.5000000000000018,15.896315789473682,0.89,SECONDARY descriptive; primary metric is distance outside the band
+google/gemini-3.8-flash,A,V,40,7.917625000000001,1.4725,5.193749999999998,0.89,SECONDARY descriptive; primary metric is distance outside the band
+openai/gpt-4o,A,V,40,22.520375,4.250000000000001,19.48,1.75,SECONDARY descriptive; primary metric is distance outside the band
+openai/gpt-6.1-sol,A,V,24,8.39645833333333,3.25,5.282916666666667,0.445,SECONDARY descriptive; primary metric is distance outside the band

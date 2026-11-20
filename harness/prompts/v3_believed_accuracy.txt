@@ -1,0 +1,20 @@
+You are assisting with a research study on probabilistic reasoning. The text below is a synthetic clinical document (no real patient). Read it and answer the question.
+
+--- DOCUMENT START ---
+{note}
+--- DOCUMENT END ---
+
+Target diagnosis: {diagnosis}
+Test of interest: {test_name}
+
+Give four numbers, each from 0 to 100 (percent):
+1. SENSITIVITY: your best estimate of the sensitivity of the test of interest for the target diagnosis in a patient like this one.
+2. SPECIFICITY: your best estimate of the specificity of the test of interest for the target diagnosis in a patient like this one.
+3. PRETEST: the probability that the patient has the target diagnosis BEFORE the result of the test of interest is known.
+4. POSTTEST: the probability that the patient has the target diagnosis AFTER taking the test result into account.
+
+Reply with exactly these four lines as the last lines of your answer, numbers only, no percent sign:
+SENSITIVITY: <number>
+SPECIFICITY: <number>
+PRETEST: <number>
+POSTTEST: <number>

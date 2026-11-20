@@ -1,0 +1,1 @@
+{"raw_glob": "results/raw/*.jsonl", "synthetic": false, "n_records": 15, "run_set": "pilot", "run_ids": ["pilot1b"]}

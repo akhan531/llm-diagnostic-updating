@@ -1,0 +1,31 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+EMERGENCY DEPARTMENT NOTE
+
+CC: Chest pain and shortness of breath for 2 days.
+
+HPI: 52-year-old woman presents to the emergency department with 2 days of pleuritic chest pain and mild shortness of breath. The pain is right-sided and sharp, worse with deep breaths. She had a runny nose and sore throat last week. She took ibuprofen at home with partial relief. She has no hemoptysis.
+
+PMH: Seasonal allergies; no history of cancer; no prior DVT or PE.
+Surgical hx: No recent surgery or immobilization.
+Meds: Cetirizine 10 mg daily PRN.
+Allergies: No known drug allergies.
+Social: Teacher, never smoker, occasional alcohol.
+
+ROS: Positive for pleuritic chest pain and mild shortness of breath. Denies abdominal pain, nausea, vomiting, diarrhea, rash, headache, or dysuria.
+
+Exam:
+Vitals: HR 88, BP 124/78, RR 18, T 37.2°C, SpO2 98% on room air.
+General: Alert, in no acute distress.
+CV: Regular rhythm, no murmur.
+Lungs: Clear bilaterally, no wheeze.
+Extremities: No unilateral leg swelling or calf tenderness.
+
+Results:
+ECG with sinus rhythm and no ST changes. Troponin I below the reference limit. CBC and BMP within normal limits. CXR: no acute cardiopulmonary process.
+ELISA D-dimer: 320 ng/mL FEU, below the 500 ng/mL FEU cutoff.
+
+A/P: 52-year-old woman with chest pain and shortness of breath.
+Clinical assessment: Viral pleurisy considered more likely than PE.
+Ddx: Viral pleurisy, pulmonary embolism, pneumonia, musculoskeletal chest pain, pericarditis.
+Plan: Acetaminophen as needed for pain. Disposition per results and reassessment.

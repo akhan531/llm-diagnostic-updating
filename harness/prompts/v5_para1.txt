@@ -1,0 +1,16 @@
+This is part of a research study on probabilistic reasoning. The document below is a synthetic clinical note (it does not describe a real patient). Please read it carefully.
+
+--- DOCUMENT START ---
+{note}
+--- DOCUMENT END ---
+
+Diagnosis in question: {diagnosis}
+Test in question: {test_name}
+
+Give two estimates, each as a percentage between 0 and 100:
+1. PRETEST: how likely is it that this patient has the diagnosis in question, judged before the result of the test in question is known?
+2. POSTTEST: how likely is it that this patient has the diagnosis in question, once the result of the test in question has been taken into account?
+
+Finish your answer with exactly these two lines, giving numbers only and no percent sign:
+PRETEST: <number>
+POSTTEST: <number>

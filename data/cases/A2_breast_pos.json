@@ -1,0 +1,98 @@
+{
+  "case_id": "A2_breast_pos",
+  "scenario": "A2_breast",
+  "set": "A",
+  "result": "pos",
+  "diagnosis": "Breast cancer",
+  "test_name": "screening mammography",
+  "setting": "primary care outpatient clinic, annual visit (annual visit is in the vignette)",
+  "patient_summary": "45-year-old woman at an annual visit, no specific risk factors or symptoms for breast cancer (Morgan 2021 Figure legend, vignette B).",
+  "pretest_source": "Morgan 2021 Table 3, breast cancer pretest evidence range 0.2-0.3%; point = log-odds midpoint.",
+  "result_shown": "a positive (abnormal) screening mammogram, recalled for additional imaging",
+  "status": "VERIFIED",
+  "unverified": [],
+  "sources": [
+    {
+      "quantity": "pretest 0.2-0.3%",
+      "citation_key": "morgan2021",
+      "id": "PMID 33818595; DOI 10.1001/jamainternmed.2021.0269; PMC8022260",
+      "location": "Table 3, Breast cancer: pretest",
+      "status": "VERIFIED"
+    },
+    {
+      "quantity": "LR+ 13.00-33.00, LR- 0.05-0.24",
+      "citation_key": "morgan2021",
+      "id": "PMID 33818595; DOI 10.1001/jamainternmed.2021.0269; PMC8022260",
+      "location": "Table 4, Mammography, positive/negative",
+      "status": "VERIFIED"
+    },
+    {
+      "quantity": "posttest 3-9% (pos); '<0.05' (neg) stored as [0, 0.05]%",
+      "citation_key": "morgan2021",
+      "id": "PMID 33818595; DOI 10.1001/jamainternmed.2021.0269; PMC8022260",
+      "location": "Table 3, Breast cancer: after positive/negative",
+      "status": "VERIFIED"
+    }
+  ],
+  "conditional_independence": "Each case applies a single likelihood ratio (the LR for the result shown) to a single pretest probability, so no conditional-independence assumption is needed. If findings were ever combined, the LRs would be multiplied assuming conditional independence given disease status.",
+  "target_inputs": {
+    "pretest": {
+      "rule": "logodds_midpoint",
+      "range": [
+        0.002,
+        0.003
+      ]
+    },
+    "lr": {
+      "pos": {
+        "rule": "geomean_range",
+        "range": [
+          13.0,
+          33.0
+        ]
+      },
+      "neg": {
+        "rule": "geomean_range",
+        "range": [
+          0.05,
+          0.24
+        ]
+      }
+    },
+    "band_primary": {
+      "rule": "printed",
+      "pct": {
+        "pos": [
+          3,
+          9
+        ],
+        "neg": [
+          0,
+          0.05
+        ]
+      }
+    }
+  },
+  "target": {
+    "pretest_point": 0.002449613780374472,
+    "pretest_range": [
+      0.002,
+      0.003
+    ],
+    "lr_point": 20.71231517720798,
+    "lr_range": [
+      13.0,
+      33.0
+    ],
+    "posttest_point": 0.0484000523050481,
+    "posttest_band_primary": [
+      0.03,
+      0.09
+    ],
+    "posttest_band_bayes": [
+      0.025390625,
+      0.0903284671532847
+    ]
+  },
+  "notes": "Printed '<0.05' post-negative is not reproduced by Bayes on the printed ranges (Bayes band 0.010-0.072%)."
+}

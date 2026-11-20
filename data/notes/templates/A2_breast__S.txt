@@ -1,0 +1,10 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+CC: {visit}
+HPI: {age_sex}. {^f_hpi}. {^no_rf}.
+PMH: {f_pmh}. Meds: {f_med}. {f_allergy}.
+SH: {f_social}.
+ROS: Neg {f_ros_neg}.
+PE: {f_vitals}. {f_exam} {f_cbe}
+Data: {f_labs} Screening mammo bilat CC/MLO (done last wk, report in chart): {RESULT}.
+A/P: {age_sex}, {visit}, asymptomatic. {f_plan}

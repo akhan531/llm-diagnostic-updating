@@ -1,0 +1,10 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+CC: SOB, CP x {duration}
+HPI: {age_sex}, {dyspnea}, {pain} x {duration}. {^f_pain}. {^cough}. {^f_tx}. {^no_hemoptysis}.
+PMH: {f_pmh}; {no_cancer}; {no_vte}. {^no_surg}. Meds: {f_med}. {f_allergy}.
+SH: {f_social}.
+ROS: + {dyspnea}, {pain}, {cough}. Neg {f_ros_neg}.
+PE: {temp}, {hr}, {f_vitals}, {spo2}. {^f_gen}. {^f_cv}. {^bs}. {^no_dvt}. {f_exam_rest}
+Data: {f_labs} CTPA w/ contrast: {RESULT}.
+A/P: {age_sex} w/ SOB, pleuritic CP. {^alt}. Ddx {f_ddx}. {f_plan}

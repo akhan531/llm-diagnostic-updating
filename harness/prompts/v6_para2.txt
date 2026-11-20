@@ -1,0 +1,11 @@
+Instructions: you are helping with a study of how probabilities are estimated. First read the synthetic clinical note that follows (no real patient is described).
+
+--- DOCUMENT START ---
+{note}
+--- DOCUMENT END ---
+
+Please end your reply with exactly two lines in this format, using plain numbers between 0 and 100 (percent, without the % sign):
+PRETEST: <number>
+POSTTEST: <number>
+
+Here is what each line means. PRETEST is your estimate of the percent chance that the patient has {diagnosis}, as it stood before anyone knew the result of {test_name}. POSTTEST is your estimate of the percent chance that the patient has {diagnosis}, after the result of {test_name} is taken into account.

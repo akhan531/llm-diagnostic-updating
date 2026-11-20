@@ -1,0 +1,25 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+OUTPATIENT CLINIC NOTE, ANNUAL VISIT
+
+CC: Annual visit.
+
+HPI: 45-year-old woman presents for her annual visit. She feels well and has no concerns today. She has no family history of breast or ovarian cancer, no prior breast biopsy, and no breast lump, pain, nipple discharge, or skin changes.
+
+PMH: Seasonal allergic rhinitis.
+Meds: Multivitamin daily.
+Allergies: No known drug allergies.
+Social: Works as an accountant, never smoker, exercises regularly.
+
+ROS: Denies headache, cough, abdominal pain, dysuria, or rash.
+
+Exam:
+Vitals: BP 116/72, HR 68, BMI 24.
+Heart regular rate and rhythm. Lungs clear bilaterally. Abdomen soft, nontender.
+Breasts: Breasts symmetric without masses, skin changes, or nipple discharge. No axillary adenopathy.
+
+Results:
+Fasting lipid panel and A1c drawn today, results pending.
+
+A/P: 45-year-old woman at annual visit, asymptomatic.
+Plan: Influenza vaccine given today. Healthy lifestyle counseling provided. Follow up per results of today's and recent studies, otherwise in 1 year.

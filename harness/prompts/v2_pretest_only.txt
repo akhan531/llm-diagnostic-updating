@@ -1,0 +1,14 @@
+You are assisting with a research study on probabilistic reasoning. The text below is a synthetic clinical document (no real patient). Read it and answer the question.
+
+--- DOCUMENT START ---
+{note}
+--- DOCUMENT END ---
+
+Target diagnosis: {diagnosis}
+Test of interest: {test_name}
+
+The result of the test of interest is not available yet. Estimate one probability, a number from 0 to 100 (percent):
+PRETEST: the probability that the patient has the target diagnosis now, BEFORE the result of the test of interest is known.
+
+Reply with exactly this line as the last line of your answer, number only, no percent sign:
+PRETEST: <number>

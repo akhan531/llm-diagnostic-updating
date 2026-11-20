@@ -1,0 +1,1134 @@
+{
+ "_generated_by": "data/notes/classify_e.py",
+ "_definition": "score_component = the removed negative is an item of the clinical score that sets the prior stratum (Wells, ADD-RS, Alvarado) or part of the source-vignette patient definition behind the Set A pretest range (basis 'vignette definition'). One row per case (pos and neg share the removed items).",
+ "summary_per_scenario": {
+  "A1_pneumonia": {
+   "score_component": 0,
+   "not_score_component": 2
+  },
+  "A2_breast": {
+   "score_component": 3,
+   "not_score_component": 2
+  },
+  "A3_cardiac": {
+   "score_component": 1,
+   "not_score_component": 2
+  },
+  "A4_uti": {
+   "score_component": 1,
+   "not_score_component": 1
+  },
+  "B1_pe_low": {
+   "score_component": 5,
+   "not_score_component": 1
+  },
+  "B2_pe_mod": {
+   "score_component": 5,
+   "not_score_component": 1
+  },
+  "B3_pe_high": {
+   "score_component": 3,
+   "not_score_component": 1
+  },
+  "B4_aas": {
+   "score_component": 4,
+   "not_score_component": 1
+  },
+  "B5_appy_ct": {
+   "score_component": 2,
+   "not_score_component": 3
+  },
+  "B6_appy_us": {
+   "score_component": 2,
+   "not_score_component": 3
+  },
+  "B7_strep": {
+   "score_component": 2,
+   "not_score_component": 1
+  },
+  "B8_septic": {
+   "score_component": 0,
+   "not_score_component": 3
+  }
+ },
+ "rows": [
+  {
+   "case_id": "A1_pneumonia_pos",
+   "scenario": "A1_pneumonia",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "headache, abdominal pain, nausea, vomiting, diarrhea, rash, dysuria, or leg swelling",
+   "description": "ROS 'Denies' list of negatives (headache, abdominal pain, nausea, vomiting, diarrhea, rash, dysuria, leg swelling)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "A1_pneumonia_neg",
+   "scenario": "A1_pneumonia",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "headache, abdominal pain, nausea, vomiting, diarrhea, rash, dysuria, or leg swelling",
+   "description": "ROS 'Denies' list of negatives (headache, abdominal pain, nausea, vomiting, diarrhea, rash, dysuria, leg swelling)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "A1_pneumonia_pos",
+   "scenario": "A1_pneumonia",
+   "fact_id": "f_exam_rest",
+   "removed_text_N": "Abdomen soft, nontender. No leg edema. No rash.",
+   "description": "negative exam line (abdomen soft and nontender, no leg edema, no rash)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "A1_pneumonia_neg",
+   "scenario": "A1_pneumonia",
+   "fact_id": "f_exam_rest",
+   "removed_text_N": "Abdomen soft, nontender. No leg edema. No rash.",
+   "description": "negative exam line (abdomen soft and nontender, no leg edema, no rash)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "A2_breast_pos",
+   "scenario": "A2_breast",
+   "fact_id": "no_rf",
+   "removed_text_N": "no family history of breast or ovarian cancer, no prior breast biopsy, and no breast lump, pain, nipple discharge, or skin changes",
+   "description": "vignette negatives: no family history of breast or ovarian cancer, no prior breast biopsy, no breast lump, pain, nipple discharge, or skin changes",
+   "score_component": true,
+   "score": "Morgan 2021 vignette: asymptomatic woman at average risk (no family history, no prior biopsy, no breast symptoms) presenting for screening",
+   "basis": "vignette definition",
+   "other_relevance": "family history and prior biopsy are also breast-cancer risk-model inputs"
+  },
+  {
+   "case_id": "A2_breast_neg",
+   "scenario": "A2_breast",
+   "fact_id": "no_rf",
+   "removed_text_N": "no family history of breast or ovarian cancer, no prior breast biopsy, and no breast lump, pain, nipple discharge, or skin changes",
+   "description": "vignette negatives: no family history of breast or ovarian cancer, no prior breast biopsy, no breast lump, pain, nipple discharge, or skin changes",
+   "score_component": true,
+   "score": "Morgan 2021 vignette: asymptomatic woman at average risk (no family history, no prior biopsy, no breast symptoms) presenting for screening",
+   "basis": "vignette definition",
+   "other_relevance": "family history and prior biopsy are also breast-cancer risk-model inputs"
+  },
+  {
+   "case_id": "A2_breast_pos",
+   "scenario": "A2_breast",
+   "fact_id": "f_hpi",
+   "removed_text_N": "She feels well and has no concerns today",
+   "description": "'She feels well and has no concerns today'",
+   "score_component": true,
+   "score": "Morgan 2021 vignette: asymptomatic screening visit",
+   "basis": "vignette definition",
+   "other_relevance": "study wording that restates the vignette's 'no symptoms'"
+  },
+  {
+   "case_id": "A2_breast_neg",
+   "scenario": "A2_breast",
+   "fact_id": "f_hpi",
+   "removed_text_N": "She feels well and has no concerns today",
+   "description": "'She feels well and has no concerns today'",
+   "score_component": true,
+   "score": "Morgan 2021 vignette: asymptomatic screening visit",
+   "basis": "vignette definition",
+   "other_relevance": "study wording that restates the vignette's 'no symptoms'"
+  },
+  {
+   "case_id": "A2_breast_pos",
+   "scenario": "A2_breast",
+   "fact_id": "f_cbe",
+   "removed_text_N": "Breasts symmetric without masses, skin changes, or nipple discharge. No axillary adenopathy.",
+   "description": "negative breast exam (symmetric, no masses, skin changes, nipple discharge, or axillary adenopathy)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": "exam line added by this study (not in the Morgan vignette); a palpable mass would turn screening into a diagnostic workup, so it bears on the setting"
+  },
+  {
+   "case_id": "A2_breast_neg",
+   "scenario": "A2_breast",
+   "fact_id": "f_cbe",
+   "removed_text_N": "Breasts symmetric without masses, skin changes, or nipple discharge. No axillary adenopathy.",
+   "description": "negative breast exam (symmetric, no masses, skin changes, nipple discharge, or axillary adenopathy)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": "exam line added by this study (not in the Morgan vignette); a palpable mass would turn screening into a diagnostic workup, so it bears on the setting"
+  },
+  {
+   "case_id": "A2_breast_pos",
+   "scenario": "A2_breast",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "headache, cough, abdominal pain, dysuria, or rash",
+   "description": "ROS 'Denies' list of negatives (headache, cough, abdominal pain, dysuria, rash); the whole ROS line is dropped",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "A2_breast_neg",
+   "scenario": "A2_breast",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "headache, cough, abdominal pain, dysuria, or rash",
+   "description": "ROS 'Denies' list of negatives (headache, cough, abdominal pain, dysuria, rash); the whole ROS line is dropped",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "A2_breast_pos",
+   "scenario": "A2_breast",
+   "fact_id": "TEMPLATE:asymptomatic",
+   "removed_text_N": "asymptomatic",
+   "description": "template text removed from the A/P line",
+   "score_component": true,
+   "score": "Morgan 2021 vignette: asymptomatic screening visit",
+   "basis": "vignette definition",
+   "other_relevance": null
+  },
+  {
+   "case_id": "A2_breast_neg",
+   "scenario": "A2_breast",
+   "fact_id": "TEMPLATE:asymptomatic",
+   "removed_text_N": "asymptomatic",
+   "description": "template text removed from the A/P line",
+   "score_component": true,
+   "score": "Morgan 2021 vignette: asymptomatic screening visit",
+   "basis": "vignette definition",
+   "other_relevance": null
+  },
+  {
+   "case_id": "A3_cardiac_pos",
+   "scenario": "A3_cardiac",
+   "fact_id": "no_rf",
+   "removed_text_N": "no hypertension, diabetes, hyperlipidemia, tobacco use, or family history of premature coronary disease",
+   "description": "vignette negatives: no hypertension, diabetes, hyperlipidemia, tobacco use, or family history of premature coronary disease",
+   "score_component": true,
+   "score": "Morgan 2021 vignette: premenopausal woman with no cardiac risk factors",
+   "basis": "vignette definition",
+   "other_relevance": "coronary risk factors are not inputs of age, sex and symptom-type pretest tables"
+  },
+  {
+   "case_id": "A3_cardiac_neg",
+   "scenario": "A3_cardiac",
+   "fact_id": "no_rf",
+   "removed_text_N": "no hypertension, diabetes, hyperlipidemia, tobacco use, or family history of premature coronary disease",
+   "description": "vignette negatives: no hypertension, diabetes, hyperlipidemia, tobacco use, or family history of premature coronary disease",
+   "score_component": true,
+   "score": "Morgan 2021 vignette: premenopausal woman with no cardiac risk factors",
+   "basis": "vignette definition",
+   "other_relevance": "coronary risk factors are not inputs of age, sex and symptom-type pretest tables"
+  },
+  {
+   "case_id": "A3_cardiac_pos",
+   "scenario": "A3_cardiac",
+   "fact_id": "exam_norm",
+   "removed_text_N": "Heart regular rate and rhythm, no murmur, rub, or gallop. Lungs clear bilaterally. Chest wall nontender. Abdomen soft, nontender. No leg edema.",
+   "description": "normal exam (no murmur, rub, or gallop; lungs clear; chest wall nontender; abdomen soft; no leg edema)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": "normal exam added by this study; argues against alternative causes"
+  },
+  {
+   "case_id": "A3_cardiac_neg",
+   "scenario": "A3_cardiac",
+   "fact_id": "exam_norm",
+   "removed_text_N": "Heart regular rate and rhythm, no murmur, rub, or gallop. Lungs clear bilaterally. Chest wall nontender. Abdomen soft, nontender. No leg edema.",
+   "description": "normal exam (no murmur, rub, or gallop; lungs clear; chest wall nontender; abdomen soft; no leg edema)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": "normal exam added by this study; argues against alternative causes"
+  },
+  {
+   "case_id": "A3_cardiac_pos",
+   "scenario": "A3_cardiac",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "headache today, abdominal pain, diarrhea, dysuria, or rash",
+   "description": "ROS 'Denies' list of negatives (headache today, abdominal pain, diarrhea, dysuria, rash)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "A3_cardiac_neg",
+   "scenario": "A3_cardiac",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "headache today, abdominal pain, diarrhea, dysuria, or rash",
+   "description": "ROS 'Denies' list of negatives (headache today, abdominal pain, diarrhea, dysuria, rash)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "A4_uti_pos",
+   "scenario": "A4_uti",
+   "fact_id": "no_sx",
+   "removed_text_N": "no pain or difficulty with urination",
+   "description": "vignette negative: no pain or difficulty with urination",
+   "score_component": true,
+   "score": "definition of urinary tract infection versus asymptomatic bacteriuria (dysuria or urinary symptoms required); Morgan 2021 vignette states no pain or difficulty with urination",
+   "basis": "vignette definition",
+   "other_relevance": "removing it changes what a positive culture means, not only the probability"
+  },
+  {
+   "case_id": "A4_uti_neg",
+   "scenario": "A4_uti",
+   "fact_id": "no_sx",
+   "removed_text_N": "no pain or difficulty with urination",
+   "description": "vignette negative: no pain or difficulty with urination",
+   "score_component": true,
+   "score": "definition of urinary tract infection versus asymptomatic bacteriuria (dysuria or urinary symptoms required); Morgan 2021 vignette states no pain or difficulty with urination",
+   "basis": "vignette definition",
+   "other_relevance": "removing it changes what a positive culture means, not only the probability"
+  },
+  {
+   "case_id": "A4_uti_pos",
+   "scenario": "A4_uti",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "chest pain, cough, or rash",
+   "description": "ROS 'Denies' list of negatives (chest pain, cough, rash)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "A4_uti_neg",
+   "scenario": "A4_uti",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "chest pain, cough, or rash",
+   "description": "ROS 'Denies' list of negatives (chest pain, cough, rash)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B1_pe_low_pos",
+   "scenario": "B1_pe_low",
+   "fact_id": "no_hemoptysis",
+   "removed_text_N": "no hemoptysis",
+   "description": "no hemoptysis",
+   "score_component": true,
+   "score": "Wells PE: hemoptysis",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B1_pe_low_neg",
+   "scenario": "B1_pe_low",
+   "fact_id": "no_hemoptysis",
+   "removed_text_N": "no hemoptysis",
+   "description": "no hemoptysis",
+   "score_component": true,
+   "score": "Wells PE: hemoptysis",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B1_pe_low_pos",
+   "scenario": "B1_pe_low",
+   "fact_id": "no_cancer",
+   "removed_text_N": "no history of cancer",
+   "description": "no history of cancer",
+   "score_component": true,
+   "score": "Wells PE: malignancy",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B1_pe_low_neg",
+   "scenario": "B1_pe_low",
+   "fact_id": "no_cancer",
+   "removed_text_N": "no history of cancer",
+   "description": "no history of cancer",
+   "score_component": true,
+   "score": "Wells PE: malignancy",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B1_pe_low_pos",
+   "scenario": "B1_pe_low",
+   "fact_id": "no_surg",
+   "removed_text_N": "no recent surgery or immobilization",
+   "description": "no recent surgery or immobilization",
+   "score_component": true,
+   "score": "Wells PE: immobilization or surgery in the previous 4 weeks",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B1_pe_low_neg",
+   "scenario": "B1_pe_low",
+   "fact_id": "no_surg",
+   "removed_text_N": "no recent surgery or immobilization",
+   "description": "no recent surgery or immobilization",
+   "score_component": true,
+   "score": "Wells PE: immobilization or surgery in the previous 4 weeks",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B1_pe_low_pos",
+   "scenario": "B1_pe_low",
+   "fact_id": "no_vte",
+   "removed_text_N": "no prior DVT or PE",
+   "description": "no prior DVT or PE",
+   "score_component": true,
+   "score": "Wells PE: previous PE or DVT",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B1_pe_low_neg",
+   "scenario": "B1_pe_low",
+   "fact_id": "no_vte",
+   "removed_text_N": "no prior DVT or PE",
+   "description": "no prior DVT or PE",
+   "score_component": true,
+   "score": "Wells PE: previous PE or DVT",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B1_pe_low_pos",
+   "scenario": "B1_pe_low",
+   "fact_id": "no_dvt",
+   "removed_text_N": "no unilateral leg swelling or calf tenderness",
+   "description": "no unilateral leg swelling or calf tenderness (extremity exam line)",
+   "score_component": true,
+   "score": "Wells PE: clinical signs and symptoms of DVT",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B1_pe_low_neg",
+   "scenario": "B1_pe_low",
+   "fact_id": "no_dvt",
+   "removed_text_N": "no unilateral leg swelling or calf tenderness",
+   "description": "no unilateral leg swelling or calf tenderness (extremity exam line)",
+   "score_component": true,
+   "score": "Wells PE: clinical signs and symptoms of DVT",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B1_pe_low_pos",
+   "scenario": "B1_pe_low",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "abdominal pain, nausea, vomiting, diarrhea, rash, headache, or dysuria",
+   "description": "ROS 'Denies' list of negatives (abdominal pain, nausea, vomiting, diarrhea, rash, headache, dysuria)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B1_pe_low_neg",
+   "scenario": "B1_pe_low",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "abdominal pain, nausea, vomiting, diarrhea, rash, headache, or dysuria",
+   "description": "ROS 'Denies' list of negatives (abdominal pain, nausea, vomiting, diarrhea, rash, headache, dysuria)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B2_pe_mod_pos",
+   "scenario": "B2_pe_mod",
+   "fact_id": "no_hemoptysis",
+   "removed_text_N": "no hemoptysis",
+   "description": "no hemoptysis",
+   "score_component": true,
+   "score": "Wells PE: hemoptysis",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B2_pe_mod_neg",
+   "scenario": "B2_pe_mod",
+   "fact_id": "no_hemoptysis",
+   "removed_text_N": "no hemoptysis",
+   "description": "no hemoptysis",
+   "score_component": true,
+   "score": "Wells PE: hemoptysis",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B2_pe_mod_pos",
+   "scenario": "B2_pe_mod",
+   "fact_id": "no_cancer",
+   "removed_text_N": "no history of cancer",
+   "description": "no history of cancer",
+   "score_component": true,
+   "score": "Wells PE: malignancy",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B2_pe_mod_neg",
+   "scenario": "B2_pe_mod",
+   "fact_id": "no_cancer",
+   "removed_text_N": "no history of cancer",
+   "description": "no history of cancer",
+   "score_component": true,
+   "score": "Wells PE: malignancy",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B2_pe_mod_pos",
+   "scenario": "B2_pe_mod",
+   "fact_id": "no_surg",
+   "removed_text_N": "no recent surgery or immobilization",
+   "description": "no recent surgery or immobilization",
+   "score_component": true,
+   "score": "Wells PE: immobilization or surgery in the previous 4 weeks",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B2_pe_mod_neg",
+   "scenario": "B2_pe_mod",
+   "fact_id": "no_surg",
+   "removed_text_N": "no recent surgery or immobilization",
+   "description": "no recent surgery or immobilization",
+   "score_component": true,
+   "score": "Wells PE: immobilization or surgery in the previous 4 weeks",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B2_pe_mod_pos",
+   "scenario": "B2_pe_mod",
+   "fact_id": "no_vte",
+   "removed_text_N": "no prior DVT or PE",
+   "description": "no prior DVT or PE",
+   "score_component": true,
+   "score": "Wells PE: previous PE or DVT",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B2_pe_mod_neg",
+   "scenario": "B2_pe_mod",
+   "fact_id": "no_vte",
+   "removed_text_N": "no prior DVT or PE",
+   "description": "no prior DVT or PE",
+   "score_component": true,
+   "score": "Wells PE: previous PE or DVT",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B2_pe_mod_pos",
+   "scenario": "B2_pe_mod",
+   "fact_id": "no_dvt",
+   "removed_text_N": "no leg swelling or calf tenderness",
+   "description": "no leg swelling or calf tenderness (extremity exam line)",
+   "score_component": true,
+   "score": "Wells PE: clinical signs and symptoms of DVT",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B2_pe_mod_neg",
+   "scenario": "B2_pe_mod",
+   "fact_id": "no_dvt",
+   "removed_text_N": "no leg swelling or calf tenderness",
+   "description": "no leg swelling or calf tenderness (extremity exam line)",
+   "score_component": true,
+   "score": "Wells PE: clinical signs and symptoms of DVT",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B2_pe_mod_pos",
+   "scenario": "B2_pe_mod",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "headache, abdominal pain, nausea, vomiting, diarrhea, dysuria, or rash",
+   "description": "ROS 'Denies' list of negatives (headache, abdominal pain, nausea, vomiting, diarrhea, dysuria, rash)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B2_pe_mod_neg",
+   "scenario": "B2_pe_mod",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "headache, abdominal pain, nausea, vomiting, diarrhea, dysuria, or rash",
+   "description": "ROS 'Denies' list of negatives (headache, abdominal pain, nausea, vomiting, diarrhea, dysuria, rash)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B3_pe_high_pos",
+   "scenario": "B3_pe_high",
+   "fact_id": "no_hemoptysis",
+   "removed_text_N": "no hemoptysis",
+   "description": "no hemoptysis",
+   "score_component": true,
+   "score": "Wells PE: hemoptysis",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B3_pe_high_neg",
+   "scenario": "B3_pe_high",
+   "fact_id": "no_hemoptysis",
+   "removed_text_N": "no hemoptysis",
+   "description": "no hemoptysis",
+   "score_component": true,
+   "score": "Wells PE: hemoptysis",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B3_pe_high_pos",
+   "scenario": "B3_pe_high",
+   "fact_id": "no_cancer",
+   "removed_text_N": "no history of cancer",
+   "description": "no history of cancer",
+   "score_component": true,
+   "score": "Wells PE: malignancy",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B3_pe_high_neg",
+   "scenario": "B3_pe_high",
+   "fact_id": "no_cancer",
+   "removed_text_N": "no history of cancer",
+   "description": "no history of cancer",
+   "score_component": true,
+   "score": "Wells PE: malignancy",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B3_pe_high_pos",
+   "scenario": "B3_pe_high",
+   "fact_id": "no_vte",
+   "removed_text_N": "no prior DVT or PE",
+   "description": "no prior DVT or PE",
+   "score_component": true,
+   "score": "Wells PE: previous PE or DVT",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B3_pe_high_neg",
+   "scenario": "B3_pe_high",
+   "fact_id": "no_vte",
+   "removed_text_N": "no prior DVT or PE",
+   "description": "no prior DVT or PE",
+   "score_component": true,
+   "score": "Wells PE: previous PE or DVT",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B3_pe_high_pos",
+   "scenario": "B3_pe_high",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "headache, abdominal pain, nausea, vomiting, diarrhea, dysuria, or rash",
+   "description": "ROS 'Denies' list of negatives (headache, abdominal pain, nausea, vomiting, diarrhea, dysuria, rash)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B3_pe_high_neg",
+   "scenario": "B3_pe_high",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "headache, abdominal pain, nausea, vomiting, diarrhea, dysuria, or rash",
+   "description": "ROS 'Denies' list of negatives (headache, abdominal pain, nausea, vomiting, diarrhea, dysuria, rash)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B4_aas_pos",
+   "scenario": "B4_aas",
+   "fact_id": "no_known",
+   "removed_text_N": "no known aortic disease, Marfan syndrome, family history of aortic dissection, or recent aortic surgery or instrumentation",
+   "description": "no known aortic disease, Marfan syndrome, family history of aortic dissection, or recent aortic surgery or instrumentation",
+   "score_component": true,
+   "score": "ADD-RS: high-risk conditions",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B4_aas_neg",
+   "scenario": "B4_aas",
+   "fact_id": "no_known",
+   "removed_text_N": "no known aortic disease, Marfan syndrome, family history of aortic dissection, or recent aortic surgery or instrumentation",
+   "description": "no known aortic disease, Marfan syndrome, family history of aortic dissection, or recent aortic surgery or instrumentation",
+   "score_component": true,
+   "score": "ADD-RS: high-risk conditions",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B4_aas_pos",
+   "scenario": "B4_aas",
+   "fact_id": "no_neuro",
+   "removed_text_N": "no focal neurologic deficit",
+   "description": "no focal neurologic deficit (neuro exam line)",
+   "score_component": true,
+   "score": "ADD-RS: high-risk examination features (focal neurologic deficit)",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B4_aas_neg",
+   "scenario": "B4_aas",
+   "fact_id": "no_neuro",
+   "removed_text_N": "no focal neurologic deficit",
+   "description": "no focal neurologic deficit (neuro exam line)",
+   "score_component": true,
+   "score": "ADD-RS: high-risk examination features (focal neurologic deficit)",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B4_aas_pos",
+   "scenario": "B4_aas",
+   "fact_id": "no_murmur",
+   "removed_text_N": "no new murmur",
+   "description": "no new murmur",
+   "score_component": true,
+   "score": "ADD-RS: high-risk examination features (new aortic regurgitation murmur)",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B4_aas_neg",
+   "scenario": "B4_aas",
+   "fact_id": "no_murmur",
+   "removed_text_N": "no new murmur",
+   "description": "no new murmur",
+   "score_component": true,
+   "score": "ADD-RS: high-risk examination features (new aortic regurgitation murmur)",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B4_aas_pos",
+   "scenario": "B4_aas",
+   "fact_id": "bp_arms",
+   "removed_text_N": "BP 150/88 in the right arm and 146/86 in the left arm, with symmetric radial and femoral pulses",
+   "description": "bilateral arm BPs and symmetric pulses (documents no pulse or BP differential)",
+   "score_component": true,
+   "score": "ADD-RS: high-risk examination features (pulse deficit or systolic BP differential)",
+   "basis": "score item",
+   "other_relevance": "replaced in E by a single-arm BP, so the differential is undocumented, not denied"
+  },
+  {
+   "case_id": "B4_aas_neg",
+   "scenario": "B4_aas",
+   "fact_id": "bp_arms",
+   "removed_text_N": "BP 150/88 in the right arm and 146/86 in the left arm, with symmetric radial and femoral pulses",
+   "description": "bilateral arm BPs and symmetric pulses (documents no pulse or BP differential)",
+   "score_component": true,
+   "score": "ADD-RS: high-risk examination features (pulse deficit or systolic BP differential)",
+   "basis": "score item",
+   "other_relevance": "replaced in E by a single-arm BP, so the differential is undocumented, not denied"
+  },
+  {
+   "case_id": "B4_aas_pos",
+   "scenario": "B4_aas",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "headache, fever, cough, abdominal pain, vomiting, diarrhea, or dysuria",
+   "description": "ROS 'Denies' list of negatives (headache, fever, cough, abdominal pain, vomiting, diarrhea, dysuria)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B4_aas_neg",
+   "scenario": "B4_aas",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "headache, fever, cough, abdominal pain, vomiting, diarrhea, or dysuria",
+   "description": "ROS 'Denies' list of negatives (headache, fever, cough, abdominal pain, vomiting, diarrhea, dysuria)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B5_appy_ct_pos",
+   "scenario": "B5_appy_ct",
+   "fact_id": "no_anorexia",
+   "removed_text_N": "no anorexia",
+   "description": "no anorexia (Alvarado item documented absent)",
+   "score_component": true,
+   "score": "Alvarado: anorexia",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B5_appy_ct_neg",
+   "scenario": "B5_appy_ct",
+   "fact_id": "no_anorexia",
+   "removed_text_N": "no anorexia",
+   "description": "no anorexia (Alvarado item documented absent)",
+   "score_component": true,
+   "score": "Alvarado: anorexia",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B5_appy_ct_pos",
+   "scenario": "B5_appy_ct",
+   "fact_id": "no_rebound",
+   "removed_text_N": "no rebound tenderness",
+   "description": "no rebound tenderness (Alvarado item documented absent)",
+   "score_component": true,
+   "score": "Alvarado: rebound tenderness",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B5_appy_ct_neg",
+   "scenario": "B5_appy_ct",
+   "fact_id": "no_rebound",
+   "removed_text_N": "no rebound tenderness",
+   "description": "no rebound tenderness (Alvarado item documented absent)",
+   "score_component": true,
+   "score": "Alvarado: rebound tenderness",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B5_appy_ct_pos",
+   "scenario": "B5_appy_ct",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "chest pain, cough, dysuria, hematuria, rash, or headache",
+   "description": "ROS 'Denies' list of negatives (chest pain, cough, dysuria, hematuria, rash, headache)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B5_appy_ct_neg",
+   "scenario": "B5_appy_ct",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "chest pain, cough, dysuria, hematuria, rash, or headache",
+   "description": "ROS 'Denies' list of negatives (chest pain, cough, dysuria, hematuria, rash, headache)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B5_appy_ct_pos",
+   "scenario": "B5_appy_ct",
+   "fact_id": "f_pmh",
+   "removed_text_N": "no significant medical history and no prior abdominal surgery",
+   "description": "'no significant medical history and no prior abdominal surgery' (PMH line dropped; no prior abdominal surgery is a pertinent negative, since a prior appendectomy would exclude the diagnosis)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": "no prior abdominal surgery is a precondition (a prior appendectomy would exclude the diagnosis), not an Alvarado item"
+  },
+  {
+   "case_id": "B5_appy_ct_neg",
+   "scenario": "B5_appy_ct",
+   "fact_id": "f_pmh",
+   "removed_text_N": "no significant medical history and no prior abdominal surgery",
+   "description": "'no significant medical history and no prior abdominal surgery' (PMH line dropped; no prior abdominal surgery is a pertinent negative, since a prior appendectomy would exclude the diagnosis)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": "no prior abdominal surgery is a precondition (a prior appendectomy would exclude the diagnosis), not an Alvarado item"
+  },
+  {
+   "case_id": "B5_appy_ct_pos",
+   "scenario": "B5_appy_ct",
+   "fact_id": "f_ua",
+   "removed_text_N": "Urinalysis without blood, protein, or pyuria.",
+   "description": "urinalysis without blood, protein, or pyuria",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": "urinalysis without blood or pyuria argues against ureteral stone or urinary infection as alternatives; not an Alvarado item"
+  },
+  {
+   "case_id": "B5_appy_ct_neg",
+   "scenario": "B5_appy_ct",
+   "fact_id": "f_ua",
+   "removed_text_N": "Urinalysis without blood, protein, or pyuria.",
+   "description": "urinalysis without blood, protein, or pyuria",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": "urinalysis without blood or pyuria argues against ureteral stone or urinary infection as alternatives; not an Alvarado item"
+  },
+  {
+   "case_id": "B6_appy_us_pos",
+   "scenario": "B6_appy_us",
+   "fact_id": "no_anorexia",
+   "removed_text_N": "no anorexia",
+   "description": "no anorexia (Alvarado item documented absent)",
+   "score_component": true,
+   "score": "Alvarado: anorexia",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B6_appy_us_neg",
+   "scenario": "B6_appy_us",
+   "fact_id": "no_anorexia",
+   "removed_text_N": "no anorexia",
+   "description": "no anorexia (Alvarado item documented absent)",
+   "score_component": true,
+   "score": "Alvarado: anorexia",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B6_appy_us_pos",
+   "scenario": "B6_appy_us",
+   "fact_id": "no_rebound",
+   "removed_text_N": "no rebound tenderness",
+   "description": "no rebound tenderness (Alvarado item documented absent)",
+   "score_component": true,
+   "score": "Alvarado: rebound tenderness",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B6_appy_us_neg",
+   "scenario": "B6_appy_us",
+   "fact_id": "no_rebound",
+   "removed_text_N": "no rebound tenderness",
+   "description": "no rebound tenderness (Alvarado item documented absent)",
+   "score_component": true,
+   "score": "Alvarado: rebound tenderness",
+   "basis": "score item",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B6_appy_us_pos",
+   "scenario": "B6_appy_us",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "chest pain, cough, dysuria, hematuria, rash, or headache",
+   "description": "ROS 'Denies' list of negatives (chest pain, cough, dysuria, hematuria, rash, headache)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B6_appy_us_neg",
+   "scenario": "B6_appy_us",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "chest pain, cough, dysuria, hematuria, rash, or headache",
+   "description": "ROS 'Denies' list of negatives (chest pain, cough, dysuria, hematuria, rash, headache)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B6_appy_us_pos",
+   "scenario": "B6_appy_us",
+   "fact_id": "f_pmh",
+   "removed_text_N": "no significant medical history and no prior abdominal surgery",
+   "description": "'no significant medical history and no prior abdominal surgery' (PMH line dropped; no prior abdominal surgery is a pertinent negative, since a prior appendectomy would exclude the diagnosis)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": "no prior abdominal surgery is a precondition (a prior appendectomy would exclude the diagnosis), not an Alvarado item"
+  },
+  {
+   "case_id": "B6_appy_us_neg",
+   "scenario": "B6_appy_us",
+   "fact_id": "f_pmh",
+   "removed_text_N": "no significant medical history and no prior abdominal surgery",
+   "description": "'no significant medical history and no prior abdominal surgery' (PMH line dropped; no prior abdominal surgery is a pertinent negative, since a prior appendectomy would exclude the diagnosis)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": "no prior abdominal surgery is a precondition (a prior appendectomy would exclude the diagnosis), not an Alvarado item"
+  },
+  {
+   "case_id": "B6_appy_us_pos",
+   "scenario": "B6_appy_us",
+   "fact_id": "f_ua",
+   "removed_text_N": "Urinalysis without blood, protein, or pyuria.",
+   "description": "urinalysis without blood, protein, or pyuria",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": "urinalysis without blood or pyuria argues against ureteral stone or urinary infection as alternatives; not an Alvarado item"
+  },
+  {
+   "case_id": "B6_appy_us_neg",
+   "scenario": "B6_appy_us",
+   "fact_id": "f_ua",
+   "removed_text_N": "Urinalysis without blood, protein, or pyuria.",
+   "description": "urinalysis without blood, protein, or pyuria",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": "urinalysis without blood or pyuria argues against ureteral stone or urinary infection as alternatives; not an Alvarado item"
+  },
+  {
+   "case_id": "B7_strep_pos",
+   "scenario": "B7_strep",
+   "fact_id": "no_exudate",
+   "removed_text_N": "no tonsillar exudate",
+   "description": "no tonsillar exudate (HEENT exam negative)",
+   "score_component": true,
+   "score": "modified Centor: tonsillar swelling or exudate (absence documented)",
+   "basis": "score item",
+   "other_relevance": "the prior is the unstratified prevalence among tested adults, not a Centor stratum"
+  },
+  {
+   "case_id": "B7_strep_neg",
+   "scenario": "B7_strep",
+   "fact_id": "no_exudate",
+   "removed_text_N": "no tonsillar exudate",
+   "description": "no tonsillar exudate (HEENT exam negative)",
+   "score_component": true,
+   "score": "modified Centor: tonsillar swelling or exudate (absence documented)",
+   "basis": "score item",
+   "other_relevance": "the prior is the unstratified prevalence among tested adults, not a Centor stratum"
+  },
+  {
+   "case_id": "B7_strep_pos",
+   "scenario": "B7_strep",
+   "fact_id": "no_uri",
+   "removed_text_N": "no cough or rhinorrhea",
+   "description": "no cough or rhinorrhea (HPI negative)",
+   "score_component": true,
+   "score": "modified Centor: absence of cough (also rhinorrhea, a viral feature)",
+   "basis": "score item",
+   "other_relevance": "the prior is the unstratified prevalence among tested adults, not a Centor stratum"
+  },
+  {
+   "case_id": "B7_strep_neg",
+   "scenario": "B7_strep",
+   "fact_id": "no_uri",
+   "removed_text_N": "no cough or rhinorrhea",
+   "description": "no cough or rhinorrhea (HPI negative)",
+   "score_component": true,
+   "score": "modified Centor: absence of cough (also rhinorrhea, a viral feature)",
+   "basis": "score item",
+   "other_relevance": "the prior is the unstratified prevalence among tested adults, not a Centor stratum"
+  },
+  {
+   "case_id": "B7_strep_pos",
+   "scenario": "B7_strep",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "chest pain, abdominal pain, vomiting, diarrhea, dysuria, or leg swelling",
+   "description": "ROS 'Denies' list of negatives (chest pain, abdominal pain, vomiting, diarrhea, dysuria, leg swelling)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B7_strep_neg",
+   "scenario": "B7_strep",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "chest pain, abdominal pain, vomiting, diarrhea, dysuria, or leg swelling",
+   "description": "ROS 'Denies' list of negatives (chest pain, abdominal pain, vomiting, diarrhea, dysuria, leg swelling)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B8_septic_pos",
+   "scenario": "B8_septic",
+   "fact_id": "no_trauma",
+   "removed_text_N": "no recent trauma",
+   "description": "no recent trauma",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": "trauma is an alternative explanation for an acute effusion (hemarthrosis, internal derangement)"
+  },
+  {
+   "case_id": "B8_septic_neg",
+   "scenario": "B8_septic",
+   "fact_id": "no_trauma",
+   "removed_text_N": "no recent trauma",
+   "description": "no recent trauma",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": "trauma is an alternative explanation for an acute effusion (hemarthrosis, internal derangement)"
+  },
+  {
+   "case_id": "B8_septic_pos",
+   "scenario": "B8_septic",
+   "fact_id": "no_risk",
+   "removed_text_N": "no prosthetic joint, no prior joint surgery or injection, no injection drug use, and no history of gout",
+   "description": "no prosthetic joint, no prior joint surgery or injection, no injection drug use, and no history of gout",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": "prosthetic joint, joint injection or surgery, injection drug use and prior gout are recognized risk factors or alternative explanations; no score sets the prior (a single ED cohort prevalence)"
+  },
+  {
+   "case_id": "B8_septic_neg",
+   "scenario": "B8_septic",
+   "fact_id": "no_risk",
+   "removed_text_N": "no prosthetic joint, no prior joint surgery or injection, no injection drug use, and no history of gout",
+   "description": "no prosthetic joint, no prior joint surgery or injection, no injection drug use, and no history of gout",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": "prosthetic joint, joint injection or surgery, injection drug use and prior gout are recognized risk factors or alternative explanations; no score sets the prior (a single ED cohort prevalence)"
+  },
+  {
+   "case_id": "B8_septic_pos",
+   "scenario": "B8_septic",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "headache, cough, chest pain, abdominal pain, diarrhea, dysuria, or rash",
+   "description": "ROS 'Denies' list of negatives (headache, cough, chest pain, abdominal pain, diarrhea, dysuria, rash)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  },
+  {
+   "case_id": "B8_septic_neg",
+   "scenario": "B8_septic",
+   "fact_id": "f_ros_neg",
+   "removed_text_N": "headache, cough, chest pain, abdominal pain, diarrhea, dysuria, or rash",
+   "description": "ROS 'Denies' list of negatives (headache, cough, chest pain, abdominal pain, diarrhea, dysuria, rash)",
+   "score_component": false,
+   "score": null,
+   "basis": "none",
+   "other_relevance": null
+  }
+ ]
+}

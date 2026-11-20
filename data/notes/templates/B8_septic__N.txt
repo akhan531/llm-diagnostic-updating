@@ -1,0 +1,30 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+EMERGENCY DEPARTMENT NOTE
+
+CC: Right knee pain and swelling.
+
+HPI: {^age_sex} presents to the {setting} with {onset}. {^f_assoc}. He reports {no_other}. He has {no_trauma}. He has {no_risk}. {^f_tx}.
+
+PMH: {^f_pmh}.
+Meds: {^f_med}.
+Allergies: {^f_allergy}.
+Social: {^f_social}.
+
+ROS: Positive for right knee pain and swelling. Denies {f_ros_neg}.
+
+Exam:
+Vitals: {^f_vitals}.
+General: {^f_gen}.
+{f_cvlung}
+MSK: {^knee}.
+{f_exam_rest}
+
+Results:
+{f_labs}
+Synovial fluid WBC count (arthrocentesis, right knee): {RESULT}. {f_pending}
+
+A/P: {age_sex} with right knee pain and swelling.
+Clinical assessment: {^alt}.
+Ddx: {^f_ddx}.
+Plan: {f_plan}

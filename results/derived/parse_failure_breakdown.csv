@@ -1,0 +1,6 @@
+model,n_collected,n_parsed,n_call_error,n_empty_at_max_tokens,n_other_unparsed
+anthropic/claude-sonnet-5.5,306,306,0,0,0
+deepseek/deepseek-v4-pro,510,489,0,21,0
+google/gemini-3.8-flash,510,510,0,0,0
+openai/gpt-4o,510,509,0,0,1
+openai/gpt-6.1-sol,306,306,0,0,0

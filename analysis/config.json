@@ -1,0 +1,38 @@
+{
+  "paper_run_ids": [
+    "main1"
+  ],
+  "pilot_run_ids": [
+    "pilot1b"
+  ],
+  "excluded_run_ids": [
+    "pilot1"
+  ],
+  "ext_run_ids": [
+    "ext1_pretest",
+    "ext2_belief",
+    "ext3_long",
+    "ext4_unnamed",
+    "ext5_dsretry",
+    "ext1_pretest_pilot",
+    "ext2_belief_pilot",
+    "ext3_long_pilot",
+    "ext4_unnamed_pilot",
+    "ext6_para1",
+    "ext6_para2",
+    "ext6_para1_pilot",
+    "ext6_para2_pilot",
+    "ext7_newcases",
+    "ext7_newcases_pilot",
+    "ext8_family"
+  ],
+  "_comment": "Only paper_run_ids feed paper outputs. pilot_run_ids are scored with --set pilot into results/derived/pilot. excluded_run_ids are known and never scored (pilot1: old prompt, 800 token limit, mostly call errors). Any other run id in raw is reported and not scored.",
+  "display_names": {
+    "anthropic/claude-sonnet-5.5": "Claude Sonnet 5.5",
+    "deepseek/deepseek-v4-pro": "DeepSeek V4 Pro",
+    "google/gemini-3.8-flash": "Gemini 3.8 Flash",
+    "openai/gpt-4o": "GPT-4o",
+    "openai/gpt-6.1-sol": "GPT-6.1 Sol"
+  },
+  "_comment_ext": "ext_run_ids (R1 committee extensions) are known but never scored by score.py, fit_wbayes.py, make_tables.py or committee_fixes*.py; only analysis/ext_analysis.py reads the five main ext ids. Adding them here only silences the UNKNOWN warning; main1 outputs are byte-identical."
+}

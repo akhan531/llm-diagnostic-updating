@@ -1,0 +1,376 @@
+{
+ "scenario": "B6_appy_us",
+ "source": "Clinical vignette written for this study (no source vignette); same clinical facts in B5_appy_ct and B6_appy_us, only the test differs",
+ "setting": "emergency department",
+ "diagnosis": "Acute appendicitis",
+ "test_name": "Right lower quadrant ultrasound (graded compression)",
+ "surface_key_note": "Surface keys: V, N, B, S, or NB (N and B), NBS. First string is what the templates render; any string counts for the check. Matching is case-insensitive.",
+ "core_facts": [
+  {
+   "id": "age_sex",
+   "surfaces": {
+    "V": [
+     "31-year-old man"
+    ],
+    "NB": [
+     "31-year-old man"
+    ],
+    "S": [
+     "31M"
+    ]
+   }
+  },
+  {
+   "id": "setting",
+   "surfaces": {
+    "V": [
+     "in the emergency department"
+    ],
+    "NB": [
+     "emergency department"
+    ],
+    "S": [
+     "ED"
+    ]
+   }
+  },
+  {
+   "id": "duration",
+   "surfaces": {
+    "V": [
+     "18 hours"
+    ],
+    "NB": [
+     "18 hours"
+    ],
+    "S": [
+     "18h"
+    ]
+   }
+  },
+  {
+   "id": "pain_site",
+   "surfaces": {
+    "V": [
+     "right lower quadrant pain, localized there since onset"
+    ],
+    "NB": [
+     "right lower quadrant pain, localized there since onset"
+    ],
+    "S": [
+     "RLQ pain, localized there since onset"
+    ]
+   }
+  },
+  {
+   "id": "no_anorexia",
+   "surfaces": {
+    "V": [
+     "no anorexia"
+    ],
+    "NB": [
+     "no anorexia"
+    ],
+    "S": [
+     "no anorexia"
+    ]
+   }
+  },
+  {
+   "id": "nausea",
+   "surfaces": {
+    "V": [
+     "nausea"
+    ],
+    "NB": [
+     "nausea"
+    ],
+    "S": [
+     "nausea"
+    ]
+   }
+  },
+  {
+   "id": "temp",
+   "surfaces": {
+    "V": [
+     "a temperature of 37.1°C"
+    ],
+    "NB": [
+     "T 37.1°C"
+    ],
+    "S": [
+     "T 37.1"
+    ]
+   }
+  },
+  {
+   "id": "rlq",
+   "surfaces": {
+    "V": [
+     "right lower quadrant tenderness"
+    ],
+    "NB": [
+     "right lower quadrant tenderness"
+    ],
+    "S": [
+     "RLQ tenderness"
+    ]
+   }
+  },
+  {
+   "id": "no_rebound",
+   "surfaces": {
+    "V": [
+     "no rebound tenderness"
+    ],
+    "NB": [
+     "no rebound tenderness"
+    ],
+    "S": [
+     "no rebound"
+    ]
+   }
+  },
+  {
+   "id": "wbc",
+   "surfaces": {
+    "V": [
+     "a white blood cell count of 9.4 x 10^9/L"
+    ],
+    "NB": [
+     "WBC 9.4 x 10^9/L"
+    ],
+    "S": [
+     "WBC 9.4"
+    ]
+   }
+  }
+ ],
+ "filler": [
+  {
+   "id": "f_tx",
+   "justification": "No effective analgesia taken; no diagnostic content.",
+   "surfaces": {
+    "NB": [
+     "He has not taken any medication for it"
+    ],
+    "S": [
+     "No meds taken"
+    ]
+   }
+  },
+  {
+   "id": "f_pmh",
+   "justification": "No relevant history.",
+   "surfaces": {
+    "NB": [
+     "no significant medical history and no prior abdominal surgery"
+    ],
+    "S": [
+     "no sig PMH, no prior abd surgery"
+    ]
+   }
+  },
+  {
+   "id": "f_med",
+   "justification": "None.",
+   "surfaces": {
+    "NB": [
+     "none"
+    ],
+    "S": [
+     "none"
+    ]
+   }
+  },
+  {
+   "id": "f_allergy",
+   "justification": "Allergy status unrelated.",
+   "surfaces": {
+    "NB": [
+     "no known drug allergies"
+    ],
+    "S": [
+     "NKDA"
+    ]
+   }
+  },
+  {
+   "id": "f_social",
+   "justification": "Neutral social history.",
+   "surfaces": {
+    "NB": [
+     "software developer, never smoker, occasional alcohol"
+    ],
+    "S": [
+     "software dev, never smoker, occ EtOH"
+    ]
+   }
+  },
+  {
+   "id": "f_ros_neg",
+   "justification": "Unrelated systems.",
+   "surfaces": {
+    "NB": [
+     "chest pain, cough, dysuria, hematuria, rash, or headache"
+    ],
+    "S": [
+     "CP, cough, dysuria, hematuria, rash, HA"
+    ]
+   }
+  },
+  {
+   "id": "f_vitals",
+   "justification": "Remaining vitals.",
+   "surfaces": {
+    "NB": [
+     "HR 92, BP 126/78, RR 16, SpO2 99% on room air"
+    ],
+    "S": [
+     "HR 92, BP 126/78, RR 16, SpO2 99% RA"
+    ]
+   }
+  },
+  {
+   "id": "f_gen",
+   "justification": "Appearance consistent with stated pain.",
+   "surfaces": {
+    "NB": [
+     "alert, uncomfortable but not toxic-appearing"
+    ],
+    "S": [
+     "A&O, uncomfortable, non-toxic"
+    ]
+   }
+  },
+  {
+   "id": "f_cvlung",
+   "justification": "Unrelated systems.",
+   "surfaces": {
+    "NB": [
+     "Heart regular rate and rhythm. Lungs clear bilaterally."
+    ],
+    "S": [
+     "RRR. Lungs CTAB."
+    ]
+   }
+  },
+  {
+   "id": "f_labs",
+   "justification": "Routine ED labs, normal; creatinine needed before contrast.",
+   "surfaces": {
+    "NB": [
+     "Creatinine 0.9 mg/dL, lipase within normal limits."
+    ],
+    "S": [
+     "Cr 0.9, lipase WNL."
+    ]
+   }
+  },
+  {
+   "id": "f_ua",
+   "justification": "Urinalysis is routine for abdominal pain; split from f_labs so condition E can omit it as a documented negative.",
+   "surfaces": {
+    "NB": [
+     "Urinalysis without blood, protein, or pyuria."
+    ],
+    "S": [
+     "UA no blood, protein, or pyuria."
+    ]
+   }
+  },
+  {
+   "id": "f_ddx",
+   "justification": "Lists target among alternatives; no interpretation of result.",
+   "surfaces": {
+    "NB": [
+     "acute appendicitis, mesenteric adenitis, infectious gastroenteritis, ureteral stone, terminal ileitis"
+    ],
+    "S": [
+     "acute appendicitis, mesenteric adenitis, infectious gastroenteritis, ureteral stone, terminal ileitis"
+    ]
+   }
+  },
+  {
+   "id": "f_plan",
+   "justification": "Result-neutral plan.",
+   "surfaces": {
+    "NB": [
+     "IV fluids, analgesia, and antiemetic as needed. Disposition per results and reassessment."
+    ],
+    "S": [
+     "IVF, analgesia, antiemetic PRN. Dispo per results and reassessment."
+    ]
+   }
+  }
+ ],
+ "result": {
+  "pos": {
+   "V": [
+    "a noncompressible, dilated appendix measuring 9 mm with periappendiceal fluid"
+   ],
+   "NB": [
+    "noncompressible, dilated appendix measuring 9 mm with periappendiceal fluid"
+   ],
+   "S": [
+    "noncompressible dilated appendix 9 mm w/ periappendiceal fluid"
+   ]
+  },
+  "neg": {
+   "V": [
+    "no sonographic findings of appendicitis"
+   ],
+   "NB": [
+    "no sonographic findings of appendicitis"
+   ],
+   "S": [
+    "no sonographic findings of appendicitis"
+   ]
+  }
+ },
+ "alvarado_items": [
+  {
+   "item": "Migration of pain to the right lower quadrant",
+   "points": 1,
+   "present": false
+  },
+  {
+   "item": "Anorexia",
+   "points": 1,
+   "present": false
+  },
+  {
+   "item": "Nausea or vomiting",
+   "points": 1,
+   "present": true
+  },
+  {
+   "item": "Right lower quadrant tenderness",
+   "points": 2,
+   "present": true
+  },
+  {
+   "item": "Rebound tenderness",
+   "points": 1,
+   "present": false
+  },
+  {
+   "item": "Elevated temperature (37.3 C or above)",
+   "points": 1,
+   "present": false
+  },
+  {
+   "item": "Leukocytosis (WBC above 10 x 10^9/L)",
+   "points": 2,
+   "present": false
+  },
+  {
+   "item": "Left shift (neutrophils above 75%)",
+   "points": 1,
+   "present": false
+  }
+ ],
+ "alvarado_total": 3,
+ "alvarado_note": "Equivocal CT-referral presentation (H2): pain localized to the RLQ since onset (no migration, 0), no anorexia (0), nausea (1), RLQ tenderness (2), no rebound (0), T 37.1 (0), WBC 9.4 (0), no differential reported (left shift scored 0). Alvarado 3 (low to equivocal). Chosen so the 23.5% prior (all adults referred for CT, Pickhardt 2011) is a plausible pretest probability for the patient on the page. The Alvarado score is never stated in any note. Identical across conditions and polarities; only imaging differs between B5 and B6."
+}

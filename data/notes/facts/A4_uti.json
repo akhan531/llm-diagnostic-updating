@@ -1,0 +1,250 @@
+{
+ "scenario": "A4_uti",
+ "source": "Morgan 2021 (PMC8022260), Figure legend vignette D; Results text calls it asymptomatic bacteriuria; quote in",
+ "setting": "primary care outpatient clinic (Morgan p748)",
+ "diagnosis": "Urinary tract infection",
+ "test_name": "urine culture",
+ "surface_key_note": "Surface keys: V, N, B, S, or NB (N and B), NBS. First string is what the templates render; any string counts for the check. Matching is case-insensitive.",
+ "core_facts": [
+  {
+   "id": "age_sex",
+   "surfaces": {
+    "V": [
+     "65-year-old man"
+    ],
+    "NB": [
+     "65-year-old man"
+    ],
+    "S": [
+     "65M"
+    ]
+   }
+  },
+  {
+   "id": "oa",
+   "surfaces": {
+    "V": [
+     "osteoarthritis"
+    ],
+    "NB": [
+     "osteoarthritis"
+    ],
+    "S": [
+     "OA"
+    ]
+   }
+  },
+  {
+   "id": "odor",
+   "surfaces": {
+    "V": [
+     "foul-smelling urine"
+    ],
+    "NB": [
+     "foul-smelling urine"
+    ],
+    "S": [
+     "foul-smelling urine"
+    ]
+   }
+  },
+  {
+   "id": "no_sx",
+   "surfaces": {
+    "V": [
+     "no pain or difficulty with urination"
+    ],
+    "NB": [
+     "no pain or difficulty with urination"
+    ],
+    "S": [
+     "no pain or difficulty w/ urination"
+    ]
+   }
+  },
+  {
+   "id": "dipstick",
+   "surfaces": {
+    "V": [
+     "trace blood"
+    ],
+    "NB": [
+     "trace blood"
+    ],
+    "S": [
+     "trace blood"
+    ]
+   }
+  }
+ ],
+ "filler": [
+  {
+   "id": "f_site",
+   "justification": "Joint site for the stated osteoarthritis; no urinary relevance.",
+   "surfaces": {
+    "NB": [
+     "bilateral knees"
+    ],
+    "S": [
+     "bilat knees"
+    ]
+   }
+  },
+  {
+   "id": "f_oa_hpi",
+   "justification": "Typical osteoarthritis course; unrelated to urine.",
+   "surfaces": {
+    "NB": [
+     "Knee pain is worse with walking and better with rest."
+    ],
+    "S": [
+     "Knee pain worse w/ walking, better w/ rest."
+    ]
+   }
+  },
+  {
+   "id": "f_pmh",
+   "justification": "Hypertension does not meaningfully change bacteriuria odds in this vignette.",
+   "surfaces": {
+    "NB": [
+     "hypertension"
+    ],
+    "S": [
+     "HTN"
+    ]
+   }
+  },
+  {
+   "id": "f_med",
+   "justification": "Antihypertensive and analgesic for the stated conditions; no urinary effect.",
+   "surfaces": {
+    "NB": [
+     "amlodipine 5 mg daily; acetaminophen 650 mg PRN for joint pain"
+    ],
+    "S": [
+     "amlodipine 5 daily; APAP 650 PRN joint pain"
+    ]
+   }
+  },
+  {
+   "id": "f_allergy",
+   "justification": "Allergy status unrelated to diagnosis.",
+   "surfaces": {
+    "NB": [
+     "no known drug allergies"
+    ],
+    "S": [
+     "NKDA"
+    ]
+   }
+  },
+  {
+   "id": "f_social",
+   "justification": "Social history unrelated to urinary tract.",
+   "surfaces": {
+    "NB": [
+     "retired, never smoker, occasional alcohol"
+    ],
+    "S": [
+     "retired, never smoker, occ EtOH"
+    ]
+   }
+  },
+  {
+   "id": "f_ros_neg",
+   "justification": "Negatives from cardiorespiratory and skin systems, unrelated to the urinary tract.",
+   "surfaces": {
+    "NB": [
+     "chest pain, cough, or rash"
+    ],
+    "S": [
+     "CP, cough, rash"
+    ]
+   }
+  },
+  {
+   "id": "f_vitals",
+   "justification": "Normal BP, HR, SpO2 for the visit; temperature deliberately not stated so as not to add information.",
+   "surfaces": {
+    "NB": [
+     "BP 132/80, HR 76, SpO2 97% on room air"
+    ],
+    "S": [
+     "BP 132/80, HR 76, SpO2 97% RA"
+    ]
+   }
+  },
+  {
+   "id": "f_exam",
+   "justification": "Heart, lung, and knee exam typical for osteoarthritis follow-up; no abdominal or genitourinary findings stated.",
+   "surfaces": {
+    "NB": [
+     "Heart regular rate and rhythm. Lungs clear bilaterally. Knees with crepitus and bony enlargement, no warmth or effusion."
+    ],
+    "S": [
+     "RRR. Lungs CTAB. Knees: crepitus, bony enlargement, no warmth or effusion."
+    ]
+   }
+  },
+  {
+   "id": "f_labs",
+   "justification": "Routine unrelated normal labs.",
+   "surfaces": {
+    "NB": [
+     "BMP within normal limits, TSH 2.1 mIU/L"
+    ],
+    "S": [
+     "BMP WNL, TSH 2.1"
+    ]
+   }
+  },
+  {
+   "id": "f_ddx",
+   "justification": "Neutral differential for odor without urinary symptoms; no interpretation of result.",
+   "surfaces": {
+    "NB": [
+     "urinary tract infection, concentrated urine, dietary or medication effect"
+    ],
+    "S": [
+     "UTI, concentrated urine, dietary/medication effect"
+    ]
+   }
+  },
+  {
+   "id": "f_plan",
+   "justification": "Result-neutral plan.",
+   "surfaces": {
+    "NB": [
+     "Urine culture sent. Continue acetaminophen as needed and home exercise program for knees. Return in 3 months or sooner if symptoms change."
+    ],
+    "S": [
+     "UCx sent. Cont APAP PRN, home exercise program for knees. RTC 3 mo or sooner if sx change."
+    ]
+   }
+  }
+ ],
+ "result": {
+  "pos": {
+   "V": [
+    "greater than 100,000 CFU/mL of Escherichia coli"
+   ],
+   "NB": [
+    "greater than 100,000 CFU/mL Escherichia coli"
+   ],
+   "S": [
+    ">100K CFU/mL E coli"
+   ]
+  },
+  "neg": {
+   "V": [
+    "no growth"
+   ],
+   "NB": [
+    "no growth"
+   ],
+   "S": [
+    "no growth"
+   ]
+  }
+ }
+}

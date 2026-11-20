@@ -1,0 +1,30 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+EMERGENCY DEPARTMENT NOTE
+
+CC: Chest pain radiating to the back.
+
+HPI: 56-year-old man presents to the emergency department with sudden-onset severe chest pain radiating to the back, starting 3 hours ago. The pain is not changed by position or breathing. A D-dimer sent from triage resulted at 880 ng/mL FEU, above the 500 ng/mL FEU cutoff. He felt nauseated at onset. He has no known aortic disease, Marfan syndrome, family history of aortic dissection, or recent aortic surgery or instrumentation.
+
+PMH: Hypertension.
+Meds: Amlodipine 5 mg daily.
+Allergies: No known drug allergies.
+Social: Works as an electrician, former smoker who quit 10 years ago, occasional alcohol.
+
+ROS: Positive for chest pain. Denies headache, fever, cough, abdominal pain, vomiting, diarrhea, or dysuria.
+
+Exam:
+Vitals: BP 150/88 in the right arm and 146/86 in the left arm, with symmetric radial and femoral pulses. HR 94, RR 18, T 36.9°C, SpO2 98% on room air.
+General: Alert, uncomfortable, diaphoretic.
+CV: Regular rhythm, no rub or gallop; no new murmur.
+Lungs: Clear bilaterally.
+Neuro: No focal neurologic deficit.
+Abdomen soft, nontender. No leg edema.
+
+Results:
+ECG with sinus rhythm and no acute ST changes. Troponin I below the reference limit. Creatinine 1.0 mg/dL.
+
+A/P: 56-year-old man with chest pain radiating to the back.
+Clinical assessment: Acute aortic syndrome is among the leading considerations.
+Ddx: Acute aortic syndrome, acute coronary syndrome, pulmonary embolism, musculoskeletal chest pain, esophageal spasm.
+Plan: IV access, continuous cardiac monitoring, and IV analgesia. Disposition per results and reassessment.

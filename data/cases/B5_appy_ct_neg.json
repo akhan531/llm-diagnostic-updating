@@ -1,0 +1,117 @@
+{
+  "case_id": "B5_appy_ct_neg",
+  "scenario": "B5_appy_ct",
+  "set": "B",
+  "result": "neg",
+  "diagnosis": "Acute appendicitis",
+  "test_name": "abdominal CT",
+  "setting": "emergency department",
+  "patient_summary": "Adult ED patient with equivocal right lower quadrant pain (no migration, no anorexia, afebrile, normal WBC; Alvarado 3) referred for CT for suspected appendicitis (synthetic).",
+  "pretest_source": "Pickhardt 2011 p. 791 and Table 2 p. 792: 675/2871 = 23.5% of adults imaged by MDCT.",
+  "result_shown": "a normal appendix on CT",
+  "status": "VERIFIED",
+  "unverified": [],
+  "sources": [
+    {
+      "quantity": "prior 23.5% = 675/2871 consecutive adults referred for MDCT (95% CI 22.0-25.1)",
+      "citation_key": "pickhardt2011mdct",
+      "id": "PMID 21690593; DOI 10.7326/0003-4819-154-12-201106210-00006",
+      "location": "p. 791, Results; p. 792, Table 2 (Prevalence row); Abstract p. 789",
+      "status": "VERIFIED"
+    },
+    {
+      "quantity": "sensitivity-analysis prior 0.43 (median prevalence, 71 populations)",
+      "citation_key": "rud2019cochrane",
+      "id": "PMID 31743429; DOI 10.1002/14651858.CD009977.pub2; PMC6953397",
+      "location": "Abstract, Main results (published abstract text; main-text tables not seen)",
+      "status": "VERIFIED (abstract text only)"
+    },
+    {
+      "quantity": "CT pooled sensitivity 0.94 (0.91-0.95), specificity 0.95 (0.93-0.96), LR+ 13.3 (9.9-17.9), LR- 0.09 (0.07-0.12), 12 CT studies",
+      "citation_key": "terasawa2004appy",
+      "id": "PMID 15466771; DOI 10.7326/0003-4819-141-7-200410050-00011",
+      "location": "p. 541, Results (Abstract p. 537; Appendix Table 1 p. W-100 gives per-study counts)",
+      "status": "VERIFIED"
+    },
+    {
+      "quantity": "Pickhardt's own CT LR+ 51.3 (38.1-69.0), LR- 0.015 (0.008-0.028), context only",
+      "citation_key": "pickhardt2011mdct",
+      "id": "PMID 21690593; DOI 10.7326/0003-4819-154-12-201106210-00006",
+      "location": "p. 792, Table 2",
+      "status": "VERIFIED"
+    }
+  ],
+  "conditional_independence": "Each case applies a single likelihood ratio (the LR for the result shown) to a single pretest probability, so no conditional-independence assumption is needed. If findings were ever combined, the LRs would be multiplied assuming conditional independence given disease status.",
+  "target_inputs": {
+    "pretest": {
+      "rule": "point",
+      "num": 675,
+      "den": 2871
+    },
+    "lr": {
+      "pos": {
+        "rule": "published_point",
+        "point": 13.3,
+        "range": [
+          9.9,
+          17.9
+        ]
+      },
+      "neg": {
+        "rule": "published_point",
+        "point": 0.09,
+        "range": [
+          0.07,
+          0.12
+        ]
+      }
+    },
+    "band_primary": {
+      "rule": "bayes_lr_range_at_point_prior"
+    },
+    "sensitivity_priors_in": [
+      {
+        "label": "Rud 2019 Cochrane median prevalence (71 populations)",
+        "pretest": 0.43
+      },
+      {
+        "label": "Terasawa 2004 CT studies pooled prevalence 533/1182, computed from Appendix Table 1 counts",
+        "pretest": 0.4509306260575296
+      }
+    ]
+  },
+  "target": {
+    "pretest_point": 0.23510971786833856,
+    "pretest_range": [
+      0.23510971786833856,
+      0.23510971786833856
+    ],
+    "lr_point": 0.09,
+    "lr_range": [
+      0.07,
+      0.12
+    ],
+    "posttest_point": 0.02691924227318045,
+    "posttest_band_primary": [
+      0.02106318956870612,
+      0.035573122529644285
+    ],
+    "posttest_band_bayes": [
+      0.02106318956870612,
+      0.035573122529644285
+    ]
+  },
+  "sensitivity_priors": [
+    {
+      "label": "Rud 2019 Cochrane median prevalence (71 populations)",
+      "pretest": 0.43,
+      "posttest_point": 0.06357811729916212
+    },
+    {
+      "label": "Terasawa 2004 CT studies pooled prevalence 533/1182, computed from Appendix Table 1 counts",
+      "pretest": 0.4509306260575296,
+      "posttest_point": 0.06882649181456878
+    }
+  ],
+  "notes": "Prior (single-center referral cohort) and LRs (pooled meta-analysis) are from different sources. Terasawa's included CT studies had a pooled prevalence of about 45% (computed from Appendix Table 1 counts, p. W-100), far above 23.5%; both appear as sensitivity priors. Pickhardt's own LRs are far more extreme than the pooled LRs; we keep the pooled ones. Alvarado score as written in the note (items in data/notes/facts/B5_appy_ct.json): migration 0, anorexia 0, nausea 1, RLQ tenderness 2, rebound 0, T 37.1 0, WBC 9.4 0, left shift not reported 0; total 3. The presentation is deliberately equivocal so the 23.5% prior (all adults referred for CT) is a plausible pretest probability for the patient on the page. The Alvarado score is never stated in a note."
+}

@@ -1,0 +1,144 @@
+{
+ "note": "Probabilities as fractions. null = no defensible published threshold. See.",
+ "framework": {
+  "source_key": "pauker1980threshold",
+  "doi": "10.1056/NEJM198005153022003"
+ },
+ "thresholds": [
+  {
+   "scenario": "PE",
+   "cases": [
+    "B1_pe_low",
+    "B2_pe_mod",
+    "B3_pe_high"
+   ],
+   "test_threshold": 0.018,
+   "treatment_threshold": null,
+   "source_key": "kline2004perc",
+   "doi": "10.1111/j.1538-7836.2004.00790.x",
+   "location": "p. 1254, Appendix II",
+   "checked": "full text",
+   "quality": "primary",
+   "alternatives": [
+    {
+     "test_threshold": 0.014,
+     "source_key": "lessler2010pe",
+     "doi": "10.1016/j.annemergmed.2009.12.001",
+     "location": "Abstract p. 316",
+     "checked": "abstract"
+    }
+   ]
+  },
+  {
+   "scenario": "aortic_dissection",
+   "cases": [
+    "B4_aas"
+   ],
+   "test_threshold": 0.0003,
+   "test_threshold_range_by_age": [
+    0.003,
+    0.021
+   ],
+   "ddimer_vs_cta_threshold": 0.006,
+   "treatment_threshold": null,
+   "source_key": "taylor2013aad",
+   "doi": "10.1016/j.ajem.2013.03.039",
+   "location": "Abstract",
+   "checked": "abstract (index page)",
+   "quality": "sensitivity; thoracic aortic dissection only"
+  },
+  {
+   "scenario": "appendicitis",
+   "cases": [
+    "B5_appy_ct",
+    "B6_appy_us"
+   ],
+   "test_threshold": null,
+   "upper_imaging_threshold": {
+    "CT": 0.74,
+    "US": 0.58
+   },
+   "treatment_threshold": null,
+   "source_key": "vanhoe2000appy",
+   "doi": "10.1097/00063110-200003000-00005",
+   "location": "Abstract",
+   "checked": "abstract",
+   "quality": "weak; sensitivity only"
+  },
+  {
+   "scenario": "pneumonia",
+   "cases": [
+    "A1_pneumonia"
+   ],
+   "test_threshold": 0.095,
+   "test_threshold_ci": [
+    0.087,
+    0.105
+   ],
+   "treatment_threshold": 0.431,
+   "treatment_threshold_ci": [
+    0.401,
+    0.464
+   ],
+   "updated_after_model_probability": {
+    "test": 0.127,
+    "treatment": 0.513
+   },
+   "source_key": "ebell2018cap",
+   "doi": "10.3399/bjgp18X699545",
+   "location": "p. e768 Results, Figure 3",
+   "checked": "full text",
+   "quality": "primary; revealed physician thresholds"
+  },
+  {
+   "scenario": "breast_screening",
+   "cases": [
+    "A2_breast"
+   ],
+   "test_threshold": null,
+   "treatment_threshold": 0.02,
+   "treatment_meaning": "biopsy vs short-interval follow-up (BI-RADS 3 vs 4)",
+   "source_key": "berg2020birads3",
+   "doi": "10.1148/radiol.2020192641",
+   "location": "Abstract, Background",
+   "checked": "abstract",
+   "quality": "primary source is ACR BI-RADS Atlas (not checked)"
+  },
+  {
+   "scenario": "cardiac_ischemia",
+   "cases": [
+    "A3_cardiac"
+   ],
+   "test_threshold": 0.01,
+   "test_meaning": "30-day death or MACE below which no further urgent testing",
+   "treatment_threshold": null,
+   "source_key": "gulati2021chestpain",
+   "doi": "10.1016/j.jacc.2021.07.053",
+   "location": "guideline; quoted in ACC summary",
+   "checked": "secondary summary",
+   "quality": "indirect; outcome scale mismatch"
+  },
+  {
+   "scenario": "uti_asb",
+   "cases": [
+    "A4_uti"
+   ],
+   "test_threshold": null,
+   "treatment_threshold": null,
+   "categorical": "do not treat asymptomatic bacteriuria",
+   "source_key": "nicolle2019asb",
+   "doi": "10.1093/cid/ciz021",
+   "location": "Abstract",
+   "checked": "abstract"
+  },
+  {
+   "scenario": "hypothetical",
+   "cases": [
+    "A5_hypothetical"
+   ],
+   "test_threshold": null,
+   "treatment_threshold": null,
+   "source_key": null
+  }
+ ]
+}

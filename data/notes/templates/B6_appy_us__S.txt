@@ -1,0 +1,10 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+CC: abd pain x {duration}
+HPI: {age_sex}, {duration} {pain_site}. {^nausea}, {no_anorexia}. {^f_tx}.
+PMH: {f_pmh}. Meds: {f_med}. {f_allergy}.
+SH: {f_social}.
+ROS: + abd pain, {nausea}. Neg {f_ros_neg}.
+PE: {temp}, {f_vitals}. {^f_gen}. {f_cvlung} Abd: {rlq}; {no_rebound}.
+Data: {wbc}. {f_labs} {f_ua} RLQ US (graded compression): {RESULT}.
+A/P: {age_sex} w/ abd pain, {nausea}. Ddx {f_ddx}. {f_plan}

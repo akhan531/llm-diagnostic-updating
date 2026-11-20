@@ -1,0 +1,10 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+CC: SOB, CP x {duration}
+HPI: {age_sex}, {dyspnea}, {pain} x {duration}. {^f_pain}. {^leg_sx}. {^imm}. {^no_hemoptysis}.
+PMH: {f_pmh}; {no_cancer}; {no_vte}. Meds: {f_med}. Allergies: {f_allergy}.
+SH: {f_social}.
+ROS: + {dyspnea}, {pain}, leg swelling. Neg {f_ros_neg}.
+PE: {hr}, {f_vitals}, {spo2}. {^f_gen}. {^f_cv}. {^f_lungs}. Ext: {leg}.
+Data: {f_labs} CTPA w/ contrast: {RESULT}.
+A/P: {age_sex} w/ SOB, pleuritic CP. {^alt}. Ddx {f_ddx}. {f_plan}

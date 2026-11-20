@@ -1,0 +1,10 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+CC: sore throat
+HPI: {age_sex} in {setting}, {onset}. {^f_assoc}. {^no_uri}. {^f_tx}.
+PMH: {f_pmh}. Meds: {f_med}. {f_allergy}.
+SH: {f_social}.
+ROS: + sore throat. Neg {f_ros_neg}.
+PE: {f_vitals}. {^f_gen}. HEENT: {f_pharynx}; {no_exudate}. Neck: {nodes}. Lungs {f_lungs}. CV {f_cv}. {f_exam_rest}
+Data: RADT (throat swab): {RESULT}.
+A/P: {age_sex} w/ sore throat. {^alt}. Ddx {f_ddx}. {f_plan}

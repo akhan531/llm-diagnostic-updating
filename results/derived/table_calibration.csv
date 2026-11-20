@@ -1,0 +1,11 @@
+model,result,condition,n_total,n_ok,target_post_pp,stated_post_med_pp,stated_post_min_pp,stated_post_max_pp,diff_med_pp,abs_lod_med
+anthropic/claude-sonnet-5.5,pos,V,3,3,1.9627085377821363,1.96,1.96,1.96,-0.002708537782136311,0.0014085803229222371
+anthropic/claude-sonnet-5.5,neg,V,3,3,0.0,0.0,0.0,0.0,0.0,0.0
+deepseek/deepseek-v4-pro,pos,V,5,5,1.9627085377821363,1.96,1.96,1.96,-0.002708537782136311,0.0014085803229222371
+deepseek/deepseek-v4-pro,neg,V,5,5,0.0,0.0,0.0,0.0,0.0,0.0
+google/gemini-3.8-flash,pos,V,5,5,1.9627085377821363,1.96,1.96,1.96,-0.002708537782136311,0.0014085803229222371
+google/gemini-3.8-flash,neg,V,5,5,0.0,0.0,0.0,0.0,0.0,0.0
+openai/gpt-4o,pos,V,5,5,1.9627085377821363,1.96,1.96,1.963,-0.002708537782136311,0.0014085803229222371
+openai/gpt-4o,neg,V,5,5,0.0,0.0,0.0,0.0,0.0,0.0
+openai/gpt-6.1-sol,pos,V,3,3,1.9627085377821363,1.96,1.96,1.9627,-0.002708537782136311,0.0014085803229222371
+openai/gpt-6.1-sol,neg,V,3,3,0.0,0.0,0.0,0.0,0.0,0.0

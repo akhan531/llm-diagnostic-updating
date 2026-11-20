@@ -1,0 +1,3 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+A {age_sex} {setting} has {onset}. He has {knee}, {no_other}, {no_trauma}, and {no_risk}. {^alt}. The synovial fluid white blood cell count is {RESULT}.

@@ -1,0 +1,3 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+A {age_sex} presents with {pain} and {ecg}. She has {no_rf} and {vitals_exam}. An exercise stress test shows {RESULT}.

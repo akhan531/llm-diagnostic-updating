@@ -1,0 +1,329 @@
+{
+ "scenario": "B8_septic",
+ "source": "Carpenter 2011 Acad Emerg Med (PMID 21843213, PMC3229263); clinical vignette written for this study",
+ "setting": "emergency department",
+ "diagnosis": "Septic arthritis",
+ "test_name": "synovial fluid white blood cell count",
+ "surface_key_note": "Surface keys: V, N, B, S, or NB (N and B), NBS. First string is what the templates render; any string counts for the check. Matching is case-insensitive.",
+ "vignette_note": "Acute native-joint monoarthritis in an adult ED patient (the population of the 27% prior). No prosthetic joint, no immunosuppression, no injection drug use. T 37.8 C and serum WBC 10.6 are deliberately modest so no unscored finding moves the prior. The current result values (68 and 12 x 10^9/L) lie inside the Carpenter interval-LR bins 50 to 100 and 0 to 25, so the alternative interval-LR target applies to the same note. The clinician line (septic arthritis among the considerations) is a deliberate realism fact, identical across conditions and polarities.",
+ "core_facts": [
+  {
+   "id": "age_sex",
+   "surfaces": {
+    "V": [
+     "46-year-old man"
+    ],
+    "NB": [
+     "46-year-old man"
+    ],
+    "S": [
+     "46M"
+    ]
+   }
+  },
+  {
+   "id": "setting",
+   "surfaces": {
+    "V": [
+     "in the emergency department"
+    ],
+    "NB": [
+     "emergency department"
+    ],
+    "S": [
+     "ED"
+    ]
+   }
+  },
+  {
+   "id": "onset",
+   "surfaces": {
+    "V": [
+     "3 days of right knee pain and swelling"
+    ],
+    "NB": [
+     "3 days of right knee pain and swelling"
+    ],
+    "S": [
+     "3d R knee pain and swelling"
+    ]
+   }
+  },
+  {
+   "id": "knee",
+   "surfaces": {
+    "V": [
+     "a warm, swollen right knee with an effusion and painful range of motion"
+    ],
+    "NB": [
+     "warm, swollen right knee with an effusion and painful range of motion"
+    ],
+    "S": [
+     "R knee warm, swollen, effusion, painful ROM"
+    ]
+   }
+  },
+  {
+   "id": "no_other",
+   "surfaces": {
+    "V": [
+     "no other joint pain or swelling"
+    ],
+    "NB": [
+     "no other joint pain or swelling"
+    ],
+    "S": [
+     "no other joint pain or swelling"
+    ]
+   }
+  },
+  {
+   "id": "no_trauma",
+   "surfaces": {
+    "V": [
+     "no recent trauma"
+    ],
+    "NB": [
+     "no recent trauma"
+    ],
+    "S": [
+     "no recent trauma"
+    ]
+   }
+  },
+  {
+   "id": "no_risk",
+   "surfaces": {
+    "V": [
+     "no prosthetic joint, no prior joint surgery or injection, no injection drug use, and no history of gout"
+    ],
+    "NB": [
+     "no prosthetic joint, no prior joint surgery or injection, no injection drug use, and no history of gout"
+    ],
+    "S": [
+     "no prosthetic joint, no prior joint surgery/injection, no IVDU, no hx gout"
+    ]
+   }
+  },
+  {
+   "id": "alt",
+   "surfaces": {
+    "V": [
+     "the clinician includes septic arthritis among the considerations"
+    ],
+    "NB": [
+     "septic arthritis is among the considerations"
+    ],
+    "S": [
+     "septic arthritis among considerations"
+    ]
+   }
+  }
+ ],
+ "filler": [
+  {
+   "id": "f_assoc",
+   "justification": "Functional consequence of the stated symptom.",
+   "surfaces": {
+    "NB": [
+     "He has been walking with a limp"
+    ],
+    "S": [
+     "Limping"
+    ]
+   }
+  },
+  {
+   "id": "f_tx",
+   "justification": "Self-treatment that does not change the probability.",
+   "surfaces": {
+    "NB": [
+     "He took ibuprofen 400 mg twice with partial relief"
+    ],
+    "S": [
+     "Ibuprofen 400 x2 with partial relief"
+    ]
+   }
+  },
+  {
+   "id": "f_pmh",
+   "justification": "Unrelated history.",
+   "surfaces": {
+    "NB": [
+     "hypertension"
+    ],
+    "S": [
+     "HTN"
+    ]
+   }
+  },
+  {
+   "id": "f_med",
+   "justification": "Antihypertensive for the stated condition.",
+   "surfaces": {
+    "NB": [
+     "lisinopril 10 mg daily"
+    ],
+    "S": [
+     "lisinopril 10 daily"
+    ]
+   }
+  },
+  {
+   "id": "f_allergy",
+   "justification": "Allergy status unrelated.",
+   "surfaces": {
+    "NB": [
+     "no known drug allergies"
+    ],
+    "S": [
+     "NKDA"
+    ]
+   }
+  },
+  {
+   "id": "f_social",
+   "justification": "Neutral social history.",
+   "surfaces": {
+    "NB": [
+     "warehouse supervisor, never smoker, occasional alcohol"
+    ],
+    "S": [
+     "warehouse supervisor, never smoker, occ EtOH"
+    ]
+   }
+  },
+  {
+   "id": "f_ros_neg",
+   "justification": "Unrelated systems.",
+   "surfaces": {
+    "NB": [
+     "headache, cough, chest pain, abdominal pain, diarrhea, dysuria, or rash"
+    ],
+    "S": [
+     "HA, cough, CP, abd pain, diarrhea, dysuria, rash"
+    ]
+   }
+  },
+  {
+   "id": "f_vitals",
+   "justification": "Remaining vitals, modest temperature.",
+   "surfaces": {
+    "NB": [
+     "T 37.8°C, HR 92, BP 134/80, RR 16, SpO2 98% on room air"
+    ],
+    "S": [
+     "T 37.8, HR 92, BP 134/80, RR 16, SpO2 98% RA"
+    ]
+   }
+  },
+  {
+   "id": "f_gen",
+   "justification": "Appearance consistent with a painful joint.",
+   "surfaces": {
+    "NB": [
+     "alert, uncomfortable, walking with a limp"
+    ],
+    "S": [
+     "A&O, uncomfortable, limping"
+    ]
+   }
+  },
+  {
+   "id": "f_cvlung",
+   "justification": "Normal cardiopulmonary exam.",
+   "surfaces": {
+    "NB": [
+     "Heart regular rate and rhythm. Lungs clear bilaterally."
+    ],
+    "S": [
+     "RRR. CTAB."
+    ]
+   }
+  },
+  {
+   "id": "f_exam_rest",
+   "justification": "Unaffected joints, supports a single affected joint.",
+   "surfaces": {
+    "NB": [
+     "Left knee, both hips, and both ankles with full range of motion and no swelling."
+    ],
+    "S": [
+     "L knee, both hips, both ankles full ROM, no swelling."
+    ]
+   }
+  },
+  {
+   "id": "f_labs",
+   "justification": "Routine ED studies for a swollen joint.",
+   "surfaces": {
+    "NB": [
+     "Serum WBC 10.6 x 10^9/L. Knee radiograph: joint effusion without fracture."
+    ],
+    "S": [
+     "Serum WBC 10.6. Knee XR: effusion, no fracture."
+    ]
+   }
+  },
+  {
+   "id": "f_pending",
+   "justification": "Other fluid studies sent, not yet resulted.",
+   "surfaces": {
+    "NB": [
+     "Synovial Gram stain, crystal analysis, and culture pending."
+    ],
+    "S": [
+     "Synovial Gram stain, crystals, culture pending."
+    ]
+   }
+  },
+  {
+   "id": "f_ddx",
+   "justification": "Lists target among alternatives; no interpretation of result.",
+   "surfaces": {
+    "NB": [
+     "septic arthritis, gout, pseudogout, reactive arthritis, internal derangement of the knee"
+    ],
+    "S": [
+     "septic arthritis, gout, pseudogout, reactive arthritis, internal derangement"
+    ]
+   }
+  },
+  {
+   "id": "f_plan",
+   "justification": "Result-neutral plan.",
+   "surfaces": {
+    "NB": [
+     "Analgesia, joint rest, and monitoring. Disposition per results and reassessment."
+    ],
+    "S": [
+     "Analgesia, joint rest, monitoring. Dispo per results and reassessment."
+    ]
+   }
+  }
+ ],
+ "result": {
+  "pos": {
+   "V": [
+    "68 x 10^9/L (68,000 cells/uL)"
+   ],
+   "NB": [
+    "68 x 10^9/L (68,000 cells/uL)"
+   ],
+   "S": [
+    "68 x 10^9/L (68,000 cells/uL)"
+   ]
+  },
+  "neg": {
+   "V": [
+    "12 x 10^9/L (12,000 cells/uL)"
+   ],
+   "NB": [
+    "12 x 10^9/L (12,000 cells/uL)"
+   ],
+   "S": [
+    "12 x 10^9/L (12,000 cells/uL)"
+   ]
+  }
+ }
+}

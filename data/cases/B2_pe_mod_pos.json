@@ -1,0 +1,93 @@
+{
+  "case_id": "B2_pe_mod_pos",
+  "scenario": "B2_pe_mod",
+  "set": "B",
+  "result": "pos",
+  "diagnosis": "Pulmonary embolism",
+  "test_name": "CT pulmonary angiography",
+  "setting": "emergency department",
+  "patient_summary": "Adult ED patient with dyspnea and chest pain, moderate Wells category (synthetic).",
+  "pretest_source": "Wells 2001 Results, p. 102: moderate-probability group, 55 of 339 (16.2%, CI 12.5-20.6%) had PE.",
+  "result_shown": "a filling defect in a pulmonary artery on CTPA",
+  "status": "VERIFIED",
+  "unverified": [],
+  "sources": [
+    {
+      "quantity": "pretest 55/339 = 16.2% (CI 12.5-20.6)",
+      "citation_key": "wells2001pe",
+      "id": "PMID 11453709; DOI 10.7326/0003-4819-135-2-200107170-00010",
+      "location": "p. 102, Results text (Abstract p. 98)",
+      "status": "VERIFIED"
+    },
+    {
+      "quantity": "CTA 2x2 (conclusive scans): 150 TP, 31 FN, 25 FP, 567 TN, so sensitivity 150/181 (83%), specificity 567/592 (96%); LRs computed from these counts (not published)",
+      "citation_key": "stein2006pioped2",
+      "id": "PMID 16738268; DOI 10.1056/NEJMoa052367",
+      "location": "p. 2324, Table 4",
+      "status": "VERIFIED"
+    },
+    {
+      "quantity": "observed CTA PPV 92% (93/101; CI 84-96) and NPV 89% (121/136; CI 82-93) in the intermediate (Wells moderate) stratum; sensitivity target only",
+      "citation_key": "stein2006pioped2",
+      "id": "PMID 16738268; DOI 10.1056/NEJMoa052367",
+      "location": "p. 2325, Table 5 (text p. 2323)",
+      "status": "VERIFIED"
+    }
+  ],
+  "conditional_independence": "Each case applies a single likelihood ratio (the LR for the result shown) to a single pretest probability, so no conditional-independence assumption is needed. If findings were ever combined, the LRs would be multiplied assuming conditional independence given disease status.",
+  "target_inputs": {
+    "pretest": {
+      "rule": "point",
+      "num": 55,
+      "den": 339
+    },
+    "sens": 0.8287292817679558,
+    "spec": 0.9577702702702703,
+    "lr": {
+      "pos": {
+        "rule": "from_sens_spec"
+      },
+      "neg": {
+        "rule": "from_sens_spec"
+      }
+    },
+    "band_primary": {
+      "rule": "degenerate"
+    }
+  },
+  "target": {
+    "pretest_point": 0.16224188790560473,
+    "pretest_range": [
+      0.16224188790560473,
+      0.16224188790560473
+    ],
+    "lr_point": 19.6243093922652,
+    "lr_range": [
+      19.6243093922652,
+      19.6243093922652
+    ],
+    "posttest_point": 0.7916876043507157,
+    "posttest_band_primary": [
+      0.7916876043507157,
+      0.7916876043507157
+    ],
+    "posttest_band_bayes": [
+      0.7916876043507157,
+      0.7916876043507157
+    ]
+  },
+  "notes": "Prior (Wells 2001 ED cohort) and LRs (PIOPED II conclusive scans) come from different cohorts. PIOPED II's observed PPV/NPV in the intermediate stratum are stored as sensitivity_targets, not as the primary target. LRs apply to conclusive scans only (51 of 824 CTAs inconclusive). Wells 2001 and PIOPED II both use the Wells score tiers (<2 low, 2-6 moderate, >6 high). Wells score as written in the note: DVT signs 0; PE leading consideration with pneumonia and pleurisy less likely 3; HR 108, 1.5; immobilization or surgery 0; prior PE or DVT 0; hemoptysis 0; malignancy 0. Total 4.5 = moderate. Unscored findings neutral (T 37.0, SpO2 96% RA, clear lungs, ECG sinus tachycardia only, no troponin).",
+  "sensitivity_targets": [
+    {
+      "label": "PIOPED II observed CTA PPV, intermediate clinical probability",
+      "num": 93,
+      "den": 101,
+      "ci": [
+        0.84,
+        0.96
+      ],
+      "location": "p. 2325, Table 5",
+      "value": 0.9207920792079208
+    }
+  ]
+}

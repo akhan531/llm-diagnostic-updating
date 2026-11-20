@@ -1,0 +1,91 @@
+{
+  "case_id": "A1_pneumonia_neg",
+  "scenario": "A1_pneumonia",
+  "result": "neg",
+  "diagnosis": "Community-acquired pneumonia",
+  "test_name": "chest radiograph",
+  "status": "VERIFIED",
+  "unverified": [],
+  "set": "A",
+  "setting": "primary care outpatient clinic (Morgan p748; no visit type is stated in the source)",
+  "patient_summary": "Previously healthy 35-year-old woman who smokes tobacco, 5 days of fatigue, productive cough, worsening shortness of breath, temperatures to 38.9 C, decreased breath sounds in the lower right field, HR 105, other vital signs normal (Morgan 2021 Figure legend, vignette A).",
+  "pretest_source": "Morgan 2021 Table 3, pneumonia pretest evidence range 25-42%; point = log-odds midpoint.",
+  "result_shown": "no focal consolidation",
+  "sources": [
+    {
+      "quantity": "pretest 25-42%",
+      "citation_key": "morgan2021",
+      "id": "PMID 33818595; DOI 10.1001/jamainternmed.2021.0269; PMC8022260",
+      "location": "Table 3, Pneumonia: pretest",
+      "status": "VERIFIED"
+    },
+    {
+      "quantity": "LR+ 2.57, LR- 0.33",
+      "citation_key": "morgan2021",
+      "id": "PMID 33818595; DOI 10.1001/jamainternmed.2021.0269; PMC8022260",
+      "location": "Table 4, Chest radiography, positive/negative",
+      "status": "VERIFIED"
+    },
+    {
+      "quantity": "posttest 46-65% (pos), 10-19% (neg)",
+      "citation_key": "morgan2021",
+      "id": "PMID 33818595; DOI 10.1001/jamainternmed.2021.0269; PMC8022260",
+      "location": "Table 3, Pneumonia: after positive/negative",
+      "status": "VERIFIED"
+    }
+  ],
+  "conditional_independence": "Each case applies a single likelihood ratio (the LR for the result shown) to a single pretest probability, so no conditional-independence assumption is needed. If findings were ever combined, the LRs would be multiplied assuming conditional independence given disease status.",
+  "target_inputs": {
+    "pretest": {
+      "rule": "logodds_midpoint",
+      "range": [
+        0.25,
+        0.42
+      ]
+    },
+    "lr": {
+      "pos": {
+        "rule": "published_point",
+        "point": 2.57
+      },
+      "neg": {
+        "rule": "published_point",
+        "point": 0.33
+      }
+    },
+    "band_primary": {
+      "rule": "printed",
+      "pct": {
+        "pos": [
+          46,
+          65
+        ],
+        "neg": [
+          10,
+          19
+        ]
+      }
+    }
+  },
+  "target": {
+    "pretest_point": 0.3294457658534094,
+    "pretest_range": [
+      0.25,
+      0.42
+    ],
+    "lr_point": 0.33,
+    "lr_range": [
+      0.33,
+      0.33
+    ],
+    "posttest_point": 0.1395112300256661,
+    "posttest_band_primary": [
+      0.1,
+      0.19
+    ],
+    "posttest_band_bayes": [
+      0.09909909909909907,
+      0.19287503478986917
+    ]
+  }
+}

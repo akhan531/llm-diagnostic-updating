@@ -1,0 +1,10 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+CC: CP radiating to back
+HPI: {age_sex}, {onset}. {^f_pain}. {^f_assoc}. {^no_known}.
+PMH: {htn}. Meds: {f_med}. {f_allergy}.
+SH: {f_social}.
+ROS: + CP. Neg {f_ros_neg}.
+PE: {bp_arms}. {f_vitals}. {^f_gen}. {^f_cv}; {no_murmur}. {^f_lungs}. {^no_neuro}. {f_exam_rest}
+Data: {f_labs} D-dimer: {RESULT}.
+A/P: {age_sex} w/ CP radiating to back. {^alt}. Ddx {f_ddx}. {f_plan}

@@ -1,0 +1,41 @@
+{
+  "scenario": "A1_pneumonia",
+  "source": "Morgan 2021 (PMC8022260), Figure legend vignette A; quote in",
+  "setting": "primary care outpatient clinic (Morgan p748)",
+  "diagnosis": "Community-acquired pneumonia",
+  "test_name": "chest radiograph",
+  "surface_key_note": "Surface keys: V, N, B, S, or NB (N and B), NBS. First string is what the templates render; any string counts for the check. Matching is case-insensitive.",
+  "core_facts": [
+    {"id": "age_sex", "surfaces": {"V": ["35-year-old woman"], "NB": ["35-year-old woman"], "S": ["35F"]}},
+    {"id": "prior_health", "surfaces": {"V": ["previously healthy"], "NB": ["previously healthy"], "S": ["prev healthy"]}},
+    {"id": "tobacco", "surfaces": {"V": ["smokes tobacco"], "NB": ["smokes tobacco", "current smoker"], "S": ["+tob"]}},
+    {"id": "duration", "surfaces": {"V": ["5 days"], "NB": ["5 days"], "S": ["5d"]}},
+    {"id": "sx_fatigue", "surfaces": {"V": ["fatigue"], "NB": ["fatigue"], "S": ["fatigue"]}},
+    {"id": "sx_cough", "surfaces": {"V": ["productive cough"], "NB": ["productive cough"], "S": ["prod cough"]}},
+    {"id": "sx_dyspnea", "surfaces": {"V": ["worsening shortness of breath"], "NB": ["worsening shortness of breath"], "S": ["worsening SOB"]}},
+    {"id": "fever", "surfaces": {"V": ["temperatures to 38.9°C"], "NB": ["temperatures to 38.9°C"], "S": ["temps to 38.9"]}},
+    {"id": "fever_vital", "surfaces": {"NB": ["T 37.2°C"], "S": ["T 37.2"]}},
+    {"id": "hr", "surfaces": {"V": ["a heart rate of 105 beats/min"], "NB": ["HR 105"], "S": ["HR 105"]}},
+    {"id": "vitals_rest", "surfaces": {"V": ["vital signs are otherwise normal"], "NB": ["BP 118/72, RR 16, SpO2 98% on room air"], "S": ["BP 118/72, RR 16, SpO2 98% RA"]}},
+    {"id": "dec_bs", "surfaces": {"V": ["decreased breath sounds in the lower right field"], "NB": ["decreased breath sounds over the lower right field"], "S": ["dec BS R lower field"]}}
+  ],
+  "filler": [
+    {"id": "f_home_tx", "justification": "Home antipyretic use is expected with fever already stated; does not change pneumonia odds.", "surfaces": {"NB": ["taking ibuprofen for the fever with partial relief"], "S": ["ibuprofen w/ partial relief"]}},
+    {"id": "f_work", "justification": "Social consequence of already stated fatigue; no diagnostic content.", "surfaces": {"NB": ["stayed home from work"], "S": ["off work"]}},
+    {"id": "f_med", "justification": "Same OTC ibuprofen as in the HPI, so the medication list is consistent; no diagnostic content.", "surfaces": {"NB": ["ibuprofen 400 mg PO PRN"], "S": ["ibuprofen 400 PRN"]}},
+    {"id": "f_allergy", "justification": "Allergy status unrelated to diagnosis.", "surfaces": {"NB": ["no known drug allergies"], "S": ["NKDA"]}},
+    {"id": "f_alcohol", "justification": "Occasional alcohol use is not a pneumonia risk factor.", "surfaces": {"NB": ["occasional alcohol"], "S": ["occ EtOH"]}},
+    {"id": "f_job", "justification": "Office work implies no occupational exposure.", "surfaces": {"NB": ["works in an office"], "S": ["office job"]}},
+    {"id": "f_ros_neg", "justification": "Negatives from systems unrelated to the lungs (neuro, GI, skin, GU, vascular).", "surfaces": {"NB": ["headache, abdominal pain, nausea, vomiting, diarrhea, rash, dysuria, or leg swelling"], "S": ["HA, abd pain, N/V/D, rash, dysuria, LE edema"]}},
+    {"id": "f_gen", "justification": "Fatigue already stated.", "surfaces": {"NB": ["alert, fatigued-appearing"], "S": ["A&O, fatigued"]}},
+    {"id": "f_cv", "justification": "Tachycardic with HR 105 already stated.", "surfaces": {"NB": ["tachycardic, regular rhythm"], "S": ["tachy, RRR"]}},
+    {"id": "f_exam_rest", "justification": "Abdomen, extremities, skin: unrelated systems.", "surfaces": {"NB": ["Abdomen soft, nontender. No leg edema. No rash."], "S": ["Abd soft NT. No LE edema. No rash."]}},
+    {"id": "f_labs", "justification": "POC glucose and urine hCG (routine before radiograph in a woman of childbearing age); unrelated to pneumonia.", "surfaces": {"NB": ["POC glucose 96 mg/dL. Urine hCG negative."], "S": ["POC glucose 96, UhCG neg."]}},
+    {"id": "f_ddx", "justification": "Lists the target among alternatives without interpreting the result; no probability.", "surfaces": {"NB": ["community-acquired pneumonia, acute bronchitis, influenza or other viral respiratory infection"], "S": ["CAP, acute bronchitis, flu/other viral resp illness"]}},
+    {"id": "f_plan", "justification": "Result-neutral plan: no drug, antibiotic, or antipyretic choice that would signal the author's view of the radiograph.", "surfaces": {"NB": ["Tobacco cessation counseling provided. Return precautions reviewed. Further management per chest radiograph result. Follow up in 1 week or sooner if worse."], "S": ["Tob cessation counseled. RTP reviewed. Further mgmt per CXR result. F/u 1wk or sooner if worse."]}}
+  ],
+  "result": {
+    "pos": {"V": ["a right lower lobe airspace opacity"], "NB": ["right lower lobe airspace opacity"], "S": ["RLL airspace opacity"]},
+    "neg": {"V": ["no focal consolidation"], "NB": ["no focal consolidation"], "S": ["no focal consolidation"]}
+  }
+}

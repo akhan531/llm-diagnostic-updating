@@ -1,0 +1,29 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+EMERGENCY DEPARTMENT NOTE
+
+CC: Shortness of breath and chest pain for {duration}.
+
+HPI: {^age_sex} presents to the {setting} with {duration} of {dyspnea} and {pain}. {^f_pain}. A CT pulmonary angiogram with IV contrast was performed; findings: {RESULT}. She reports {leg_sx}. She has been {imm}. She has {no_hemoptysis}.
+
+PMH: {^f_pmh}; {no_cancer}; {no_vte}.
+Meds: {^f_med}.
+Allergies: {^f_allergy}.
+Social: {^f_social}.
+
+ROS: Positive for {dyspnea}, {pain}, and leg swelling. Denies {f_ros_neg}.
+
+Exam:
+Vitals: {hr}, {f_vitals}, {spo2}.
+General: {^f_gen}.
+CV: {^f_cv}.
+Lungs: {^f_lungs}.
+Extremities: {^leg}.
+
+Results:
+{f_labs}
+
+A/P: {age_sex} with shortness of breath and pleuritic chest pain.
+Clinical assessment: {^alt}.
+Ddx: {^f_ddx}.
+Plan: {f_plan}

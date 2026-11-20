@@ -1,0 +1,7 @@
+arm,model,case_id,seed,parse_status,length_stopped,completion_tokens
+Main,deepseek/deepseek-v4-pro,A2_breast_neg,3,unparseable_missing_field,1,4000
+Main,deepseek/deepseek-v4-pro,B2_pe_mod_neg,1,unparseable_missing_field,1,4000
+Main,deepseek/deepseek-v4-pro,B4_aas_neg,1,unparseable_missing_field,1,4000
+ParaOne,deepseek/deepseek-v4-pro,B5_appy_ct_pos,3,unparseable_missing_field,1,8000
+ParaTwo,deepseek/deepseek-v4-pro,B1_pe_low_pos,3,unparseable_missing_field,1,8000
+ParaTwo,deepseek/deepseek-v4-pro,B5_appy_ct_neg,3,call_error,0,

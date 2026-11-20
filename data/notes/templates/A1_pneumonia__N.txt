@@ -1,0 +1,29 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+OUTPATIENT CLINIC NOTE
+
+CC: Cough and shortness of breath for {duration}.
+
+HPI: {age_sex}, {prior_health}, who {tobacco}, presents with {duration} of {sx_fatigue}, {sx_cough}, and {sx_dyspnea}. She reports {fever} at home and has been {f_home_tx}. She has {f_work} since onset.
+
+PMH: {^prior_health}.
+Meds: {^f_med}.
+Allergies: {^f_allergy}.
+Social: {^tobacco#1}; {f_alcohol}; {f_job}.
+
+ROS: Positive for {sx_fatigue}, fever, {sx_cough}, and {sx_dyspnea}. Denies {f_ros_neg}.
+
+Exam:
+Vitals: {fever_vital}, {hr}, {vitals_rest}.
+General: {^f_gen}.
+CV: {^f_cv}.
+Lungs: {^dec_bs}.
+{f_exam_rest}
+
+Results:
+{f_labs}
+CXR (PA and lateral): {RESULT}.
+
+A/P: {age_sex} with {duration} of cough, dyspnea, and fever.
+Ddx: {^f_ddx}.
+Plan: {f_plan}

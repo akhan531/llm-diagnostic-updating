@@ -1,0 +1,30 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+EMERGENCY DEPARTMENT NOTE
+
+CC: Chest pain and shortness of breath for {duration}.
+
+HPI: {^age_sex} presents to the {setting} with {duration} of {pain} and {dyspnea}. {^f_pain}. An ELISA D-dimer sent from triage resulted at {RESULT}. She had a {uri}. {^f_tx}. She has {no_hemoptysis}.
+
+PMH: {^f_pmh}; {no_cancer}; {no_vte}.
+Surgical hx: {^no_surg}.
+Meds: {^f_med}.
+Allergies: {^f_allergy}.
+Social: {^f_social}.
+
+ROS: Positive for {pain} and {dyspnea}. Denies {f_ros_neg}.
+
+Exam:
+Vitals: {hr}, {f_vitals}.
+General: {^f_gen}.
+CV: {^f_cv}.
+Lungs: {^f_lungs}.
+Extremities: {^no_dvt}.
+
+Results:
+{f_labs}
+
+A/P: {age_sex} with chest pain and shortness of breath.
+Clinical assessment: {^alt}.
+Ddx: {^f_ddx}.
+Plan: {f_plan}

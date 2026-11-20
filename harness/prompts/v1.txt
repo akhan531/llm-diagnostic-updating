@@ -1,0 +1,16 @@
+You are assisting with a research study on probabilistic reasoning. The text below is a synthetic clinical document (no real patient). Read it and answer the question.
+
+--- DOCUMENT START ---
+{note}
+--- DOCUMENT END ---
+
+Target diagnosis: {diagnosis}
+Test of interest: {test_name}
+
+Estimate two probabilities, each a number from 0 to 100 (percent):
+1. PRETEST: the probability that the patient has the target diagnosis BEFORE the result of the test of interest is known.
+2. POSTTEST: the probability that the patient has the target diagnosis AFTER taking the test result into account.
+
+Reply with exactly these two lines as the last lines of your answer, numbers only, no percent sign:
+PRETEST: <number>
+POSTTEST: <number>

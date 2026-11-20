@@ -1,0 +1,3 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+A {age_sex} {setting} has {onset}, with {nodes}, {no_exudate}, and {no_uri}. {^alt}. The rapid antigen detection test on a throat swab is {RESULT}.

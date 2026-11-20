@@ -1,0 +1,23 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+OUTPATIENT CLINIC NOTE, ANNUAL VISIT
+
+CC: Annual visit.
+
+HPI: 45-year-old woman presents for her annual visit.
+
+PMH: Seasonal allergic rhinitis.
+Meds: Multivitamin daily.
+Allergies: No known drug allergies.
+Social: Works as an accountant, never smoker, exercises regularly.
+
+Exam:
+Vitals: BP 116/72, HR 68, BMI 24.
+Heart regular rate and rhythm. Lungs clear bilaterally. Abdomen soft, nontender.
+
+Results:
+Fasting lipid panel and A1c drawn today, results pending.
+Screening mammogram (bilateral CC and MLO views, performed last week, report in chart): negative.
+
+A/P: 45-year-old woman at annual visit.
+Plan: Influenza vaccine given today. Healthy lifestyle counseling provided. Follow up per results of today's and recent studies, otherwise in 1 year.

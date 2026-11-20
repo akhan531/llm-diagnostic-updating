@@ -1,0 +1,1 @@
+{"raw_glob": "results/raw/*.jsonl", "synthetic": false, "n_records": 2142, "run_set": "paper", "run_ids": ["main1"], "n_malformed_raw_lines": 0}

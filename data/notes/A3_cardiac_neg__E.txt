@@ -1,0 +1,25 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+OUTPATIENT CLINIC NOTE
+
+CC: Chest pain on and off for 3 weeks.
+
+HPI: 43-year-old premenopausal woman presents with atypical chest pain on and off for 3 weeks. The pain is a substernal pressure that sometimes comes on with exertion and is not reliably relieved by rest.
+
+PMH: Migraine without aura, well controlled.
+Meds: Sumatriptan 50 mg PRN migraine.
+Allergies: No known drug allergies.
+Social: Teacher, never smoker, occasional alcohol.
+
+ROS: Positive for chest pain.
+
+Exam:
+Vitals: BP 112/70, HR 72, RR 14, T 36.8°C, SpO2 99% on room air.
+
+Results:
+ECG: Normal sinus rhythm, normal intervals, no ST or T wave changes.
+Exercise treadmill test (Bruce protocol, 9 minutes, 92% of maximum predicted heart rate; performed 2 days ago, report in chart): no ischemic ST changes at peak exercise or in recovery.
+
+A/P: 43-year-old premenopausal woman with atypical chest pain.
+Ddx: Musculoskeletal chest pain, gastroesophageal reflux, anxiety, cardiac ischemia.
+Plan: Return precautions for exertional chest pain, dyspnea, or syncope reviewed. Follow up per results.

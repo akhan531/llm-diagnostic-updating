@@ -1,0 +1,5 @@
+table,model,set,result,condition,contrast,metric,strict,hand_read
+error,openai/gpt-4o,B,all,E,,band_pp_med/abs_lod_med,7.7|2.3|15.8|1.61|0.71|2.36|59,8.2|2.3|15.8|1.61|0.71|2.37|60
+error,openai/gpt-4o,B,pos,E,,band_pp_med/abs_lod_med,15.8|10.4|24.5|1.61|1.54|2.37|29,15.8|10.4|24.0|1.61|1.54|2.39|30
+contrast,openai/gpt-4o,B,all,,EvsN,logodds_err,0.02|\ensuremath{-}0.19|0.29|12,\ensuremath{-}0.01|\ensuremath{-}0.19|0.29|12
+contrast,openai/gpt-4o,B,pos,,EvsN,logodds_err,0.02|\ensuremath{-}0.33|0.29|6,\ensuremath{-}0.01|\ensuremath{-}0.33|0.29|6

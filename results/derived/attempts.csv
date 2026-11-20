@@ -1,0 +1,6 @@
+run_id,model,n_records,n_keys,n_superseded,n_final_call_error,max_attempt
+main1,anthropic/claude-sonnet-5.5,307,306,1,0,2
+main1,deepseek/deepseek-v4-pro,512,510,2,0,2
+main1,google/gemini-3.8-flash,511,510,1,0,2
+main1,openai/gpt-4o,510,510,0,0,1
+main1,openai/gpt-6.1-sol,308,306,2,0,2

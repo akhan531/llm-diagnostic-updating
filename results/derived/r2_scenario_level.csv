@@ -1,0 +1,7 @@
+model,level,n_scen,n_gt1,sign_p,median
+anthropic/claude-sonnet-5.5,model median r per scenario,10,8,0.109375,1.3404583824576024
+deepseek/deepseek-v4-pro,model median r per scenario,10,8,0.109375,1.829686826922733
+google/gemini-3.8-flash,model median r per scenario,10,8,0.109375,1.4620029671648864
+openai/gpt-4o,model median r per scenario,10,9,0.021484375,1.5203425898336063
+openai/gpt-6.1-sol,model median r per scenario,10,8,0.109375,1.4370846261612278
+ALL,"median over models of r, per scenario",10,8,0.109375,1.4745019513991728

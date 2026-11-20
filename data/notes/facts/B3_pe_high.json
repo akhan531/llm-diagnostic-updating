@@ -1,0 +1,425 @@
+{
+ "scenario": "B3_pe_high",
+ "source": "Wells criteria (Wells 2000/2001 categories); clinical vignette written for this study (no source vignette) for the PE evidence",
+ "setting": "emergency department",
+ "diagnosis": "Pulmonary embolism",
+ "test_name": "CT pulmonary angiography",
+ "wells_items": [
+  {
+   "item": "Clinical signs and symptoms of DVT",
+   "points": 3.0,
+   "present": true
+  },
+  {
+   "item": "PE is the leading consideration or an alternative diagnosis is less likely than PE",
+   "points": 3.0,
+   "present": true
+  },
+  {
+   "item": "Heart rate above 100 beats/min",
+   "points": 1.5,
+   "present": true
+  },
+  {
+   "item": "Immobilization or surgery in the previous 4 weeks",
+   "points": 1.5,
+   "present": true
+  },
+  {
+   "item": "Previous PE or DVT",
+   "points": 1.5,
+   "present": false
+  },
+  {
+   "item": "Hemoptysis",
+   "points": 1.0,
+   "present": false
+  },
+  {
+   "item": "Malignancy (treatment within 6 months or palliative)",
+   "points": 1.0,
+   "present": false
+  }
+ ],
+ "wells_total": 9.0,
+ "wells_category": "high (>6)",
+ "wells_note": "Score is computable from the facts but is never stated in any note. Item by item: DVT signs 3 (left calf swelling, deep venous tenderness, 3 cm asymmetry); PE leading consideration, no alternative more likely 3; HR 112 above 100 1.5; immobilization (bed-bound 10 days after an acute lumbar disc herniation; both calves exposed) 1.5; prior PE or DVT 0; hemoptysis 0; malignancy 0. Total 9.0, high. Unscored findings SpO2 92% and RR 22 are not Wells items; plausible within the high stratum and identical across conditions and polarities (L5).",
+ "surface_key_note": "Surface keys: V, N, B, S, or NB (N and B), NBS. First string is what the templates render; any string counts for the check. Matching is case-insensitive.",
+ "core_facts": [
+  {
+   "id": "age_sex",
+   "surfaces": {
+    "V": [
+     "71-year-old woman"
+    ],
+    "NB": [
+     "71-year-old woman"
+    ],
+    "S": [
+     "71F"
+    ]
+   }
+  },
+  {
+   "id": "setting",
+   "surfaces": {
+    "V": [
+     "in the emergency department"
+    ],
+    "NB": [
+     "emergency department"
+    ],
+    "S": [
+     "ED"
+    ]
+   }
+  },
+  {
+   "id": "duration",
+   "surfaces": {
+    "V": [
+     "2 days"
+    ],
+    "NB": [
+     "2 days"
+    ],
+    "S": [
+     "2d"
+    ]
+   }
+  },
+  {
+   "id": "dyspnea",
+   "surfaces": {
+    "V": [
+     "new shortness of breath"
+    ],
+    "NB": [
+     "new shortness of breath"
+    ],
+    "S": [
+     "new SOB"
+    ]
+   }
+  },
+  {
+   "id": "pain",
+   "surfaces": {
+    "V": [
+     "pleuritic chest pain"
+    ],
+    "NB": [
+     "pleuritic chest pain"
+    ],
+    "S": [
+     "pleuritic CP"
+    ]
+   }
+  },
+  {
+   "id": "leg",
+   "surfaces": {
+    "V": [
+     "left calf swelling and tenderness along the deep veins"
+    ],
+    "NB": [
+     "left calf swelling and tenderness along the deep venous system, with the left calf 3 cm larger than the right"
+    ],
+    "S": [
+     "L calf swelling and deep venous tenderness, L calf 3 cm larger than R"
+    ]
+   }
+  },
+  {
+   "id": "leg_sx",
+   "surfaces": {
+    "NB": [
+     "left calf swelling and pain"
+    ],
+    "S": [
+     "L calf swelling and pain"
+    ]
+   }
+  },
+  {
+   "id": "imm",
+   "surfaces": {
+    "V": [
+     "been bed-bound for 10 days after an acute lumbar disc herniation"
+    ],
+    "NB": [
+     "bed-bound for the past 10 days after an acute lumbar disc herniation"
+    ],
+    "S": [
+     "bed-bound x 10d after acute lumbar disc herniation"
+    ]
+   }
+  },
+  {
+   "id": "hr",
+   "surfaces": {
+    "V": [
+     "a heart rate of 112 beats/min"
+    ],
+    "NB": [
+     "HR 112"
+    ],
+    "S": [
+     "HR 112"
+    ]
+   }
+  },
+  {
+   "id": "spo2",
+   "surfaces": {
+    "V": [
+     "an oxygen saturation of 92% on room air"
+    ],
+    "NB": [
+     "SpO2 92% on room air"
+    ],
+    "S": [
+     "SpO2 92% RA"
+    ]
+   }
+  },
+  {
+   "id": "no_hemoptysis",
+   "surfaces": {
+    "V": [
+     "no hemoptysis"
+    ],
+    "NB": [
+     "no hemoptysis"
+    ],
+    "S": [
+     "no hemoptysis"
+    ]
+   }
+  },
+  {
+   "id": "no_cancer",
+   "surfaces": {
+    "V": [
+     "no history of cancer"
+    ],
+    "NB": [
+     "no history of cancer"
+    ],
+    "S": [
+     "no hx cancer"
+    ]
+   }
+  },
+  {
+   "id": "no_vte",
+   "surfaces": {
+    "V": [
+     "no prior DVT or PE"
+    ],
+    "NB": [
+     "no prior DVT or PE"
+    ],
+    "S": [
+     "no prior DVT/PE"
+    ]
+   }
+  },
+  {
+   "id": "alt",
+   "surfaces": {
+    "V": [
+     "the clinician judges pulmonary embolism to be the leading explanation, with no alternative more likely"
+    ],
+    "NB": [
+     "PE is the leading consideration, no alternative more likely"
+    ],
+    "S": [
+     "PE leading consideration, no alternative more likely"
+    ]
+   }
+  }
+ ],
+ "filler": [
+  {
+   "id": "f_pain",
+   "justification": "Character of a stated symptom.",
+   "surfaces": {
+    "NB": [
+     "The pain is right-sided and worse with deep breaths"
+    ],
+    "S": [
+     "Pain R-sided, worse w/ deep breaths"
+    ]
+   }
+  },
+  {
+   "id": "f_pmh",
+   "justification": "Common comorbidities.",
+   "surfaces": {
+    "NB": [
+     "hypertension, osteoarthritis"
+    ],
+    "S": [
+     "HTN, OA"
+    ]
+   }
+  },
+  {
+   "id": "f_med",
+   "justification": "Antihypertensive and analgesic; no hormonal agent.",
+   "surfaces": {
+    "NB": [
+     "lisinopril 10 mg daily, acetaminophen 650 mg PRN"
+    ],
+    "S": [
+     "lisinopril 10 daily, APAP 650 PRN"
+    ]
+   }
+  },
+  {
+   "id": "f_allergy",
+   "justification": "Allergy status unrelated.",
+   "surfaces": {
+    "NB": [
+     "penicillin (rash)"
+    ],
+    "S": [
+     "PCN (rash)"
+    ]
+   }
+  },
+  {
+   "id": "f_social",
+   "justification": "Neutral social history.",
+   "surfaces": {
+    "NB": [
+     "retired, lives with her daughter, never smoker"
+    ],
+    "S": [
+     "retired, lives w/ daughter, never smoker"
+    ]
+   }
+  },
+  {
+   "id": "f_ros_neg",
+   "justification": "Unrelated systems.",
+   "surfaces": {
+    "NB": [
+     "headache, abdominal pain, nausea, vomiting, diarrhea, dysuria, or rash"
+    ],
+    "S": [
+     "HA, abd pain, N/V/D, dysuria, rash"
+    ]
+   }
+  },
+  {
+   "id": "f_vitals",
+   "justification": "Remaining vitals.",
+   "surfaces": {
+    "NB": [
+     "BP 128/76, RR 22, T 37.1°C"
+    ],
+    "S": [
+     "BP 128/76, RR 22, T 37.1"
+    ]
+   }
+  },
+  {
+   "id": "f_gen",
+   "justification": "Appearance consistent with stated symptoms.",
+   "surfaces": {
+    "NB": [
+     "alert, mildly dyspneic"
+    ],
+    "S": [
+     "A&O, mildly dyspneic"
+    ]
+   }
+  },
+  {
+   "id": "f_cv",
+   "justification": "Tachycardia already stated.",
+   "surfaces": {
+    "NB": [
+     "tachycardic, regular rhythm, no murmur"
+    ],
+    "S": [
+     "tachy, RRR, no murmur"
+    ]
+   }
+  },
+  {
+   "id": "f_lungs",
+   "justification": "Lung exam.",
+   "surfaces": {
+    "NB": [
+     "clear bilaterally"
+    ],
+    "S": [
+     "CTAB"
+    ]
+   }
+  },
+  {
+   "id": "f_labs",
+   "justification": "Routine ED studies; creatinine needed before contrast; normal chest radiograph (M6).",
+   "surfaces": {
+    "NB": [
+     "ECG with sinus tachycardia and no ST changes. Troponin I below the reference limit. Creatinine 0.8 mg/dL. CXR: no acute cardiopulmonary process."
+    ],
+    "S": [
+     "ECG sinus tachy, no ST changes. Trop I below ref. Cr 0.8. CXR no acute cardiopulmonary process."
+    ]
+   }
+  },
+  {
+   "id": "f_ddx",
+   "justification": "Lists target among alternatives; no interpretation of result.",
+   "surfaces": {
+    "NB": [
+     "pulmonary embolism, pneumonia, acute coronary syndrome, pericarditis"
+    ],
+    "S": [
+     "PE, pneumonia, ACS, pericarditis"
+    ]
+   }
+  },
+  {
+   "id": "f_plan",
+   "justification": "Result-neutral plan.",
+   "surfaces": {
+    "NB": [
+     "Continuous pulse oximetry and cardiac monitoring. Disposition per results and reassessment."
+    ],
+    "S": [
+     "Cont pulse ox and tele. Dispo per results and reassessment."
+    ]
+   }
+  }
+ ],
+ "result": {
+  "pos": {
+   "V": [
+    "a filling defect in a pulmonary artery"
+   ],
+   "NB": [
+    "filling defect in a pulmonary artery"
+   ],
+   "S": [
+    "filling defect in a pulm artery"
+   ]
+  },
+  "neg": {
+   "V": [
+    "no filling defect in the pulmonary arteries"
+   ],
+   "NB": [
+    "no filling defect in the pulmonary arteries"
+   ],
+   "S": [
+    "no filling defect in the pulmonary arteries"
+   ]
+  }
+ }
+}

@@ -1,0 +1,10 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+CC: R knee pain and swelling
+HPI: {age_sex} in {setting}, {onset}. {^f_assoc}. {^no_other}. {^no_trauma}. {^no_risk}. {^f_tx}.
+PMH: {f_pmh}. Meds: {f_med}. {f_allergy}.
+SH: {f_social}.
+ROS: + R knee pain/swelling. Neg {f_ros_neg}.
+PE: {f_vitals}. {^f_gen}. {f_cvlung} MSK: {knee}. {f_exam_rest}
+Data: {f_labs} Synovial fluid WBC (R knee arthrocentesis): {RESULT}. {f_pending}
+A/P: {age_sex} w/ R knee pain and swelling. {^alt}. Ddx {f_ddx}. {f_plan}

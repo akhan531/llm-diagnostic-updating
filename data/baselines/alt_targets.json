@@ -1,0 +1,23 @@
+{
+ "_note": "F4 alternative-target inputs (committee item #2). Transcribed from, which was checked against the local full-text PDFs in data/sources/. Primary targets in data/cases are unchanged. Observed PIOPED II stratum PPV/NPV are already stored per case as sensitivity_targets and are read from there. Probabilities as fractions.",
+ "pioped2_cta_lr": {
+  "applies_to": ["B2_pe_mod", "B3_pe_high"],
+  "lr_pos": 19.6, "lr_pos_ci": [13.3, 29.0],
+  "lr_neg": 0.18, "lr_neg_ci": [0.13, 0.24],
+  "source_key": "stein2006pioped2",
+  "location": "N Engl J Med 2006;354:2317-2327, p. 2321, Results",
+  "checked": "full text (data/sources/)"
+ },
+ "pickhardt2011_mdct": {
+  "applies_to": ["B5_appy_ct"],
+  "lr_pos": 51.3, "lr_pos_ci": [38.1, 69.0],
+  "lr_neg": 0.015, "lr_neg_ci": [0.008, 0.028],
+  "lr_pos_recomputed": 50.3,
+  "lr_neg_recomputed": 0.0151,
+  "recomputed_from": "sens 665/675, spec 2153/2196 (p. 792 Table 2): LR+ = (665/675)/(43/2196) = 50.3, not the printed 51.3",
+  "observed_ppv": 0.939, "observed_npv": 0.995,
+  "source_key": "pickhardt2011mdct",
+  "location": "Ann Intern Med 2011;154:789-796, p. 792 Table 2; Abstract p. 789",
+  "checked": "full text (data/sources/)"
+ }
+}

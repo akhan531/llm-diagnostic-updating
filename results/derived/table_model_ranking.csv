@@ -1,0 +1,6 @@
+model,n,abs_lod_med,rank_lod,band_pp_med,rank_band
+openai/gpt-6.1-sol,300,1.007494129725826,1,1.8164413303069225,1
+anthropic/claude-sonnet-5.5,300,1.010155240755029,2,1.89,2
+deepseek/deepseek-v4-pro,479,1.3467778337357879,3,3.0,3
+google/gemini-3.8-flash,500,1.4220012549733752,4,4.689699414457461,4
+openai/gpt-4o,499,1.6093109592489392,5,4.89,5

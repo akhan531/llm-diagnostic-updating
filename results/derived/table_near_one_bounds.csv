@@ -1,0 +1,6 @@
+table,model,condition,param,bound,value,printed_2dp,printed_rule,wholly_above_one,wholly_below_one
+Main,google/gemini-3.8-flash,V,a,hi,1.001278,1.00,1.001,0,0
+Own,google/gemini-3.8-flash,S,b,lo,0.998400,1.00,0.998,0,0
+Own,openai/gpt-4o,N,b,lo,1.001279,1.00,1.001,1,0
+Own,openai/gpt-6.1-sol,N,b,lo,0.997245,1.00,0.997,0,0
+Own,openai/gpt-6.1-sol,S,b,lo,1.002476,1.00,1.002,1,0

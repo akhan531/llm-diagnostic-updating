@@ -1,0 +1,43 @@
+variant,label,model,n_scen,median,med_lo,med_hi,n_gt1,sign_p,n_cells_gt1,n_cells,n_censored
+primary,"answers clipped to [0.001%, 99.999%] (the pipeline rule)",anthropic/claude-sonnet-5.5,10,1.3404583824576024,0.8090440670334205,1.483395844966175,8,0.109375,8,10,0
+primary,"answers clipped to [0.001%, 99.999%] (the pipeline rule)",deepseek/deepseek-v4-pro,10,1.829686826922733,0.9228229869366338,2.2994845544134956,8,0.109375,8,10,0
+primary,"answers clipped to [0.001%, 99.999%] (the pipeline rule)",google/gemini-3.8-flash,10,1.4620029671648864,0.8930277037494752,1.696663951292683,8,0.109375,8,10,0
+primary,"answers clipped to [0.001%, 99.999%] (the pipeline rule)",openai/gpt-4o,10,1.5203425898336063,1.0649722780296047,1.9923515974317436,9,0.021484375,9,10,0
+primary,"answers clipped to [0.001%, 99.999%] (the pipeline rule)",openai/gpt-6.1-sol,10,1.4370846261612278,0.9230124219001208,1.6510718177692285,8,0.109375,8,10,0
+primary,"answers clipped to [0.001%, 99.999%] (the pipeline rule)",ALL,10,1.4745019513991728,0.8658466237203849,1.696663951292683,8,0.109375,41,50,0
+cliphalf,"answers clipped to [0.5%, 99.5%]",anthropic/claude-sonnet-5.5,10,1.3404583824576024,0.8090440670334205,1.483395844966175,8,0.109375,8,10,0
+cliphalf,"answers clipped to [0.5%, 99.5%]",deepseek/deepseek-v4-pro,10,1.6105078600594878,0.8515486043081618,1.9858748143131022,8,0.109375,8,10,0
+cliphalf,"answers clipped to [0.5%, 99.5%]",google/gemini-3.8-flash,10,1.4620029671648864,0.8930277037494752,1.696663951292683,8,0.109375,8,10,0
+cliphalf,"answers clipped to [0.5%, 99.5%]",openai/gpt-4o,10,1.5203425898336063,0.7936003601418329,1.9923515974317436,8,0.109375,8,10,0
+cliphalf,"answers clipped to [0.5%, 99.5%]",openai/gpt-6.1-sol,10,1.3002560905921907,0.9122889073409535,1.6510718177692285,8,0.109375,8,10,0
+cliphalf,"answers clipped to [0.5%, 99.5%]",ALL,10,1.4745019513991728,0.8515486043081618,1.696663951292683,8,0.109375,40,50,0
+clipone,"answers clipped to [1%, 99%]",anthropic/claude-sonnet-5.5,10,1.3404583824576024,0.7162966066087719,1.483395844966175,7,0.34375,7,10,0
+clipone,"answers clipped to [1%, 99%]",deepseek/deepseek-v4-pro,10,1.5882937961439159,0.8028843727774592,1.9858748143131022,7,0.34375,7,10,0
+clipone,"answers clipped to [1%, 99%]",google/gemini-3.8-flash,10,1.4620029671648864,0.8930277037494752,1.696663951292683,8,0.109375,8,10,0
+clipone,"answers clipped to [1%, 99%]",openai/gpt-4o,10,1.5203425898336063,0.7936003601418329,1.9923515974317436,8,0.109375,8,10,0
+clipone,"answers clipped to [1%, 99%]",openai/gpt-6.1-sol,10,1.3002560905921907,0.8117217512015673,1.63342524843179,6,0.75390625,6,10,0
+clipone,"answers clipped to [1%, 99%]",ALL,10,1.4745019513991728,0.8028843727774592,1.696663951292683,7,0.34375,36,50,0
+median,"median log-odds per cell (rank-based, unchanged by clipping unless the median itself is censored)",anthropic/claude-sonnet-5.5,10,1.3160441724806873,0.8080297340022452,1.4862599623896202,8,0.109375,8,10,0
+median,"median log-odds per cell (rank-based, unchanged by clipping unless the median itself is censored)",deepseek/deepseek-v4-pro,10,1.7526479202115586,0.9370385195294048,2.9665488903022452,7,0.34375,7,10,0
+median,"median log-odds per cell (rank-based, unchanged by clipping unless the median itself is censored)",google/gemini-3.8-flash,10,1.4536040749464563,0.8212186984574259,1.6988457603101221,8,0.109375,8,10,0
+median,"median log-odds per cell (rank-based, unchanged by clipping unless the median itself is censored)",openai/gpt-4o,10,1.5169907154112066,0.8983962132152585,2.1409512542517577,8,0.109375,8,10,0
+median,"median log-odds per cell (rank-based, unchanged by clipping unless the median itself is censored)",openai/gpt-6.1-sol,10,1.4181157079438935,0.8954281765778185,1.6156300336346001,8,0.109375,8,10,0
+median,"median log-odds per cell (rank-based, unchanged by clipping unless the median itself is censored)",ALL,10,1.4748926366267714,0.8212186984574259,1.6196743813182524,8,0.109375,39,50,0
+tobit,Tobit-style: answers <= 1% or >= 99% censored at 1% and 99%,anthropic/claude-sonnet-5.5,10,1.3784273354484347,0.7162966066087719,1.4920909417149213,7,0.34375,7,10,49
+tobit,Tobit-style: answers <= 1% or >= 99% censored at 1% and 99%,deepseek/deepseek-v4-pro,10,1.7993995082673728,0.8028843727774592,2.1533230622901427,7,0.34375,7,10,157
+tobit,Tobit-style: answers <= 1% or >= 99% censored at 1% and 99%,google/gemini-3.8-flash,10,1.4609391455413414,0.950055590645123,1.8097522940494517,8,0.109375,8,10,91
+tobit,Tobit-style: answers <= 1% or >= 99% censored at 1% and 99%,openai/gpt-4o,10,1.7860172327679213,0.7936003601418329,2.1691815231995957,8,0.109375,8,10,91
+tobit,Tobit-style: answers <= 1% or >= 99% censored at 1% and 99%,openai/gpt-6.1-sol,10,1.3121331328354742,0.8117217512015673,1.63342524843179,6,0.75390625,6,10,66
+tobit,Tobit-style: answers <= 1% or >= 99% censored at 1% and 99%,ALL,10,1.473438129775628,0.8028843727774592,1.6804243869074493,7,0.34375,36,50,454
+exclsubone,scenarios whose negative target is below 1% excluded,anthropic/claude-sonnet-5.5,6,1.4509671546347818,1.1738344582728288,2.0229849671051436,6,0.03125,6,6,0
+exclsubone,scenarios whose negative target is below 1% excluded,deepseek/deepseek-v4-pro,6,1.9460638605394356,1.7105399592950417,2.965047407213382,6,0.03125,6,6,0
+exclsubone,scenarios whose negative target is below 1% excluded,google/gemini-3.8-flash,6,1.6151344666701068,1.458397876497602,2.3661601320134857,6,0.03125,6,6,0
+exclsubone,scenarios whose negative target is below 1% excluded,openai/gpt-4o,6,1.6384001855856876,1.2917232656266087,2.9902069704624767,6,0.03125,6,6,0
+exclsubone,scenarios whose negative target is below 1% excluded,openai/gpt-6.1-sol,6,1.4962893182043127,1.206928573020654,2.400782816296106,6,0.03125,6,6,0
+exclsubone,scenarios whose negative target is below 1% excluded,ALL,6,1.6151344666701068,1.4656080578321709,2.3661601320134857,6,0.03125,30,30,0
+exclsubone_clipone,"sub-1% scenarios excluded and answers clipped to [1%, 99%]",anthropic/claude-sonnet-5.5,6,1.4509671546347818,1.1738344582728288,2.0229849671051436,6,0.03125,6,6,0
+exclsubone_clipone,"sub-1% scenarios excluded and answers clipped to [1%, 99%]",deepseek/deepseek-v4-pro,6,1.7348451025509641,1.4780467857417245,2.965047407213382,6,0.03125,6,6,0
+exclsubone_clipone,"sub-1% scenarios excluded and answers clipped to [1%, 99%]",google/gemini-3.8-flash,6,1.6151344666701068,1.458397876497602,2.3661601320134857,6,0.03125,6,6,0
+exclsubone_clipone,"sub-1% scenarios excluded and answers clipped to [1%, 99%]",openai/gpt-4o,6,1.5647773472938524,1.2917232656266087,2.9902069704624767,6,0.03125,6,6,0
+exclsubone_clipone,"sub-1% scenarios excluded and answers clipped to [1%, 99%]",openai/gpt-6.1-sol,6,1.4962893182043127,1.206928573020654,2.400782816296106,6,0.03125,6,6,0
+exclsubone_clipone,"sub-1% scenarios excluded and answers clipped to [1%, 99%]",ALL,6,1.6060408029353712,1.4656080578321709,2.3661601320134857,6,0.03125,30,30,0

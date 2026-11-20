@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+.pipeline.lock
+results/spend_ledger.csv
+data/sources/

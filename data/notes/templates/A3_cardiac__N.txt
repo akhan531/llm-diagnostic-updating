@@ -1,0 +1,26 @@
+SYNTHETIC NOTE FOR RESEARCH. NOT A REAL PATIENT.
+
+OUTPATIENT CLINIC NOTE
+
+CC: Chest pain {f_dur}.
+
+HPI: {^age_sex} presents with {pain} {f_dur}. {^f_course}. She has {no_rf}.
+
+PMH: {^f_pmh}.
+Meds: {^f_med}.
+Allergies: {^f_allergy}.
+Social: {^f_social}.
+
+ROS: Positive for chest pain. Denies {f_ros_neg}.
+
+Exam:
+Vitals: {vitals_exam}.
+{^exam_norm}
+
+Results:
+ECG: {^ecg}.
+Exercise treadmill test ({f_proto}; performed 2 days ago, report in chart): {RESULT}.
+
+A/P: {age_sex} with {pain}.
+Ddx: {^f_ddx}.
+Plan: {f_plan}

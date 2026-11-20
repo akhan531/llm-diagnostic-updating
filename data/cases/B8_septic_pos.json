@@ -1,0 +1,133 @@
+{
+  "case_id": "B8_septic_pos",
+  "scenario": "B8_septic",
+  "set": "B",
+  "result": "pos",
+  "diagnosis": "Septic arthritis",
+  "test_name": "synovial fluid white blood cell count",
+  "setting": "emergency department",
+  "patient_summary": "Adult ED patient with 3 days of acute right knee monoarthritis (warm, swollen, effusion, no trauma, no prosthesis or other risk factor), arthrocentesis performed (synthetic).",
+  "pretest_source": "Carpenter 2011 Acad Emerg Med, Prevalence subsection: best-estimate prevalence of nongonococcal septic arthritis in ED patients with monoarticular arthritis 27% (95% CI 17% to 38%), from one ED-based prospective study (Jeng 1997, Taiwan; reference 47; 20 of 75 = 26.7% by the Jeng abstract). Point prior 0.27 as published.",
+  "result_shown": "synovial fluid WBC 68 x 10^9/L (68,000 cells/uL)",
+  "status": "VERIFIED",
+  "unverified": [],
+  "sources": [
+    {
+      "quantity": "pretest 27% (95% CI 17% to 38%), nongonococcal septic arthritis in ED patients with monoarticular arthritis, from one 1997 Taiwanese ED study",
+      "citation_key": "carpenter2011septic",
+      "id": "PMID 21843213; DOI 10.1111/j.1553-2712.2011.01121.x; PMC3229263",
+      "location": "Prevalence subsection (also Abstract)",
+      "status": "VERIFIED",
+      "quote": "Based on one ED-based prospective study published in 1997 and conducted in Taiwan, the best-estimate prevalence of nongonococcal septic arthritis in ED patients with monoarticular arthritis is 27% (95% confidence interval [CI] = 17% to 38%)."
+    },
+    {
+      "quantity": "underlying study: 20 culture-proven bacterial arthritis among 75 patients with arthritis disorders presenting to an emergency service (20/75 = 26.7%); population label (monoarticular, nongonococcal) is Carpenter's, Jeng full text not open access",
+      "citation_key": "jeng1997tnf",
+      "id": "PMID 9375540; DOI 10.1016/s0735-6757(97)90173-x",
+      "location": "Abstract (PubMed)",
+      "status": "VERIFIED",
+      "quote": "Synovial fluid samples were obtained from 75 patients with arthritis disorders who presented to an emergency service ... Twenty patients with culture-proven bacterial arthritis"
+    },
+    {
+      "quantity": "synovial WBC >50 x 10^9/L: sensitivity 56 (49-63), specificity 90 (88-92), +LR 4.7 (2.5-8.5), -LR 0.52 (0.38-0.72), summary estimates; the published LRs are used, not LRs recomputed from the sensitivity and specificity (0.56/0.10 = 5.6 and 0.44/0.90 = 0.49 differ because the summaries were pooled separately)",
+      "citation_key": "carpenter2011septic",
+      "id": "PMID 21843213; DOI 10.1111/j.1553-2712.2011.01121.x; PMC3229263",
+      "location": "Table 4, row '>50 x 10^9/L', Summary estimate (the Results text misprints the +LR upper bound as 85; Table 4 and the Discussion print 8.5)",
+      "status": "VERIFIED",
+      "quote": "Summary estimate / 56 (49-63) / 90 (88-92) / 4.7 (2.5-8.5) / 0.52 (0.38-0.72)"
+    },
+    {
+      "quantity": "interval LRs 0.33, 1.06, 3.59, infinity (alternative target field)",
+      "citation_key": "carpenter2011septic",
+      "id": "PMID 21843213; DOI 10.1111/j.1553-2712.2011.01121.x; PMC3229263",
+      "location": "Abstract",
+      "status": "VERIFIED",
+      "quote": "The interval LR for synovial white blood cell (sWBC) counts of 0 x 10^9-25 x 10^9/L was 0.33; for 25 x 10^9-50 x 10^9/L, 1.06; for 50 x 10^9-100 x 10^9/L, 3.59; and exceeding 100 x 10^9/L, infinity."
+    },
+    {
+      "quantity": "authors' own worked example from the 27% prior",
+      "citation_key": "carpenter2011septic",
+      "id": "PMID 21843213; DOI 10.1111/j.1553-2712.2011.01121.x; PMC3229263",
+      "location": "Discussion, synovial WBC paragraph",
+      "status": "VERIFIED",
+      "quote": "if one starts with a pretest probability for septic arthritis of 27%, and the sWBC count is >50 x 10^9 but <100 x 10^9/L, then the posttest probability would increase to 64%."
+    }
+  ],
+  "conditional_independence": "Each case applies a single likelihood ratio (the LR for the result shown) to a single pretest probability, so no conditional-independence assumption is needed. If findings were ever combined, the LRs would be multiplied assuming conditional independence given disease status.",
+  "target_inputs": {
+    "pretest": {
+      "rule": "point",
+      "value": 0.27
+    },
+    "lr": {
+      "pos": {
+        "rule": "published_point",
+        "point": 4.7,
+        "range": [
+          2.5,
+          8.5
+        ]
+      },
+      "neg": {
+        "rule": "published_point",
+        "point": 0.52,
+        "range": [
+          0.38,
+          0.72
+        ]
+      }
+    },
+    "band_primary": {
+      "rule": "bayes_lr_range_at_point_prior"
+    },
+    "sensitivity_priors_in": [
+      {
+        "label": "Jeng 1997 abstract counts 20/75 = 26.7% (Carpenter's 27% unrounded; Clopper-Pearson 17.1% to 38.1% reproduces Carpenter's CI)",
+        "pretest": 0.26666666666666666
+      }
+    ]
+  },
+  "target": {
+    "pretest_point": 0.27,
+    "pretest_range": [
+      0.27,
+      0.27
+    ],
+    "lr_point": 4.7,
+    "lr_range": [
+      2.5,
+      8.5
+    ],
+    "posttest_point": 0.6348174087043522,
+    "posttest_band_primary": [
+      0.4804270462633452,
+      0.7586776859504132
+    ],
+    "posttest_band_bayes": [
+      0.4804270462633452,
+      0.7586776859504132
+    ]
+  },
+  "notes": "Primary target uses the published dichotomous LRs at synovial WBC >50 x 10^9/L (one positive and one negative result per scenario). The note's values (68 and 12 x 10^9/L) lie in the interval-LR bins 50 to 100 and 0 to 25, so the interval-LR targets in alternative_lr_targets apply to the same notes; they are not used for primary scoring. Prior and LRs come from different studies: the prior is one 1997 Taiwanese ED cohort (n = 75, 20 cases; the 'monoarticular, nongonococcal' label is Carpenter's); the LRs are pooled from heterogeneous cohorts (rheumatology, mixed settings, varied cutoffs and reference standards; I2 53% to 70%). Native joints only (prosthetic joints have lower counts). The target replicates the source authors' own worked example (27% prior, 64% posttest). Note design: no prosthesis, no immunosuppression, no injection drug use, T 37.8 C, serum WBC 10.6, so no unscored finding moves the prior. The clinician line (septic arthritis among the considerations) is a deliberate realism fact, identical across conditions and polarities.",
+  "alternative_lr_targets": [
+    {
+      "label": "Carpenter 2011 interval LR for synovial WBC 50 to 100 x 10^9/L (the note's 68 x 10^9/L lies in this bin)",
+      "lr_point": 3.59,
+      "pretest_point": 0.27,
+      "posttest_point": 0.5704113458482905,
+      "citation_key": "carpenter2011septic",
+      "id": "PMID 21843213; DOI 10.1111/j.1553-2712.2011.01121.x; PMC3229263",
+      "location": "Abstract (interval LRs 0.33, 1.06, 3.59, infinity for 0-25, 25-50, 50-100, >100 x 10^9/L); no CIs published; interval LRs from four trials",
+      "quote": "The interval LR for synovial white blood cell (sWBC) counts of 0 x 10^9-25 x 10^9/L was 0.33; for 25 x 10^9-50 x 10^9/L, 1.06; for 50 x 10^9-100 x 10^9/L, 3.59; and exceeding 100 x 10^9/L, infinity.",
+      "status": "VERIFIED",
+      "use": "alternative target only; not used for primary scoring"
+    }
+  ],
+  "sensitivity_priors": [
+    {
+      "label": "Jeng 1997 abstract counts 20/75 = 26.7% (Carpenter's 27% unrounded; Clopper-Pearson 17.1% to 38.1% reproduces Carpenter's CI)",
+      "pretest": 0.26666666666666666,
+      "posttest_point": 0.6308724832214765
+    }
+  ]
+}
